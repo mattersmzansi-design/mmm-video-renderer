@@ -1,0 +1,83 @@
+name: Render video
+
+on:
+  workflow_dispatch:
+    inputs:
+      content:
+        description: "Content file to render"
+        required: false
+        default: "content.json"
+      voiceover:
+        description: "Generate voiceover"
+        type: boolean
+        required: false
+        default: true
+      fps:
+        description: "Frames per second"
+        required: false
+        default: "30"
+  push:
+    paths:
+      - "content.json"
+      - "content/**"
+      - "template.html"
+      - "assets/**"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Fetch brand fonts
+        run: |
+          mkdir -p fonts
+          base=https://raw.githubusercontent.com/google/fonts/main
+          curl -sSfL "$base/ofl/archivo/Archivo%5Bwdth,wght%5D.ttf" \
+            -o fonts/Archivo-Bold.ttf || echo "archivo fetch failed, using fallback"
+          curl -sSfL "$base/ofl/ibmplexmono/IBMPlexMono-Regular.ttf" \
+            -o fonts/IBMPlexMono-Regular.ttf || echo "plex fetch failed, using fallback"
+          ls -la fonts
+
+      - name: Generate voiceover
+        if: ${{ github.event_name == 'push' || inputs.voiceover }}
+        run: |
+          python voice.py --content "${{ inputs.content || 'content.json' }}"
+
+      - name: Render
+        run: |
+          FPS="${{ inputs.fps || '30' }}"
+          if [ -f build/content.timed.json ]; then
+            echo "rendering with voiceover"
+            python render.py --content build/content.timed.json \
+                             --audio build/voiceover.m4a --fps "$FPS"
+          else
+            echo "rendering silent"
+            python render.py --content "${{ inputs.content || 'content.json' }}" --fps "$FPS"
+          fi
+
+      - name: Upload video
+        uses: actions/upload-artifact@v4
+        with:
+          name: mmm-video
+          path: |
+            out/*.mp4
+            build/voiceover.m4a
+          retention-days: 30

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MMM Render</title>
+<style>
+  __FONTS__
+
+  :root{
+    --navy:#002C3D; --navy-deep:#001B26;
+    --orange:#EF4C00; --teal:#1F6F78; --teal-dim:#0E3D45;
+    --paper:#F2EFE9; --slate:#7FA5AC;
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1920px;height:1080px;overflow:hidden;background:#000;
+    font-family:var(--display)}
+
+  #stage{position:relative;width:1920px;height:1080px;overflow:hidden;
+    background:radial-gradient(110% 80% at 22% 8%,#04455C 0%,var(--navy) 46%,var(--navy-deep) 100%)}
+
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(var(--teal-dim) 1px,transparent 1px),
+      linear-gradient(90deg,var(--teal-dim) 1px,transparent 1px);
+    background-size:80px 80px;opacity:.28;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 78%,transparent 100%);
+    mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 78%,transparent 100%)}
+
+  /* backdrop photo */
+  #backdrop{position:absolute;inset:0;overflow:hidden;opacity:0}
+  #backdrop img{width:100%;height:100%;object-fit:cover}
+  #backdrop::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(0,27,38,.96) 0%,rgba(0,44,61,.86) 46%,rgba(0,27,38,.62) 100%)}
+
+  /* top brand rail */
+  .brandbar{position:absolute;top:56px;left:120px;right:120px;display:flex;
+    align-items:center;justify-content:space-between;z-index:6;opacity:0}
+  .brandbar .mark{display:flex;align-items:center;gap:20px;color:var(--paper);
+    font-size:23px;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+  .brandbar .mark img{width:56px;height:56px;border-radius:12px;object-fit:cover;
+    box-shadow:0 0 0 2px rgba(239,76,0,.65)}
+  .brandbar .pair{font-family:var(--mono);font-size:23px;letter-spacing:.26em;
+    color:var(--slate);text-transform:uppercase}
+
+  /* content grid: text left, media right */
+  .scene{position:absolute;left:120px;top:0;width:1680px;height:1080px;
+    display:grid;grid-template-columns:1fr 620px;gap:90px;align-items:center;
+    opacity:0;visibility:hidden;z-index:4}
+  .scene.nomedia{grid-template-columns:1fr;width:1440px}
+  .col{max-width:940px}
+  .eyebrow{font-family:var(--mono);font-size:25px;letter-spacing:.32em;
+    text-transform:uppercase;color:var(--orange);margin-bottom:28px}
+  .scene h2{font-size:96px;line-height:1.03;font-weight:800;
+    letter-spacing:-.03em;color:var(--paper)}
+  .scene h2 em{font-style:normal;color:var(--orange)}
+  .scene p{margin-top:30px;font-size:36px;line-height:1.42;color:var(--slate)}
+
+  .media{width:620px;height:620px;border-radius:26px;overflow:hidden;
+    box-shadow:0 0 0 3px var(--teal-dim),0 40px 80px rgba(0,0,0,.55)}
+  .media img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.05)}
+
+  /* end card */
+  #endcard{position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;z-index:7;opacity:0;visibility:hidden;
+    background:radial-gradient(70% 70% at 50% 46%,rgba(239,76,0,.18) 0%,transparent 72%)}
+  #endcard .face{width:210px;height:210px;border-radius:50%;object-fit:cover;
+    box-shadow:0 0 0 6px var(--orange),0 26px 54px rgba(0,0,0,.6);margin-bottom:44px}
+  #endcard h3{font-size:92px;font-weight:800;letter-spacing:-.03em;
+    color:var(--paper);text-align:center;line-height:1.05}
+  #endcard h3 em{font-style:normal;color:var(--orange)}
+  #endcard .sub{margin-top:26px;font-size:36px;color:var(--slate);text-align:center}
+  #endcard .row{margin-top:56px;display:flex;align-items:center;gap:28px}
+  #endcard .row img{width:104px;height:104px;border-radius:20px;object-fit:cover}
+  #endcard .handle{font-family:var(--mono);font-size:30px;letter-spacing:.2em;
+    color:var(--paper);text-transform:uppercase}
+
+  /* ticker */
+  #ticker{position:absolute;bottom:132px;left:0;right:0;padding:18px 0;
+    border-top:2px solid var(--teal-dim);border-bottom:2px solid var(--teal-dim);
+    overflow:hidden;white-space:nowrap;z-index:5;background:rgba(0,27,38,.42);opacity:0}
+  #ticker .track{display:inline-block;will-change:transform}
+  #ticker span{display:inline-block;font-family:var(--mono);font-size:26px;
+    letter-spacing:.14em;color:var(--slate);padding-right:64px}
+  #ticker b{color:var(--orange);font-weight:600}
+
+  /* signature: chart line doubles as the progress bar */
+  .chart{position:absolute;bottom:0;left:0;right:0;height:132px;z-index:5}
+  .chart svg{width:100%;height:100%;display:block}
+  #spark{fill:none;stroke:var(--orange);stroke-width:4;stroke-linecap:round;
+    stroke-linejoin:round;filter:drop-shadow(0 0 14px rgba(239,76,0,.6))}
+  #sparkfill{fill:url(#g);opacity:0}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="backdrop"></div>
+  <div class="grid"></div>
+
+  <div class="brandbar">
+    <div class="mark"><img id="barlogo" alt="">
+      <span id="barname"></span></div>
+    <div class="pair" id="barpair"></div>
+  </div>
+
+  <div id="scenes"></div>
+
+  <div id="endcard">
+    <img class="face" id="endface" alt="">
+    <h3 id="endtitle"></h3>
+    <div class="sub" id="endsub"></div>
+    <div class="row"><img id="endlogo" alt=""><span class="handle" id="endhandle"></span></div>
+  </div>
+
+  <div id="ticker"><div class="track" id="tickertrack"></div></div>
+
+  <div class="chart">
+    <svg viewBox="0 0 1920 132" preserveAspectRatio="none">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#EF4C00" stop-opacity=".28"/>
+        <stop offset="100%" stop-color="#EF4C00" stop-opacity="0"/>
+      </linearGradient></defs>
+      <path id="sparkfill"></path>
+      <path id="spark"></path>
+    </svg>
+  </div>
+</div>
+
+<script>
+const CONTENT = __CONTENT__;
+const ASSETS  = __ASSETS__;
+
+const SCENE_FADE = 700;   // ms in/out per scene
+const $ = id => document.getElementById(id);
+
+function asset(key){ return ASSETS[key] || ""; }
+
+/* ---------- build DOM ---------- */
+$('barlogo').src  = asset(CONTENT.brand.logo);
+$('barname').textContent = CONTENT.brand.name;
+$('barpair').textContent = CONTENT.brand.rail || "";
+
+if (CONTENT.backdrop) {
+  const img = document.createElement('img');
+  img.src = asset(CONTENT.backdrop);
+  $('backdrop').appendChild(img);
+}
+
+const scenesEl = $('scenes');
+CONTENT.scenes.forEach((sc, i) => {
+  const el = document.createElement('section');
+  el.className = 'scene' + (sc.media ? '' : ' nomedia');
+  const col = document.createElement('div');
+  col.className = 'col';
+  col.innerHTML =
+    (sc.eyebrow ? '<div class="eyebrow">' + sc.eyebrow + '</div>' : '') +
+    '<h2>' + sc.headline + '</h2>' +
+    (sc.body ? '<p>' + sc.body + '</p>' : '');
+  el.appendChild(col);
+  if (sc.media) {
+    const m = document.createElement('div');
+    m.className = 'media';
+    m.innerHTML = '<img src="' + asset(sc.media) + '" alt="">';
+    el.appendChild(m);
+  }
+  el.dataset.index = i;
+  scenesEl.appendChild(el);
+});
+
+const ec = CONTENT.endcard;
+$('endface').src = asset(ec.headshot);
+$('endtitle').innerHTML = ec.title;
+$('endsub').textContent = ec.subtitle || "";
+$('endlogo').src = asset(CONTENT.brand.logo);
+$('endhandle').textContent = ec.handle || "";
+if (!ec.headshot) $('endface').style.display = 'none';
+
+const track = $('tickertrack');
+const tickHTML = (CONTENT.ticker || [])
+  .map(t => '<span>' + t.label + ' <b>' + t.value + '</b></span>').join('');
+track.innerHTML = tickHTML + tickHTML;
+
+/* ---------- chart path ---------- */
+function sparkPath(points, w, h){
+  const step = w / (points.length - 1);
+  return points.map((p,i) => (i ? 'L' : 'M') + (i*step).toFixed(1) + ',' +
+    (h - 14 - p * (h - 40)).toFixed(1)).join(' ');
+}
+const pts = CONTENT.chart || [0.10,0.16,0.08,0.26,0.20,0.38,0.31,0.52,0.44,0.66,0.58,0.78,0.70,0.92,0.84,1.00];
+const d = sparkPath(pts, 1920, 132);
+$('spark').setAttribute('d', d);
+$('sparkfill').setAttribute('d', d + ' L1920,132 L0,132 Z');
+
+/* ---------- timeline ---------- */
+const scenes = [...document.querySelectorAll('.scene')];
+let t = CONTENT.timing?.lead_in ?? 900;
+const starts = [];
+CONTENT.scenes.forEach((sc, i) => {
+  starts.push(t);
+  t += (sc.duration ?? 4500);
+});
+const endStart = t;
+const TOTAL = endStart + (CONTENT.endcard.duration ?? 4800);
+window.TOTAL_MS = TOTAL;
+
+const ease = 'cubic-bezier(.22,.61,.36,1)';
+
+// scene in/out
+scenes.forEach((el, i) => {
+  const dur = CONTENT.scenes[i].duration ?? 4500;
+  el.animate([
+    {opacity:0, visibility:'visible', transform:'translateY(26px)', offset:0},
+    {opacity:1, transform:'translateY(0)',  offset:SCENE_FADE/dur},
+    {opacity:1, transform:'translateY(0)',  offset:1 - SCENE_FADE/dur},
+    {opacity:0, transform:'translateY(-22px)', offset:1},
+  ], {duration:dur, delay:starts[i], fill:'both', easing:ease});
+});
+
+// brand bar
+$('barname').parentElement.parentElement.animate(
+  [{opacity:0},{opacity:1}], {duration:800, delay:300, fill:'both', easing:ease});
+
+// ticker fade + scroll
+$('ticker').animate([{opacity:0},{opacity:1}],
+  {duration:900, delay:1100, fill:'both', easing:ease});
+track.animate([{transform:'translateX(0)'},{transform:'translateX(-50%)'}],
+  {duration:26000, iterations:Math.ceil(TOTAL/26000)+1, easing:'linear', fill:'both'});
+
+// backdrop: hold under scene 1, then recede
+if (CONTENT.backdrop) {
+  $('backdrop').animate([
+    {opacity:0, offset:0},
+    {opacity:1, offset:0.10},
+    {opacity:1, offset:0.34},
+    {opacity:0.14, offset:0.55},
+    {opacity:0.14, offset:1},
+  ], {duration:TOTAL, fill:'both', easing:'linear'});
+  $('backdrop').querySelector('img').animate(
+    [{transform:'scale(1.06)'},{transform:'scale(1.24) translate(-2%,-2%)'}],
+    {duration:TOTAL, fill:'both', easing:'linear'});
+}
+
+// signature: line draws across the whole runtime = progress bar
+const len = $('spark').getTotalLength();
+$('spark').style.strokeDasharray = len;
+$('spark').animate(
+  [{strokeDashoffset:len},{strokeDashoffset:0}],
+  {duration:TOTAL, fill:'both', easing:'linear'});
+$('sparkfill').animate([{opacity:0},{opacity:1}],
+  {duration:2600, delay:2600, fill:'both', easing:ease});
+
+// end card
+$('endcard').animate([
+  {opacity:0, visibility:'visible', transform:'scale(.98)'},
+  {opacity:1, transform:'scale(1)'},
+], {duration:800, delay:endStart, fill:'both', easing:ease});
+
+/* ---------- deterministic seeking for the renderer ---------- */
+window.seek = function(ms){
+  document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+};
+window.seek(0);
+window.READY = true;
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "slug": "bitcoin-institutional-adoption",
+
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg",
+    "rail": "BTC / ZAR"
+  },
+
+  "backdrop": "bitcoin-flatlay.jpg",
+
+  "voice": {
+    "name": "en-ZA-LukeNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 950
+  },
+
+  "timing": { "lead_in": 900 },
+
+  "scenes": [
+    {
+      "eyebrow": "Market signal",
+      "headline": "Smart money<br>is <em>moving.</em>",
+      "voiceover": "Something is shifting in the Bitcoin market, and the smart money noticed first."
+    },
+    {
+      "eyebrow": "The setup",
+      "headline": "Bitcoin's technicals are <em>strong.</em>",
+      "body": "Breakout structure is holding across the majors.",
+      "voiceover": "Bitcoin is showing strong technical patterns right now. The breakout structure is holding across the major pairs."
+    },
+    {
+      "eyebrow": "Who's buying",
+      "headline": "SA hedge funds are stepping in.",
+      "body": "Local institutions are quietly building crypto positions.",
+      "media": "bitcoin-flatlay.jpg",
+      "voiceover": "And it is not just retail. More South African hedge funds are entering the crypto space, quietly building positions while everyone else debates."
+    },
+    {
+      "eyebrow": "The shift",
+      "headline": "Adoption isn't coming.<br><em>It's already here.</em>",
+      "voiceover": "Institutional adoption is not something coming in the future. In South Africa, it is already here."
+    }
+  ],
+
+  "endcard": {
+    "title": "Are you <em>watching?</em>",
+    "subtitle": "The South African market read, every week.",
+    "headshot": "headshot.jpg",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "The question is whether you are watching. Follow Mzansi Money Matters for the South African market read, every week."
+  },
+
+  "ticker": [
+    { "label": "BTC",      "value": "\u25b2 4.2%" },
+    { "label": "ETH",      "value": "\u25b2 2.8%" },
+    { "label": "JSE ALSI", "value": "\u25b2 0.9%" },
+    { "label": "USD/ZAR",  "value": "17.84"  },
+    { "label": "GOLD",     "value": "\u25b2 1.1%" }
+  ],
+
+  "chart": [0.10, 0.16, 0.08, 0.26, 0.20, 0.38, 0.31, 0.52,
+            0.44, 0.66, 0.58, 0.78, 0.70, 0.92, 0.84, 1.00]
+}
