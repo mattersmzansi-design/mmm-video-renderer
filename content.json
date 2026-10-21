@@ -1,66 +1,154 @@
 {
-  "slug": "bitcoin-institutional-adoption",
+  "slug": "top10-sa-corporate-collapses",
+  "template": "template-countdown.html",
 
-  "brand": {
-    "name": "Mzansi Money Matters",
-    "logo": "logo.jpg",
-    "rail": "BTC / ZAR"
-  },
+  "brand": { "name": "Mzansi Money Matters", "logo": "logo.jpg" },
+  "countdown": { "from": 10 },
+  "disclaimer": "Education, not financial advice. Facts checked at time of publishing.",
 
-  "backdrop": "bitcoin-flatlay.jpg",
-
-  "voice": {
-    "name": "en-ZA-LukeNeural",
-    "rate": "+4%",
-    "pitch": "+0Hz",
-    "lead_pad": 400,
-    "tail_pad": 950
-  },
-
+  "voice": { "name": "en-ZA-LukeNeural", "rate": "+2%", "pitch": "+0Hz", "lead_pad": 400, "tail_pad": 900 },
   "timing": { "lead_in": 900 },
 
   "scenes": [
-    {
-      "eyebrow": "Market signal",
-      "headline": "Smart money<br>is <em>moving.</em>",
-      "voiceover": "Something is shifting in the Bitcoin market, and the smart money noticed first."
-    },
-    {
-      "eyebrow": "The setup",
-      "headline": "Bitcoin's technicals are <em>strong.</em>",
-      "body": "Breakout structure is holding across the majors.",
-      "voiceover": "Bitcoin is showing strong technical patterns right now. The breakout structure is holding across the major pairs."
-    },
-    {
-      "eyebrow": "Who's buying",
-      "headline": "SA hedge funds are stepping in.",
-      "body": "Local institutions are quietly building crypto positions.",
-      "media": "bitcoin-flatlay.jpg",
-      "voiceover": "And it is not just retail. More South African hedge funds are entering the crypto space, quietly building positions while everyone else debates."
-    },
-    {
-      "eyebrow": "The shift",
-      "headline": "Adoption isn't coming.<br><em>It's already here.</em>",
-      "voiceover": "Institutional adoption is not something coming in the future. In South Africa, it is already here."
-    }
+    { "type": "intro",
+      "headline": "South Africa's biggest corporate collapses",
+      "body": "Banks, retailers, airlines and one crypto scheme. Counted down from ten to one.",
+      "voiceover": "Billions of rand, gone. Deposits, pensions and jobs, wiped out. These are the ten biggest corporate collapses in South African history, counted down from ten to one.",
+      "duration": 9000 },
+    { "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "Money lost, people hurt, rules changed.",
+      "body": "The higher on the list, the wider the damage and the longer the fallout.",
+      "voiceover": "We ranked them on three things. How much money was lost, how many ordinary people were hurt, and how much each collapse changed the rules afterwards.",
+      "duration": 8000 },
+
+    { "type": "rank", "rank": 10, "eyebrow": "Fitness, 2000",
+      "headline": "LeisureNet",
+      "voiceover": "Number ten. LeisureNet.",
+      "duration": 3200 },
+    { "type": "point", "rank": 10, "name": "LeisureNet",
+      "headline": "The gym empire that ran out of cash",
+      "body": "Owner of Health and Racquet Clubs. Liquidated, with its founders later convicted of fraud.",
+      "stat": { "value": "2000", "label": "Liquidated" },
+      "voiceover": "LeisureNet owned the Health and Racquet Club gyms and expanded fast, including overseas. In two thousand it collapsed into liquidation, and its founders were later convicted of fraud.",
+      "duration": 11000 },
+
+    { "type": "rank", "rank": 9, "eyebrow": "Aviation, 2022",
+      "headline": "Comair",
+      "voiceover": "Number nine. Comair.",
+      "duration": 3200 },
+    { "type": "point", "rank": 9, "name": "Comair",
+      "headline": "kulula.com and BA's local flights, grounded",
+      "body": "Covid-era losses it never recovered from. Thousands of jobs gone overnight.",
+      "stat": { "value": "2022", "label": "Grounded for good" },
+      "voiceover": "Comair ran kulula dot com and British Airways flights in South Africa. After the pandemic years it never recovered, and in twenty twenty-two the planes stopped flying for good.",
+      "duration": 11000 },
+
+    { "type": "rank", "rank": 8, "eyebrow": "Retail, 2020",
+      "headline": "Edcon",
+      "voiceover": "Number eight. Edcon.",
+      "duration": 3200 },
+    { "type": "point", "rank": 8, "name": "Edcon",
+      "headline": "Edgars and Jet, sold off piece by piece",
+      "body": "Years of debt, then lockdown. The group entered business rescue and its brands were sold.",
+      "stat": { "value": "2020", "label": "Business rescue" },
+      "voiceover": "Edcon owned Edgars and Jet, household names for generations. Heavy debt had weakened it for years, and when lockdown closed its stores in twenty twenty, it went into business rescue. Its brands were sold off to other retailers.",
+      "duration": 13000 },
+
+    { "type": "rank", "rank": 7, "eyebrow": "Aviation, 2019",
+      "headline": "South African Airways",
+      "voiceover": "Number seven. South African Airways.",
+      "duration": 3400 },
+    { "type": "point", "rank": 7, "name": "SAA",
+      "headline": "Bailout after bailout, paid by taxpayers",
+      "body": "The national carrier needed repeated state rescues before entering business rescue.",
+      "stat": { "value": "2019", "label": "Entered business rescue" },
+      "voiceover": "The national airline survived for years on government bailouts, paid for by taxpayers. In December twenty nineteen, it finally entered business rescue.",
+      "duration": 10000 },
+
+    { "type": "rank", "rank": 6, "eyebrow": "Banking, 2002",
+      "headline": "Saambou Bank",
+      "voiceover": "Number six. Saambou Bank.",
+      "duration": 3200 },
+    { "type": "point", "rank": 6, "name": "Saambou",
+      "headline": "A bank run that spread fear through small banks",
+      "body": "Depositors rushed to withdraw. The Reserve Bank placed it under curatorship.",
+      "stat": { "value": "2002", "label": "Placed under curatorship" },
+      "voiceover": "In two thousand and two, depositors lost confidence in Saambou and rushed to pull their money out. The Reserve Bank stepped in and placed it under curatorship, and the panic spread to other smaller banks.",
+      "duration": 12000 },
+
+    { "type": "rank", "rank": 5, "eyebrow": "Crypto, 2020",
+      "headline": "Mirror Trading International",
+      "voiceover": "Number five. Mirror Trading International.",
+      "duration": 3600 },
+    { "type": "point", "rank": 5, "name": "MTI",
+      "headline": "Promised bitcoin returns from a trading bot",
+      "body": "Investors were promised steady daily profits. The scheme was placed in liquidation.",
+      "stat": { "value": "2020", "label": "Liquidated" },
+      "voiceover": "Mirror Trading International promised investors steady returns from a bitcoin trading bot. The returns didn't match any real trading, and in twenty twenty the scheme was placed in liquidation. It's a textbook warning about promised daily profits.",
+      "duration": 13000 },
+
+    { "type": "rank", "rank": 4, "eyebrow": "Sugar, 2019",
+      "headline": "Tongaat Hulett",
+      "voiceover": "Number four. Tongaat Hulett.",
+      "duration": 3200 },
+    { "type": "point", "rank": 4, "name": "Tongaat Hulett",
+      "headline": "A KZN giant built on overstated numbers",
+      "body": "A forensic probe found profits and assets inflated for years. Business rescue followed.",
+      "stat": { "value": "2022", "label": "Business rescue" },
+      "voiceover": "Tongaat Hulett was a pillar of the KwaZulu-Natal economy. In twenty nineteen, new management found the books had been inflated for years. Three years later, the company entered business rescue.",
+      "duration": 12000 },
+
+    { "type": "rank", "rank": 3, "eyebrow": "Banking, 2014",
+      "headline": "African Bank",
+      "voiceover": "Number three. African Bank.",
+      "duration": 3200 },
+    { "type": "point", "rank": 3, "name": "African Bank",
+      "headline": "Unsecured lending that went too far",
+      "body": "Bad loans piled up. The Reserve Bank split it into a good bank and a bad bank.",
+      "stat": { "value": "2014", "label": "Placed under curatorship" },
+      "voiceover": "African Bank grew fast by lending without security to people who often couldn't repay. In twenty fourteen the losses caught up with it. The Reserve Bank placed it under curatorship and split it into a good bank and a bad bank.",
+      "duration": 13000 },
+
+    { "type": "rank", "rank": 2, "eyebrow": "Banking, 2018",
+      "headline": "VBS Mutual Bank",
+      "voiceover": "Number two. V B S Mutual Bank.",
+      "duration": 3400 },
+    { "type": "point", "rank": 2, "name": "VBS",
+      "headline": "The bank that was looted from the inside",
+      "body": "Municipal deposits and savings of ordinary Limpopo families disappeared.",
+      "stat": { "value": "R2bn", "label": "Looted, per the investigation commissioned by the Reserve Bank" },
+      "voiceover": "V B S was looted from the inside. An investigation commissioned by the Reserve Bank found close to two billion rand had been taken, including deposits from municipalities and the savings of ordinary families in Limpopo.",
+      "duration": 13000 },
+
+    { "type": "rank", "rank": 1, "eyebrow": "Retail, 2017",
+      "headline": "Steinhoff",
+      "voiceover": "And number one. Steinhoff.",
+      "duration": 3400 },
+    { "type": "point", "rank": 1, "name": "Steinhoff",
+      "headline": "Accounting irregularities crash a JSE giant",
+      "body": "The parent of Pepkor. The CEO resigned, and the share price collapsed within days.",
+      "stat": { "value": "60%+", "label": "Share price fall in a single day" },
+      "voiceover": "In December twenty seventeen, Steinhoff announced accounting irregularities and its CEO resigned. The share price fell more than sixty percent in a single day.",
+      "duration": 11000 },
+    { "type": "point", "rank": 1, "name": "Steinhoff",
+      "headline": "Your pension was probably in it",
+      "body": "The Government Employees Pension Fund, through the PIC, was one of the biggest losers.",
+      "voiceover": "The losses reached far beyond wealthy investors. The Government Employees Pension Fund, invested through the P I C, was among the biggest losers. If you're a public servant, your retirement savings took part of that hit.",
+      "duration": 12000 },
+
+    { "type": "plain",
+      "eyebrow": "The lesson",
+      "headline": "Big names fail too.",
+      "body": "Spread your risk, question promised returns, and read past the headlines.",
+      "voiceover": "The lesson? Big names fail too. Spread your risk, be suspicious of guaranteed returns, and read past the headlines. Which of these did you live through? Tell us in the comments.",
+      "duration": 11000 }
   ],
 
   "endcard": {
-    "title": "Are you <em>watching?</em>",
-    "subtitle": "The South African market read, every week.",
-    "headshot": "headshot.jpg",
+    "title": "Subscribe for the <em>next</em> ten",
+    "subtitle": "South African money, explained.",
     "handle": "@MzansiMoneyMatters",
-    "voiceover": "The question is whether you are watching. Follow Mzansi Money Matters for the South African market read, every week."
-  },
-
-  "ticker": [
-    { "label": "BTC",      "value": "\u25b2 4.2%" },
-    { "label": "ETH",      "value": "\u25b2 2.8%" },
-    { "label": "JSE ALSI", "value": "\u25b2 0.9%" },
-    { "label": "USD/ZAR",  "value": "17.84"  },
-    { "label": "GOLD",     "value": "\u25b2 1.1%" }
-  ],
-
-  "chart": [0.10, 0.16, 0.08, 0.26, 0.20, 0.38, 0.31, 0.52,
-            0.44, 0.66, 0.58, 0.78, 0.70, 0.92, 0.84, 1.00]
+    "duration": 4800
+  }
 }

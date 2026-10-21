@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MMM Countdown Render</title>
+<style>
+  __FONTS__
+
+  :root{
+    --navy:#002C3D; --navy-deep:#001B26;
+    --orange:#EF4C00; --teal:#1F6F78; --teal-dim:#0E3D45;
+    --paper:#F2EFE9; --slate:#7FA5AC;
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1920px;height:1080px;overflow:hidden;background:#000;
+    font-family:var(--display)}
+
+  #stage{position:relative;width:1920px;height:1080px;overflow:hidden;
+    background:radial-gradient(110% 80% at 22% 8%,#04455C 0%,var(--navy) 46%,var(--navy-deep) 100%)}
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(var(--teal-dim) 1px,transparent 1px),
+      linear-gradient(90deg,var(--teal-dim) 1px,transparent 1px);
+    background-size:80px 80px;opacity:.22;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 78%,transparent 100%);
+    mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 78%,transparent 100%)}
+
+  /* condensed heavy cut of Archivo, used for every numeral */
+  .cond{font-variation-settings:"wdth" 62,"wght" 900;font-weight:900;font-stretch:62%}
+
+  /* ---------- top bar: brand left, countdown rail right ---------- */
+  .brandbar{position:absolute;top:56px;left:120px;right:120px;height:64px;display:flex;
+    align-items:center;justify-content:space-between;z-index:6;opacity:0}
+  .mark{display:flex;align-items:center;gap:20px;color:var(--paper);
+    font-size:26px;font-weight:700;letter-spacing:.01em}
+  .mark img{width:56px;height:56px;border-radius:12px;object-fit:cover;
+    box-shadow:0 0 0 2px rgba(239,76,0,.65)}
+  #rail{display:flex;align-items:flex-end;gap:6px}
+  #rail span{display:block;width:52px;text-align:center;font-size:44px;line-height:1;
+    color:var(--slate);opacity:.32}
+  #rail span::after{content:"";display:block;height:4px;margin:10px auto 0;width:0;
+    background:var(--orange)}
+
+  /* ---------- scenes ---------- */
+  .scene{position:absolute;left:120px;top:0;width:1680px;height:1080px;
+    opacity:0;visibility:hidden;z-index:4}
+  .eyebrow{font-size:32px;font-weight:600;color:var(--orange);margin-bottom:26px}
+  .scene h2{font-size:104px;line-height:1.02;font-weight:800;letter-spacing:-.025em;color:var(--paper)}
+  .scene h2 em{font-style:normal;color:var(--orange)}
+  .scene p{margin-top:32px;font-size:38px;line-height:1.4;color:var(--slate);max-width:900px}
+
+  /* intro: headline left, giant outlined total right */
+  .s-intro{display:grid;grid-template-columns:1fr 640px;align-items:center;gap:60px}
+  .s-intro .ghost{font-size:980px;line-height:.78;text-align:right;color:transparent;
+    -webkit-text-stroke:4px var(--teal);letter-spacing:-.04em}
+
+  /* rank reveal: the one big moment per entry */
+  .s-rank{display:grid;grid-template-columns:720px 1fr;align-items:center;gap:40px}
+  .s-rank .num{font-size:900px;line-height:.78;color:var(--orange);text-align:center;
+    letter-spacing:-.05em;transform-origin:50% 60%}
+  .s-rank h2{font-size:124px}
+
+  /* point: small rank badge, copy left, one figure right */
+  .s-point{display:grid;grid-template-columns:1fr 560px;align-items:center;gap:100px}
+  .s-point.nostat{grid-template-columns:1fr}
+  .badge{display:flex;align-items:baseline;gap:22px;margin-bottom:40px}
+  .badge .n{font-size:150px;line-height:.8;color:transparent;-webkit-text-stroke:3px var(--orange)}
+  .badge .who{font-size:34px;font-weight:700;color:var(--paper)}
+  .s-point h2{font-size:84px}
+  .figure{border-left:6px solid var(--orange);padding:10px 0 14px 44px}
+  .figure .v{font-size:230px;line-height:.9;color:var(--paper);letter-spacing:-.03em;white-space:nowrap}
+  .figure .l{margin-top:22px;font-size:32px;line-height:1.35;color:var(--slate)}
+  .media{width:560px;height:560px;border-radius:26px;overflow:hidden;
+    box-shadow:0 0 0 3px var(--teal-dim),0 40px 80px rgba(0,0,0,.55)}
+  .media img{width:100%;height:100%;object-fit:cover}
+
+  /* plain: text only, like the original template */
+  .s-plain{display:flex;flex-direction:column;justify-content:center;width:1440px}
+
+  /* ---------- end card ---------- */
+  #endcard{position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;z-index:7;opacity:0;visibility:hidden;
+    background:radial-gradient(70% 70% at 50% 46%,rgba(239,76,0,.18) 0%,transparent 72%)}
+  #endcard .face{width:210px;height:210px;border-radius:50%;object-fit:cover;
+    box-shadow:0 0 0 6px var(--orange),0 26px 54px rgba(0,0,0,.6);margin-bottom:44px}
+  #endcard h3{font-size:100px;font-weight:800;letter-spacing:-.03em;
+    color:var(--paper);text-align:center;line-height:1.05}
+  #endcard h3 em{font-style:normal;color:var(--orange)}
+  #endcard .sub{margin-top:26px;font-size:38px;color:var(--slate);text-align:center}
+  #endcard .row{margin-top:56px;display:flex;align-items:center;gap:28px}
+  #endcard .row img{width:104px;height:104px;border-radius:20px;object-fit:cover}
+  #endcard .handle{font-size:34px;font-weight:700;color:var(--paper)}
+
+  /* ---------- footer: disclaimer + progress line ---------- */
+  #disclaimer{position:absolute;left:120px;bottom:150px;z-index:6;font-size:24px;
+    color:var(--slate);opacity:0}
+  .chart{position:absolute;bottom:0;left:0;right:0;height:132px;z-index:5}
+  .chart svg{width:100%;height:100%;display:block}
+  #spark{fill:none;stroke:var(--orange);stroke-width:4;stroke-linecap:round;
+    stroke-linejoin:round;filter:drop-shadow(0 0 14px rgba(239,76,0,.6))}
+  #sparkfill{fill:url(#g);opacity:0}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="grid"></div>
+
+  <div class="brandbar" id="brandbar">
+    <div class="mark"><img id="barlogo" alt=""><span id="barname"></span></div>
+    <div id="rail"></div>
+  </div>
+
+  <div id="scenes"></div>
+
+  <div id="endcard">
+    <img class="face" id="endface" alt="">
+    <h3 id="endtitle"></h3>
+    <div class="sub" id="endsub"></div>
+    <div class="row"><img id="endlogo" alt=""><span class="handle" id="endhandle"></span></div>
+  </div>
+
+  <div id="disclaimer"></div>
+
+  <div class="chart">
+    <svg viewBox="0 0 1920 132" preserveAspectRatio="none">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#EF4C00" stop-opacity=".28"/>
+        <stop offset="100%" stop-color="#EF4C00" stop-opacity="0"/>
+      </linearGradient></defs>
+      <path id="sparkfill"></path>
+      <path id="spark"></path>
+    </svg>
+  </div>
+</div>
+
+<script>
+const CONTENT = __CONTENT__;
+const ASSETS  = __ASSETS__;
+
+const SCENE_FADE = 600;
+const ease = 'cubic-bezier(.22,.61,.36,1)';
+const $ = id => document.getElementById(id);
+const asset = k => ASSETS[k] || "";
+const esc = s => String(s ?? "");
+
+const TOTAL_RANKS = CONTENT.countdown?.from ?? 10;
+
+/* ---------- brand bar + rail ---------- */
+$('barlogo').src = asset(CONTENT.brand.logo);
+$('barname').textContent = CONTENT.brand.name;
+const rail = $('rail');
+for (let r = TOTAL_RANKS; r >= 1; r--) {
+  const s = document.createElement('span');
+  s.className = 'cond';
+  s.textContent = r;
+  s.dataset.rank = r;
+  rail.appendChild(s);
+}
+$('disclaimer').textContent = CONTENT.disclaimer || "";
+
+/* ---------- scenes ---------- */
+const scenesEl = $('scenes');
+CONTENT.scenes.forEach((sc, i) => {
+  const type = sc.type || 'plain';
+  const el = document.createElement('section');
+  el.className = 'scene s-' + type;
+  const eyebrow = sc.eyebrow ? '<div class="eyebrow">' + esc(sc.eyebrow) + '</div>' : '';
+  const body = sc.body ? '<p>' + esc(sc.body) + '</p>' : '';
+
+  if (type === 'intro') {
+    el.innerHTML = '<div>' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' +
+      '<div class="ghost cond">' + TOTAL_RANKS + '</div>';
+  } else if (type === 'rank') {
+    el.innerHTML = '<div class="num cond">' + sc.rank + '</div>' +
+      '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>';
+  } else if (type === 'point') {
+    let right = '';
+    if (sc.stat) {
+      right = '<div class="figure"><div class="v cond">' + esc(sc.stat.value) + '</div>' +
+              '<div class="l">' + esc(sc.stat.label) + '</div></div>';
+    } else if (sc.media) {
+      right = '<div class="media"><img src="' + asset(sc.media) + '" alt=""></div>';
+    } else {
+      el.classList.add('nostat');
+    }
+    el.innerHTML = '<div class="copy"><div class="badge"><span class="n cond">' + sc.rank +
+      '</span><span class="who">' + esc(sc.name || '') + '</span></div>' +
+      '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' + right;
+  } else {
+    el.innerHTML = eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body;
+  }
+  scenesEl.appendChild(el);
+});
+
+/* ---------- end card ---------- */
+const ec = CONTENT.endcard;
+$('endtitle').innerHTML = ec.title;
+$('endsub').textContent = ec.subtitle || "";
+$('endlogo').src = asset(CONTENT.brand.logo);
+$('endhandle').textContent = ec.handle || "";
+if (ec.headshot) $('endface').src = asset(ec.headshot);
+else $('endface').style.display = 'none';
+
+/* ---------- progress line ---------- */
+function sparkPath(points, w, h){
+  const step = w / (points.length - 1);
+  return points.map((p,i) => (i ? 'L' : 'M') + (i*step).toFixed(1) + ',' +
+    (h - 14 - p * (h - 40)).toFixed(1)).join(' ');
+}
+const pts = CONTENT.chart || [0.10,0.16,0.08,0.26,0.20,0.38,0.31,0.52,0.44,0.66,0.58,0.78,0.70,0.92,0.84,1.00];
+const d = sparkPath(pts, 1920, 132);
+$('spark').setAttribute('d', d);
+$('sparkfill').setAttribute('d', d + ' L1920,132 L0,132 Z');
+
+/* ---------- timeline ---------- */
+const sceneEls = [...document.querySelectorAll('.scene')];
+let t = CONTENT.timing?.lead_in ?? 900;
+const starts = [];
+CONTENT.scenes.forEach(sc => { starts.push(t); t += (sc.duration ?? 5000); });
+const endStart = t;
+const TOTAL = endStart + (ec.duration ?? 4800);
+window.TOTAL_MS = TOTAL;
+
+sceneEls.forEach((el, i) => {
+  const dur = CONTENT.scenes[i].duration ?? 5000;
+  const f = Math.min(SCENE_FADE / dur, 0.25);
+  el.animate([
+    {opacity:0, visibility:'visible', offset:0},
+    {opacity:1, offset:f},
+    {opacity:1, offset:1 - f},
+    {opacity:0, offset:1},
+  ], {duration:dur, delay:starts[i], fill:'both', easing:'linear'});
+
+  const type = CONTENT.scenes[i].type;
+  if (type === 'rank') {
+    // the signature beat: numeral wipes up from below, then drifts
+    el.querySelector('.num').animate([
+      {clipPath:'inset(100% 0 0 0)', transform:'translateY(90px) scale(1)'},
+      {clipPath:'inset(0% 0 0 0)',   transform:'translateY(0) scale(1)', offset:.22},
+      {clipPath:'inset(0% 0 0 0)',   transform:'translateY(0) scale(1.05)'},
+    ], {duration:dur, delay:starts[i], fill:'both', easing:ease});
+    el.querySelector('.copy').animate([
+      {opacity:0, transform:'translateX(-30px)'},
+      {opacity:1, transform:'translateX(0)'},
+    ], {duration:700, delay:starts[i] + 450, fill:'both', easing:ease});
+  } else if (type === 'point' || type === 'intro') {
+    el.firstElementChild.animate([
+      {transform:'translateY(24px)'}, {transform:'translateY(0)'},
+    ], {duration:800, delay:starts[i], fill:'both', easing:ease});
+    const fig = el.querySelector('.figure, .media');
+    if (fig) fig.animate([
+      {opacity:0, transform:'translateY(30px)'}, {opacity:1, transform:'translateY(0)'},
+    ], {duration:800, delay:starts[i] + 350, fill:'both', easing:ease});
+  }
+});
+
+/* rail: upcoming = dim, current = orange with underline, done = paper, faint */
+const rankStart = {};
+CONTENT.scenes.forEach((sc, i) => {
+  if (sc.rank != null && rankStart[sc.rank] == null) rankStart[sc.rank] = starts[i];
+});
+[...rail.children].forEach(span => {
+  const r = +span.dataset.rank;
+  const s = rankStart[r];
+  if (s == null) return;
+  const nextStarts = Object.entries(rankStart).filter(([k]) => +k < r).map(([,v]) => v);
+  const e = nextStarts.length ? Math.min(...nextStarts) : endStart;
+  const o = ms => Math.max(0, Math.min(1, ms / TOTAL));
+  const idle = {color:'#7FA5AC', opacity:.32};
+  const on   = {color:'#EF4C00', opacity:1};
+  const done = {color:'#F2EFE9', opacity:.55};
+  span.animate([
+    {...idle, offset:0}, {...idle, offset:o(s)}, {...on, offset:o(s + 300)},
+    {...on, offset:o(e)}, {...done, offset:o(e + 300)}, {...done, offset:1},
+  ], {duration:TOTAL, fill:'both'});
+  // underline (pseudo-element) grows while the rank is on screen
+  span.animate([
+    {width:'0px', offset:0}, {width:'0px', offset:o(s)}, {width:'40px', offset:o(s + 400)},
+    {width:'40px', offset:o(e)}, {width:'0px', offset:o(e + 300)}, {width:'0px', offset:1},
+  ], {duration:TOTAL, fill:'both', pseudoElement:'::after'});
+});
+
+$('brandbar').animate([{opacity:0},{opacity:1}], {duration:800, delay:300, fill:'both', easing:ease});
+$('disclaimer').animate([{opacity:0},{opacity:.75}], {duration:800, delay:900, fill:'both', easing:ease});
+
+const len = $('spark').getTotalLength();
+$('spark').style.strokeDasharray = len;
+$('spark').animate([{strokeDashoffset:len},{strokeDashoffset:0}],
+  {duration:TOTAL, fill:'both', easing:'linear'});
+$('sparkfill').animate([{opacity:0},{opacity:1}], {duration:2600, delay:2600, fill:'both', easing:ease});
+
+$('endcard').animate([
+  {opacity:0, visibility:'visible', transform:'scale(.98)'},
+  {opacity:1, visibility:'visible', transform:'scale(1)'},
+], {duration:800, delay:endStart, fill:'both', easing:ease});
+
+/* ---------- deterministic seeking for render.py ---------- */
+window.seek = function(ms){
+  document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+};
+window.seek(0);
+window.READY = true;
+</script>
+</body>
+</html>

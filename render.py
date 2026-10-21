@@ -65,7 +65,7 @@ def font_face_css(fonts_dir: Path) -> str:
 
 def build_html(content_path: Path) -> Path:
     content = json.loads(content_path.read_text(encoding="utf-8"))
-    template = (ROOT / "template.html").read_text(encoding="utf-8")
+    template = (ROOT / content.get("template", "template.html")).read_text(encoding="utf-8")
 
     assets_dir = ROOT / "assets"
     assets = {}
