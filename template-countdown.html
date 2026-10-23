@@ -68,7 +68,7 @@
   .badge .who{font-size:34px;font-weight:700;color:var(--paper)}
   .s-point h2{font-size:84px}
   .figure{border-left:6px solid var(--orange);padding:10px 0 14px 44px}
-  .figure .v{font-size:230px;line-height:.9;color:var(--paper);letter-spacing:-.03em;white-space:nowrap}
+  .figure .v{display:inline-block;font-size:230px;line-height:.9;color:var(--paper);letter-spacing:-.03em;white-space:nowrap}
   .figure .l{margin-top:22px;font-size:32px;line-height:1.35;color:var(--slate)}
   .media{width:560px;height:560px;border-radius:26px;overflow:hidden;
     box-shadow:0 0 0 3px var(--teal-dim),0 40px 80px rgba(0,0,0,.55)}
@@ -77,7 +77,9 @@
   /* plain: text only, like the original template */
   .s-plain{display:flex;flex-direction:column;justify-content:center;width:1440px}
 
-  /* ---------- end card ---------- */
+  /* shrink long figures (e.g. "Millions") so they fit their column */
+
+/* ---------- end card ---------- */
   #endcard{position:absolute;inset:0;display:flex;flex-direction:column;
     align-items:center;justify-content:center;z-index:7;opacity:0;visibility:hidden;
     background:radial-gradient(70% 70% at 50% 46%,rgba(239,76,0,.18) 0%,transparent 72%)}
@@ -149,7 +151,9 @@ const TOTAL_RANKS = CONTENT.countdown?.from ?? 10;
 $('barlogo').src = asset(CONTENT.brand.logo);
 $('barname').textContent = CONTENT.brand.name;
 const rail = $('rail');
-for (let r = TOTAL_RANKS; r >= 1; r--) {
+const ORDER_UP = (CONTENT.countdown?.order === 'up');
+const railRanks = [...Array(TOTAL_RANKS)].map((_, i) => ORDER_UP ? i + 1 : TOTAL_RANKS - i);
+for (const r of railRanks) {
   const s = document.createElement('span');
   s.className = 'cond';
   s.textContent = r;
@@ -184,7 +188,7 @@ CONTENT.scenes.forEach((sc, i) => {
       el.classList.add('nostat');
     }
     el.innerHTML = '<div class="copy"><div class="badge"><span class="n cond">' + sc.rank +
-      '</span><span class="who">' + esc(sc.name || '') + '</span></div>' +
+      '</span><span class="who">' + esc(sc.name || '') + '</span></div>' + eyebrow +
       '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' + right;
   } else {
     el.innerHTML = eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body;
@@ -263,8 +267,10 @@ CONTENT.scenes.forEach((sc, i) => {
   const r = +span.dataset.rank;
   const s = rankStart[r];
   if (s == null) return;
-  const nextStarts = Object.entries(rankStart).filter(([k]) => +k < r).map(([,v]) => v);
-  const e = nextStarts.length ? Math.min(...nextStarts) : endStart;
+  // rank stays lit until the first later scene that belongs to another rank (or none)
+  const iFirst = CONTENT.scenes.findIndex(sc => sc.rank === r);
+  let iEnd = CONTENT.scenes.findIndex((sc, j) => j > iFirst && sc.rank !== r);
+  const e = iEnd === -1 ? endStart : starts[iEnd];
   const o = ms => Math.max(0, Math.min(1, ms / TOTAL));
   const idle = {color:'#7FA5AC', opacity:.32};
   const on   = {color:'#EF4C00', opacity:1};
@@ -298,8 +304,15 @@ $('endcard').animate([
 window.seek = function(ms){
   document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
 };
-window.seek(0);
-window.READY = true;
+/* wait for the brand font, then shrink long figures (e.g. "Millions") to fit */
+document.fonts.ready.then(() => {
+  document.querySelectorAll('.figure .v').forEach(v => {
+    let size = 230;
+    while (v.getBoundingClientRect().width > 500 && size > 110) { size -= 6; v.style.fontSize = size + 'px'; }
+  });
+  window.seek(0);
+  window.READY = true;
+});
 </script>
 </body>
 </html>

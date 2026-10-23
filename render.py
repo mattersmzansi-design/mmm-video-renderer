@@ -107,7 +107,7 @@ def capture(html_path: Path, fps: int) -> int:
 
         for i in range(n):
             page.evaluate("ms => window.seek(ms)", i * 1000 / fps)
-            page.screenshot(path=str(FRAMES / f"f{i:05d}.png"))
+            page.screenshot(path=str(FRAMES / f"f{i:05d}.jpg"), type="jpeg", quality=92)
             if i % 60 == 0:
                 print(f"  frame {i}/{n}", flush=True)
 
@@ -119,7 +119,7 @@ def encode(out_path: Path, fps: int, audio: Path | None):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cmd = ["ffmpeg", "-y",
            "-framerate", str(fps),
-           "-i", str(FRAMES / "f%05d.png")]
+           "-i", str(FRAMES / "f%05d.jpg")]
     if audio and audio.exists():
         cmd += ["-i", str(audio), "-c:a", "aac", "-b:a", "192k", "-shortest"]
     cmd += ["-c:v", "libx264",

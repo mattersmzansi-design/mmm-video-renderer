@@ -1,154 +1,702 @@
 {
-  "slug": "top10-sa-corporate-collapses",
+  "slug": "10-corporate-governance-disasters",
   "template": "template-countdown.html",
-
-  "brand": { "name": "Mzansi Money Matters", "logo": "logo.jpg" },
-  "countdown": { "from": 10 },
-  "disclaimer": "Education, not financial advice. Facts checked at time of publishing.",
-
-  "voice": { "name": "en-ZA-LukeNeural", "rate": "+2%", "pitch": "+0Hz", "lead_pad": 400, "tail_pad": 900 },
-  "timing": { "lead_in": 900 },
-
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "countdown": {
+    "from": 10,
+    "order": "up"
+  },
+  "disclaimer": "Education, not financial or legal advice. Facts as at October 2026.",
+  "voice": {
+    "name": "en-ZA-LukeNeural",
+    "rate": "+2%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
   "scenes": [
-    { "type": "intro",
-      "headline": "South Africa's biggest corporate collapses",
-      "body": "Banks, retailers, airlines and one crypto scheme. Counted down from ten to one.",
-      "voiceover": "Billions of rand, gone. Deposits, pensions and jobs, wiped out. These are the ten biggest corporate collapses in South African history, counted down from ten to one.",
-      "duration": 9000 },
-    { "type": "plain",
-      "eyebrow": "How we ranked them",
-      "headline": "Money lost, people hurt, rules changed.",
-      "body": "The higher on the list, the wider the damage and the longer the fallout.",
-      "voiceover": "We ranked them on three things. How much money was lost, how many ordinary people were hurt, and how much each collapse changed the rules afterwards.",
-      "duration": 8000 },
-
-    { "type": "rank", "rank": 10, "eyebrow": "Fitness, 2000",
-      "headline": "LeisureNet",
-      "voiceover": "Number ten. LeisureNet.",
-      "duration": 3200 },
-    { "type": "point", "rank": 10, "name": "LeisureNet",
-      "headline": "The gym empire that ran out of cash",
-      "body": "Owner of Health and Racquet Clubs. Liquidated, with its founders later convicted of fraud.",
-      "stat": { "value": "2000", "label": "Liquidated" },
-      "voiceover": "LeisureNet owned the Health and Racquet Club gyms and expanded fast, including overseas. In two thousand it collapsed into liquidation, and its founders were later convicted of fraud.",
-      "duration": 11000 },
-
-    { "type": "rank", "rank": 9, "eyebrow": "Aviation, 2022",
-      "headline": "Comair",
-      "voiceover": "Number nine. Comair.",
-      "duration": 3200 },
-    { "type": "point", "rank": 9, "name": "Comair",
-      "headline": "kulula.com and BA's local flights, grounded",
-      "body": "Covid-era losses it never recovered from. Thousands of jobs gone overnight.",
-      "stat": { "value": "2022", "label": "Grounded for good" },
-      "voiceover": "Comair ran kulula dot com and British Airways flights in South Africa. After the pandemic years it never recovered, and in twenty twenty-two the planes stopped flying for good.",
-      "duration": 11000 },
-
-    { "type": "rank", "rank": 8, "eyebrow": "Retail, 2020",
-      "headline": "Edcon",
-      "voiceover": "Number eight. Edcon.",
-      "duration": 3200 },
-    { "type": "point", "rank": 8, "name": "Edcon",
-      "headline": "Edgars and Jet, sold off piece by piece",
-      "body": "Years of debt, then lockdown. The group entered business rescue and its brands were sold.",
-      "stat": { "value": "2020", "label": "Business rescue" },
-      "voiceover": "Edcon owned Edgars and Jet, household names for generations. Heavy debt had weakened it for years, and when lockdown closed its stores in twenty twenty, it went into business rescue. Its brands were sold off to other retailers.",
-      "duration": 13000 },
-
-    { "type": "rank", "rank": 7, "eyebrow": "Aviation, 2019",
-      "headline": "South African Airways",
-      "voiceover": "Number seven. South African Airways.",
-      "duration": 3400 },
-    { "type": "point", "rank": 7, "name": "SAA",
-      "headline": "Bailout after bailout, paid by taxpayers",
-      "body": "The national carrier needed repeated state rescues before entering business rescue.",
-      "stat": { "value": "2019", "label": "Entered business rescue" },
-      "voiceover": "The national airline survived for years on government bailouts, paid for by taxpayers. In December twenty nineteen, it finally entered business rescue.",
-      "duration": 10000 },
-
-    { "type": "rank", "rank": 6, "eyebrow": "Banking, 2002",
-      "headline": "Saambou Bank",
-      "voiceover": "Number six. Saambou Bank.",
-      "duration": 3200 },
-    { "type": "point", "rank": 6, "name": "Saambou",
-      "headline": "A bank run that spread fear through small banks",
-      "body": "Depositors rushed to withdraw. The Reserve Bank placed it under curatorship.",
-      "stat": { "value": "2002", "label": "Placed under curatorship" },
-      "voiceover": "In two thousand and two, depositors lost confidence in Saambou and rushed to pull their money out. The Reserve Bank stepped in and placed it under curatorship, and the panic spread to other smaller banks.",
-      "duration": 12000 },
-
-    { "type": "rank", "rank": 5, "eyebrow": "Crypto, 2020",
-      "headline": "Mirror Trading International",
-      "voiceover": "Number five. Mirror Trading International.",
-      "duration": 3600 },
-    { "type": "point", "rank": 5, "name": "MTI",
-      "headline": "Promised bitcoin returns from a trading bot",
-      "body": "Investors were promised steady daily profits. The scheme was placed in liquidation.",
-      "stat": { "value": "2020", "label": "Liquidated" },
-      "voiceover": "Mirror Trading International promised investors steady returns from a bitcoin trading bot. The returns didn't match any real trading, and in twenty twenty the scheme was placed in liquidation. It's a textbook warning about promised daily profits.",
-      "duration": 13000 },
-
-    { "type": "rank", "rank": 4, "eyebrow": "Sugar, 2019",
-      "headline": "Tongaat Hulett",
-      "voiceover": "Number four. Tongaat Hulett.",
-      "duration": 3200 },
-    { "type": "point", "rank": 4, "name": "Tongaat Hulett",
-      "headline": "A KZN giant built on overstated numbers",
-      "body": "A forensic probe found profits and assets inflated for years. Business rescue followed.",
-      "stat": { "value": "2022", "label": "Business rescue" },
-      "voiceover": "Tongaat Hulett was a pillar of the KwaZulu-Natal economy. In twenty nineteen, new management found the books had been inflated for years. Three years later, the company entered business rescue.",
-      "duration": 12000 },
-
-    { "type": "rank", "rank": 3, "eyebrow": "Banking, 2014",
-      "headline": "African Bank",
-      "voiceover": "Number three. African Bank.",
-      "duration": 3200 },
-    { "type": "point", "rank": 3, "name": "African Bank",
-      "headline": "Unsecured lending that went too far",
-      "body": "Bad loans piled up. The Reserve Bank split it into a good bank and a bad bank.",
-      "stat": { "value": "2014", "label": "Placed under curatorship" },
-      "voiceover": "African Bank grew fast by lending without security to people who often couldn't repay. In twenty fourteen the losses caught up with it. The Reserve Bank placed it under curatorship and split it into a good bank and a bad bank.",
-      "duration": 13000 },
-
-    { "type": "rank", "rank": 2, "eyebrow": "Banking, 2018",
-      "headline": "VBS Mutual Bank",
-      "voiceover": "Number two. V B S Mutual Bank.",
-      "duration": 3400 },
-    { "type": "point", "rank": 2, "name": "VBS",
-      "headline": "The bank that was looted from the inside",
-      "body": "Municipal deposits and savings of ordinary Limpopo families disappeared.",
-      "stat": { "value": "R2bn", "label": "Looted, per the investigation commissioned by the Reserve Bank" },
-      "voiceover": "V B S was looted from the inside. An investigation commissioned by the Reserve Bank found close to two billion rand had been taken, including deposits from municipalities and the savings of ordinary families in Limpopo.",
-      "duration": 13000 },
-
-    { "type": "rank", "rank": 1, "eyebrow": "Retail, 2017",
-      "headline": "Steinhoff",
-      "voiceover": "And number one. Steinhoff.",
-      "duration": 3400 },
-    { "type": "point", "rank": 1, "name": "Steinhoff",
-      "headline": "Accounting irregularities crash a JSE giant",
-      "body": "The parent of Pepkor. The CEO resigned, and the share price collapsed within days.",
-      "stat": { "value": "60%+", "label": "Share price fall in a single day" },
-      "voiceover": "In December twenty seventeen, Steinhoff announced accounting irregularities and its CEO resigned. The share price fell more than sixty percent in a single day.",
-      "duration": 11000 },
-    { "type": "point", "rank": 1, "name": "Steinhoff",
-      "headline": "Your pension was probably in it",
-      "body": "The Government Employees Pension Fund, through the PIC, was one of the biggest losers.",
-      "voiceover": "The losses reached far beyond wealthy investors. The Government Employees Pension Fund, invested through the P I C, was among the biggest losers. If you're a public servant, your retirement savings took part of that hit.",
-      "duration": 12000 },
-
-    { "type": "plain",
+    {
+      "type": "intro",
+      "headline": "10 corporate disasters that could have been prevented",
+      "body": "Enron. Lehman. FTX. Volkswagen. Boeing. And five more.",
+      "voiceover": "What if I told you that some of the biggest corporate disasters in history didn't happen because nobody saw the warning signs? They happened because someone saw them, and the system failed to respond.",
+      "duration": 14461
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The pattern",
+      "headline": "Someone always saw it coming.",
+      "body": "Employees. Auditors. Journalists. Regulators.",
+      "voiceover": "Employees raised concerns. Auditors found problems. Journalists investigated. Regulators received warnings. And yet, in case after case, the problems continued until the truth could no longer be hidden.",
+      "duration": 12138
+    },
+    {
+      "type": "plain",
+      "eyebrow": "For each one, we ask",
+      "headline": "What happened, how it was exposed, and where they are now.",
+      "voiceover": "From Enron to Lehman Brothers, Volkswagen, F T X and Boeing, these aren't simply stories about companies that failed. They are stories about governance failures. For each one, we're asking: what happened? What was the biggest trigger? How was it finally exposed? Who was held responsible? And where are they now?",
+      "duration": 21041
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Energy, 2001",
+      "headline": "Enron",
+      "voiceover": "Number one. Enron. Two thousand and one.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "What went wrong",
+      "headline": "Debt and losses hidden off the balance sheet",
+      "voiceover": "Before the scandal, Enron looked like the future. It was one of America's most admired companies. But underneath the success, Enron was carrying enormous amounts of debt and losses that investors weren't seeing. It used complicated special-purpose entities to keep liabilities away from its main balance sheet. On paper, Enron looked profitable. Behind the scenes, it was becoming increasingly unstable.",
+      "body": "Complex special-purpose entities kept liabilities out of sight.",
+      "duration": 24525
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "The warning",
+      "headline": "The CEO quit. Then an executive spoke up.",
+      "voiceover": "C E O Jeffrey Skilling suddenly resigned in August two thousand and one. Shortly afterwards, Enron executive Sherron Watkins warned chairman Kenneth Lay that the company's accounting could cause it to collapse.",
+      "body": "Sherron Watkins warned chairman Kenneth Lay the accounting could sink the company.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "The collapse",
+      "headline": "Bankrupt by December 2001",
+      "voiceover": "The share price collapsed, and in December two thousand and one, Enron filed for bankruptcy. More than seventy-four billion dollars in shareholder value disappeared.",
+      "stat": {
+        "value": "$74bn",
+        "label": "Shareholder value wiped out"
+      },
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "Court and consequences",
+      "headline": "Prison for the CFO and CEO. The auditor fell too.",
+      "voiceover": "C F O Andrew Fastow pleaded guilty and received a prison sentence. Jeffrey Skilling was convicted and eventually sentenced to fourteen years in prison, after his original sentence was reduced. Kenneth Lay was convicted but died before sentencing. And auditor Arthur Andersen was convicted of obstruction of justice, and effectively collapsed as a major auditing business.",
+      "stat": {
+        "value": "14 yrs",
+        "label": "Skilling's final prison sentence"
+      },
+      "duration": 22977
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "Where they are now",
+      "headline": "Enron and Arthur Andersen are both gone",
+      "voiceover": "How was it caught? Falling share prices, internal warnings, investigative scrutiny and increasingly impossible accounting. Today, Enron is gone. Arthur Andersen's former audit business is gone. Skilling eventually returned to business after prison.",
+      "duration": 14074
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
       "eyebrow": "The lesson",
-      "headline": "Big names fail too.",
-      "body": "Spread your risk, question promised returns, and read past the headlines.",
-      "voiceover": "The lesson? Big names fail too. Spread your risk, be suspicious of guaranteed returns, and read past the headlines. Which of these did you live through? Tell us in the comments.",
-      "duration": 11000 }
+      "headline": "A warning that isn't acted on isn't a control.",
+      "voiceover": "The lesson: a warning that isn't acted upon isn't really a control.",
+      "duration": 5945
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Telecoms, 2002",
+      "headline": "WorldCom",
+      "voiceover": "Number two. WorldCom. Two thousand and two.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "WorldCom",
+      "eyebrow": "What went wrong",
+      "headline": "Everyday costs booked as investments",
+      "voiceover": "WorldCom was one of America's largest telecommunications companies, but its profits were falling. Instead of accepting lower profits, management changed the accounting. Ordinary operating expenses were recorded as capital investments. Eventually, the improper accounting amounted to almost eleven billion dollars.",
+      "stat": {
+        "value": "$11bn",
+        "label": "Improper accounting, almost"
+      },
+      "duration": 16783
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "WorldCom",
+      "eyebrow": "How it was exposed",
+      "headline": "Internal audit followed the entries",
+      "voiceover": "The breakthrough came from an internal audit team led by Cynthia Cooper. Her team refused to accept management's explanations, investigated suspicious entries, and followed them to their source, uncovering the scale of the manipulation.",
+      "body": "Cynthia Cooper's team refused to accept management's explanations.",
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "WorldCom",
+      "eyebrow": "Court and consequences",
+      "headline": "25 years for the CEO",
+      "voiceover": "WorldCom filed for bankruptcy. C E O Bernard Ebbers was convicted and sentenced to twenty-five years in prison. C F O Scott Sullivan pleaded guilty and cooperated.",
+      "stat": {
+        "value": "25 yrs",
+        "label": "Prison sentence for CEO Bernard Ebbers"
+      },
+      "duration": 11751
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "WorldCom",
+      "eyebrow": "Where they are now",
+      "headline": "Absorbed into MCI, then Verizon",
+      "voiceover": "WorldCom eventually emerged as M C I, before later becoming part of Verizon. It no longer exists independently. Bernard Ebbers died in twenty twenty.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "WorldCom",
+      "eyebrow": "The lesson",
+      "headline": "Reward numbers over truth, and the numbers stop meaning anything.",
+      "voiceover": "The lesson: if employees are rewarded for producing numbers rather than producing the truth, the numbers eventually become meaningless.",
+      "duration": 8654
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Banking, 2008",
+      "headline": "Lehman Brothers",
+      "voiceover": "Number three. Lehman Brothers. Two thousand and eight.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "What went wrong",
+      "headline": "A financial machine built on borrowed money",
+      "voiceover": "Lehman Brothers had built an enormous financial machine on borrowed money. Leverage reached roughly thirty to one, while the firm was heavily exposed to the collapsing American housing market.",
+      "stat": {
+        "value": "30:1",
+        "label": "Approximate leverage"
+      },
+      "duration": 12525
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "The hidden problem",
+      "headline": "Repo 105 made leverage look smaller",
+      "voiceover": "Mortgage-related assets were losing value, but Lehman still needed its financial statements to look strong. One controversial mechanism became known as Repo one-oh-five. It temporarily moved assets off the balance sheet around reporting periods, and reduced the appearance of leverage.",
+      "body": "Assets moved off the balance sheet around reporting dates.",
+      "duration": 16783
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "The collapse",
+      "headline": "The largest bankruptcy in US history at the time",
+      "voiceover": "Then the housing crisis accelerated. Investors lost confidence. Lehman's liquidity disappeared. On the fifteenth of September two thousand and eight, Lehman Brothers filed for bankruptcy, at the time the largest bankruptcy in U S history.",
+      "stat": {
+        "value": "15 Sep",
+        "label": "2008: bankruptcy filed"
+      },
+      "duration": 14848
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "Court and consequences",
+      "headline": "Heavy criticism, but no prison",
+      "voiceover": "C E O Richard Fuld faced enormous criticism, but was not criminally convicted or sent to prison. The consequences were primarily financial, regulatory and civil. It was caught when the housing collapse exposed the underlying weakness, once investors stopped trusting the balance sheet.",
+      "duration": 17945
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "Where they are now",
+      "headline": "The bank is gone. The estate is still paying creditors.",
+      "voiceover": "Lehman Brothers as an operating investment bank is gone, while the Lehman estate has spent years recovering assets and distributing money to creditors.",
+      "duration": 10203
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Lehman Brothers",
+      "eyebrow": "The lesson",
+      "headline": "You don't need obvious fraud to be dangerously governed.",
+      "voiceover": "The lesson: a company doesn't have to commit obvious fraud to become dangerously governed.",
+      "duration": 6719
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Crypto, 2022",
+      "headline": "FTX",
+      "voiceover": "Number four. F T X. Twenty twenty-two.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "What went wrong",
+      "headline": "No independent board. Customer funds moved.",
+      "voiceover": "F T X went from one of the world's biggest crypto exchanges to bankruptcy in days. Founder Sam Bankman-Fried had become a billionaire celebrity, but governance was extraordinarily weak. There was no effective independent board structure, internal controls were inadequate, and customer funds were transferred to Alameda Research, a closely connected trading firm.",
+      "body": "Customer money flowed to Alameda Research, a closely connected trading firm.",
+      "duration": 21816
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "The trigger",
+      "headline": "Customers wanted their money back",
+      "voiceover": "Questions about Alameda's financial position, and its dependence on F T X's own token, triggered a loss of confidence. Customers withdrew money. F T X couldn't meet the withdrawals. The estimated customer shortfall was around eight billion dollars.",
+      "stat": {
+        "value": "$8bn",
+        "label": "Estimated customer shortfall"
+      },
+      "duration": 16009
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "Court and consequences",
+      "headline": "25 years. Appeal rejected in 2026.",
+      "voiceover": "Bankman-Fried was convicted of fraud and conspiracy, and sentenced to twenty-five years in prison. His appeal failed in twenty twenty-six. Other executives also pleaded guilty or cooperated.",
+      "stat": {
+        "value": "25 yrs",
+        "label": "Sentence upheld on appeal, June 2026"
+      },
+      "duration": 11751
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "Where they are now",
+      "headline": "A bankruptcy and recovery operation",
+      "voiceover": "How was it caught? Investigative reporting, financial analysis, and a sudden liquidity crisis. Today, F T X is a bankruptcy and recovery operation, rather than the crypto empire it once was.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "The lesson",
+      "headline": "Technology doesn't create governance.",
+      "voiceover": "The lesson: technology doesn't create governance. If nobody independently controls the money, the system can still collapse.",
+      "duration": 7880
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Automotive, 2015",
+      "headline": "Volkswagen Dieselgate",
+      "voiceover": "Number five. Volkswagen. Dieselgate. Twenty fifteen.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Volkswagen",
+      "eyebrow": "What went wrong",
+      "headline": "Software that cheated the emissions test",
+      "voiceover": "Volkswagen installed software known as a defeat device in diesel vehicles. During laboratory testing, the software could recognise testing conditions and change engine behaviour. During normal driving, emissions could be dramatically higher.",
+      "body": "The car behaved one way in the lab and another on the road.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Volkswagen",
+      "eyebrow": "How it was exposed",
+      "headline": "Researchers tested cars on real roads",
+      "voiceover": "Around eleven million vehicles were eventually affected worldwide. Researchers compared laboratory emissions with real-world driving, regulators asked questions, and the scandal exploded in twenty fifteen.",
+      "stat": {
+        "value": "11m",
+        "label": "Vehicles affected worldwide"
+      },
+      "duration": 10977
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Volkswagen",
+      "eyebrow": "Court and consequences",
+      "headline": "Billions in penalties and buybacks",
+      "voiceover": "Billions were spent on penalties, settlements, vehicle buybacks and remediation. Executives and engineers faced criminal investigations, and former C E O Martin Winterkorn faced prosecution in Germany. Several former Volkswagen employees were convicted in the major German trial in twenty twenty-five.",
+      "duration": 17170
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Volkswagen",
+      "eyebrow": "Where they are now",
+      "headline": "VW survived, and sped up its shift to electric",
+      "voiceover": "Volkswagen survived, but the scandal damaged its reputation and accelerated its shift toward electric vehicles.",
+      "duration": 7106
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Volkswagen",
+      "eyebrow": "The lesson",
+      "headline": "When targets beat compliance, cheating looks like a solution.",
+      "voiceover": "The lesson: a culture that rewards targets above compliance can make illegal behaviour look like a solution.",
+      "duration": 7880
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Banking, 2016",
+      "headline": "Wells Fargo",
+      "voiceover": "Number six. Wells Fargo. Twenty sixteen.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Wells Fargo",
+      "eyebrow": "What went wrong",
+      "headline": "Sales targets created millions of fake accounts",
+      "voiceover": "Wells Fargo employees were under enormous pressure to meet aggressive sales targets. The result was millions of unauthorised accounts.",
+      "stat": {
+        "value": "Millions",
+        "label": "Of unauthorised customer accounts"
+      },
+      "duration": 8654
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Wells Fargo",
+      "eyebrow": "How it was exposed",
+      "headline": "Complaints, whistleblowers, regulators",
+      "voiceover": "Customer complaints, employee concerns, whistleblowers and regulatory investigations eventually brought the scandal into the open. In twenty sixteen, the bank was fined, and C E O John Stumpf resigned. Former Community Bank executive Carrie Tolstedt eventually pleaded guilty to obstructing a regulatory examination.",
+      "duration": 17945
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Wells Fargo",
+      "eyebrow": "The punishment",
+      "headline": "A cap on how big the bank could grow",
+      "voiceover": "In twenty eighteen, the Federal Reserve imposed an extraordinary asset cap on the bank. In March twenty twenty-six, the Federal Reserve terminated that enforcement action, after nearly a decade of remediation.",
+      "stat": {
+        "value": "2018",
+        "label": "Fed asset cap imposed"
+      },
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Wells Fargo",
+      "eyebrow": "Where they are now",
+      "headline": "Still a major US bank, after a decade of repairs",
+      "voiceover": "Wells Fargo survived, and remains a major U S bank, after years of governance and risk-control remediation.",
+      "duration": 7880
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Wells Fargo",
+      "eyebrow": "The lesson",
+      "headline": "Incentives shape behaviour as powerfully as rules.",
+      "voiceover": "The lesson: incentives can shape behaviour just as powerfully as rules.",
+      "duration": 5558
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Health tech, 2015 to 2018",
+      "headline": "Theranos",
+      "voiceover": "Number seven. Theranos. Twenty fifteen to twenty eighteen.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Theranos",
+      "eyebrow": "What went wrong",
+      "headline": "A blood test that didn't work as claimed",
+      "voiceover": "Elizabeth Holmes claimed Theranos could perform hundreds of blood tests using tiny amounts of blood. Investors believed her, and the company reached a valuation of roughly nine billion dollars.",
+      "stat": {
+        "value": "$9bn",
+        "label": "Peak valuation, roughly"
+      },
+      "duration": 12525
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Theranos",
+      "eyebrow": "The hidden problem",
+      "headline": "A famous board without the science to challenge her",
+      "voiceover": "But employees and scientists raised concerns about the technology. The board contained many high-profile people, but lacked the scientific expertise needed to challenge the core claims effectively.",
+      "duration": 11751
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Theranos",
+      "eyebrow": "How it was exposed",
+      "headline": "A journalist, backed by whistleblowers",
+      "voiceover": "Journalist John Carreyrou investigated. His Wall Street Journal reporting, supported by whistleblower information, became a major turning point. Regulators followed, and the company collapsed.",
+      "body": "Employees spoke, journalists investigated, regulators followed.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Theranos",
+      "eyebrow": "Court and consequences",
+      "headline": "Prison, and $452 million in restitution",
+      "voiceover": "Holmes was convicted and sentenced to one hundred and thirty-five months in prison. Former C O O Ramesh Balwani was convicted separately and sentenced to one hundred and fifty-five months. They were also ordered to pay approximately four hundred and fifty-two million dollars in restitution. Today, Theranos is gone, and both are serving prison sentences.",
+      "stat": {
+        "value": "$452m",
+        "label": "Restitution ordered"
+      },
+      "duration": 22590
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Theranos",
+      "eyebrow": "The lesson",
+      "headline": "Famous names don't make a competent board.",
+      "voiceover": "The lesson: a board full of famous names isn't necessarily a competent board.",
+      "duration": 6332
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Fintech, 2020",
+      "headline": "Wirecard",
+      "voiceover": "Number eight. Wirecard. Twenty twenty.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Wirecard",
+      "eyebrow": "What went wrong",
+      "headline": "Auditors asked: where is the money?",
+      "voiceover": "Wirecard looked like one of Europe's biggest fintech success stories. Then auditors asked a simple question: where is the money? Wirecard claimed around one point nine billion euros existed in trustee accounts. Auditors couldn't verify it.",
+      "stat": {
+        "value": "€1.9bn",
+        "label": "Cash auditors couldn't verify"
+      },
+      "duration": 15235
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Wirecard",
+      "eyebrow": "The collapse",
+      "headline": "The money probably never existed",
+      "voiceover": "Eventually, Wirecard admitted the money probably never existed, and the company collapsed. It was caught through investigative reporting, whistleblower allegations, and auditors being unable to verify the cash.",
+      "duration": 12138
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Wirecard",
+      "eyebrow": "Court and consequences",
+      "headline": "The CEO charged. A top executive vanished.",
+      "voiceover": "C E O Markus Braun was arrested and charged. Former executive Jan Marsalek disappeared, and became one of the world's most famous financial fugitives. The criminal trial against Braun and other former executives is still reaching its closing stage, so it isn't treated as a completed conviction.",
+      "body": "Jan Marsalek remains wanted. Braun's trial has not reached a final verdict.",
+      "duration": 19493
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Wirecard",
+      "eyebrow": "The lesson",
+      "headline": "Show me the money.",
+      "voiceover": "The lesson: sometimes governance comes down to one simple question. Show me the money.",
+      "duration": 6719
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Aviation, 2018 to 2019",
+      "headline": "Boeing 737 MAX",
+      "voiceover": "Number nine. The Boeing seven-three-seven MAX. Twenty eighteen to twenty nineteen.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Boeing",
+      "eyebrow": "What went wrong",
+      "headline": "A new system pilots weren't properly told about",
+      "voiceover": "The Boeing seven-three-seven MAX was developed under enormous commercial pressure. A new flight-control system called M CAS was introduced, but critical information about its behaviour and training requirements was not adequately communicated.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Boeing",
+      "eyebrow": "The trigger",
+      "headline": "Two crashes in five months",
+      "voiceover": "Lion Air Flight six-ten crashed in October twenty eighteen, killing one hundred and eighty-nine people. Five months later, Ethiopian Airlines Flight three-oh-two crashed, killing one hundred and fifty-seven. Three hundred and forty-six people died.",
+      "stat": {
+        "value": "346",
+        "label": "Lives lost in two crashes"
+      },
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Boeing",
+      "eyebrow": "Court and consequences",
+      "headline": "Grounded worldwide. Criminal proceedings followed.",
+      "voiceover": "Investigations exposed failures involving aircraft design, pilot information, training, certification and safety oversight. The MAX was grounded worldwide. Boeing faced enormous legal and financial consequences, while the U S Department of Justice pursued criminal proceedings concerning the certification process. Litigation surrounding the crashes continued into twenty twenty-six.",
+      "duration": 19493
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Boeing",
+      "eyebrow": "Where they are now",
+      "headline": "Back in service, still rebuilding trust",
+      "voiceover": "The MAX returned to service after changes and regulatory scrutiny. Boeing survived, but has been rebuilding its safety culture and its relationship with regulators.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Boeing",
+      "eyebrow": "The lesson",
+      "headline": "When safety competes with commercial pressure, safety has to win.",
+      "voiceover": "The lesson: when safety competes with commercial pressure, safety has to win.",
+      "duration": 5945
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Banking, 2011 to 2018",
+      "headline": "Punjab National Bank",
+      "voiceover": "And number ten. Punjab National Bank. Twenty eleven to twenty eighteen.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Punjab National Bank",
+      "eyebrow": "What went wrong",
+      "headline": "Two systems that didn't talk to each other",
+      "voiceover": "Punjab National Bank had a dangerous technology and control gap. Its SWIFT messaging system was not properly integrated with its core banking system. Fraudsters exploited that weakness to issue fraudulent Letters of Undertaking.",
+      "body": "SWIFT messages never matched against core banking records.",
+      "duration": 14074
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Punjab National Bank",
+      "eyebrow": "The scale",
+      "headline": "A fraud that grew for years",
+      "voiceover": "The alleged scheme grew for years and involved diamond businessmen Nirav Modi and Mehul Choksi. The fraud was eventually estimated at roughly thirteen thousand crore rupees.",
+      "stat": {
+        "value": "₹13k cr",
+        "label": "Estimated fraud, in rupees"
+      },
+      "duration": 11364
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Punjab National Bank",
+      "eyebrow": "How it was exposed",
+      "headline": "Guarantees issued without collateral",
+      "voiceover": "P N B discovered suspicious guarantees being issued without the required collateral, and investigators then uncovered the larger scheme. But by the time the scandal became public in twenty eighteen, key individuals had already left India.",
+      "duration": 15235
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Punjab National Bank",
+      "eyebrow": "Where they are now",
+      "headline": "Arrests abroad. Extradition fights continue.",
+      "voiceover": "Nirav Modi was arrested in Britain in twenty nineteen, and continued fighting extradition. Mehul Choksi was arrested in Belgium in twenty twenty-five, after India's extradition request. International legal proceedings and asset recovery continue.",
+      "duration": 14074
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Punjab National Bank",
+      "eyebrow": "The lesson",
+      "headline": "Controls are only as strong as their connections.",
+      "voiceover": "The lesson: a control system is only as strong as the connections between its components.",
+      "duration": 7106
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The pattern",
+      "headline": "Different industries. Same failure.",
+      "voiceover": "So what do Enron, WorldCom, Lehman Brothers, F T X, Volkswagen, Wells Fargo, Theranos, Wirecard, Boeing and Punjab National Bank actually have in common? They are completely different industries, countries, technologies and people. But the pattern is remarkably similar.",
+      "duration": 16396
+    },
+    {
+      "type": "plain",
+      "eyebrow": "It began years earlier",
+      "headline": "A warning ignored. A control that didn't work.",
+      "body": "A board that didn't ask. An auditor too comfortable. An employee afraid to speak.",
+      "voiceover": "The disaster usually didn't begin on the day the company collapsed. It began years earlier. A warning was ignored. A control wasn't working. A board didn't ask the right question. An auditor became too comfortable. An employee was afraid to speak. A regulator didn't connect the dots. Or management created incentives that encouraged people to do the wrong thing.",
+      "duration": 24138
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The deeper lesson",
+      "headline": "Good governance catches problems before they become scandals.",
+      "voiceover": "The deeper lesson is this: good governance is designed to detect problems before they become scandals. Internal controls aren't there to make reports look professional. Auditors aren't there simply to sign documents. Boards aren't there just to attend meetings. Compliance isn't there simply to slow a company down.",
+      "duration": 19880
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Someone must be able to say",
+      "headline": "“Wait. That number doesn't make sense.”",
+      "body": "Where did this money come from? Why are we doing this? What happens if this goes wrong?",
+      "voiceover": "Someone must be able to say: Wait. That number doesn't make sense. Where did this money come from? Why are we doing this? What happens if this goes wrong?",
+      "duration": 12525
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Corporate governance",
+      "headline": "Not preventing every mistake. Stopping one from becoming a catastrophe.",
+      "voiceover": "Every company on this list had opportunities to stop the disaster earlier. The real tragedy isn't that the warning signs existed. It's that they weren't strong enough, or weren't taken seriously enough, to stop what came next. That is the real meaning of corporate governance. Not preventing every mistake, but making sure that one mistake doesn't become a catastrophe.",
+      "duration": 24138
+    }
   ],
-
   "endcard": {
-    "title": "Subscribe for the <em>next</em> ten",
-    "subtitle": "South African money, explained.",
+    "title": "They <em>knew.</em>",
+    "subtitle": "Subscribe for more on money, markets and governance.",
     "handle": "@MzansiMoneyMatters",
-    "duration": 4800
+    "duration": 5200
   }
 }
