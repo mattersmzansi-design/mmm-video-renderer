@@ -129,8 +129,24 @@ def main():
 
         if text:
             mp3 = VO / f"{tag}.mp3"
-            asyncio.run(speak(text, voice, rate, pitch, mp3))
-            if not mp3.exists() or mp3.stat().st_size == 0:
+            # a scene may override the voice (used for voice comparison tests)
+            sc = content["scenes"][idx] if kind == "scene" else content["endcard"]
+            sv = sc.get("voice", {})
+            s_voice = sv.get("name", voice)
+            s_rate = sv.get("rate", rate)
+            s_pitch = sv.get("pitch", pitch)
+            try:
+                asyncio.run(speak(text, s_voice, s_rate, s_pitch, mp3))
+                ok = mp3.exists() and mp3.stat().st_size > 0
+            except Exception as e:
+                print(f"  {tag}: voice {s_voice} failed ({e})")
+                ok = False
+            if not ok and s_voice != voice:
+                print(f"  {tag}: falling back to {voice}")
+                sc["body"] = f"{s_voice} is not available. This line uses {voice} instead."
+                asyncio.run(speak(text, voice, rate, pitch, mp3))
+                ok = mp3.exists() and mp3.stat().st_size > 0
+            if not ok:
                 sys.exit(f"TTS produced no audio for {tag}. Check network/voice name.")
             wav = VO / f"{tag}.wav"
             to_wav(mp3, wav)

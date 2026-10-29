@@ -1,0 +1,95 @@
+{
+  "slug": "voice-test",
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "countdown": {
+    "from": 4,
+    "order": "up"
+  },
+  "disclaimer": "Voice test. Not for publishing.",
+  "voice": {
+    "name": "en-ZA-LukeNeural",
+    "rate": "+2%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "scenes": [
+    {
+      "type": "plain",
+      "eyebrow": "Voice test",
+      "headline": "Four voices, one script.",
+      "body": "Listen to each, then pick a number.",
+      "voiceover": "This is a voice test for Mzansi Money Matters. You'll hear four voices read the same lines. Pick the one you like best.",
+      "duration": 12000
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Voice 1",
+      "headline": "Luke, South African, livelier",
+      "body": "en-ZA-LukeNeural, rate +8%, pitch +2Hz",
+      "voiceover": "Voice 1. In December two thousand and one, Enron filed for bankruptcy. More than seventy-four billion dollars in shareholder value disappeared. And the warning signs had been there for years.",
+      "voice": {
+        "name": "en-ZA-LukeNeural",
+        "rate": "+8%",
+        "pitch": "+2Hz"
+      },
+      "duration": 12000,
+      "rank": 1
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Voice 2",
+      "headline": "Andrew, American, warm and confident",
+      "body": "en-US-AndrewMultilingualNeural, rate +4%, pitch +0Hz",
+      "voiceover": "Voice 2. In December two thousand and one, Enron filed for bankruptcy. More than seventy-four billion dollars in shareholder value disappeared. And the warning signs had been there for years.",
+      "voice": {
+        "name": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz"
+      },
+      "duration": 12000,
+      "rank": 2
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Voice 3",
+      "headline": "Brian, American, casual and energetic",
+      "body": "en-US-BrianMultilingualNeural, rate +4%, pitch +0Hz",
+      "voiceover": "Voice 3. In December two thousand and one, Enron filed for bankruptcy. More than seventy-four billion dollars in shareholder value disappeared. And the warning signs had been there for years.",
+      "voice": {
+        "name": "en-US-BrianMultilingualNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz"
+      },
+      "duration": 12000,
+      "rank": 3
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Voice 4",
+      "headline": "Ryan, British, clear and steady",
+      "body": "en-GB-RyanNeural, rate +4%, pitch +0Hz",
+      "voiceover": "Voice 4. In December two thousand and one, Enron filed for bankruptcy. More than seventy-four billion dollars in shareholder value disappeared. And the warning signs had been there for years.",
+      "voice": {
+        "name": "en-GB-RyanNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz"
+      },
+      "duration": 12000,
+      "rank": 4
+    }
+  ],
+  "endcard": {
+    "title": "Which <em>number?</em>",
+    "subtitle": "Tell Claude 1, 2, 3 or 4.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 4000
+  }
+}
