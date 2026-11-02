@@ -30,7 +30,8 @@ def load(content_path: Path):
     content = json.loads(content_path.read_text(encoding="utf-8"))
     yt = content.get("youtube")
     if not yt:
-        sys.exit(f"{content_path.name} has no \"youtube\" block; nothing to upload.")
+        print(f"{content_path.name} has no \"youtube\" block; skipping upload.")
+        sys.exit(0)
     w, h = content.get("size", [1920, 1080])
     video = ROOT / "out" / f"{content.get('slug', 'video')}-{w}x{h}.mp4"
     if not video.exists():

@@ -12,6 +12,11 @@ on:
         type: boolean
         required: false
         default: true
+      upload:
+        description: "Upload to YouTube as private (needs the YT_ secrets)"
+        type: boolean
+        required: false
+        default: true
       fps:
         description: "Frames per second"
         required: false
@@ -19,14 +24,23 @@ on:
   push:
     paths:
       - "content.json"
-      - "content/**"
-      - "template.html"
+      - "content-short.json"
       - "assets/**"
 
 jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        # a push renders the long video and the Short side by side;
+        # a manual run renders only the file typed into the form
+        content: ${{ fromJSON(github.event_name == 'workflow_dispatch' && format('["{0}"]', inputs.content) || '["content.json","content-short.json"]') }}
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
@@ -58,8 +72,7 @@ jobs:
 
       - name: Generate voiceover
         if: ${{ github.event_name == 'push' || inputs.voiceover }}
-        run: |
-          python voice.py --content "${{ inputs.content || 'content.json' }}"
+        run: python voice.py --content "${{ matrix.content }}"
 
       - name: Render
         run: |
@@ -70,14 +83,18 @@ jobs:
                              --audio build/voiceover.m4a --fps "$FPS"
           else
             echo "rendering silent"
-            python render.py --content "${{ inputs.content || 'content.json' }}" --fps "$FPS"
+            python render.py --content "${{ matrix.content }}" --fps "$FPS"
           fi
 
-      - name: Upload video
+      - name: Save video
         uses: actions/upload-artifact@v4
         with:
-          name: mmm-video
+          name: video-${{ matrix.content }}
           path: |
             out/*.mp4
             build/voiceover.m4a
           retention-days: 30
+
+      - name: Upload to YouTube (private)
+        if: ${{ env.YT_REFRESH_TOKEN != '' && (github.event_name == 'push' || inputs.upload) }}
+        run: python upload.py --content "${{ matrix.content }}"
