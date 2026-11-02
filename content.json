@@ -11,8 +11,8 @@
   },
   "disclaimer": "Education, not financial or legal advice. Facts as at October 2026.",
   "voice": {
-    "name": "en-ZA-LukeNeural",
-    "rate": "+2%",
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
     "pitch": "+0Hz",
     "lead_pad": 400,
     "tail_pad": 900
@@ -59,7 +59,8 @@
       "headline": "Debt and losses hidden off the balance sheet",
       "voiceover": "Before the scandal, Enron looked like the future. It was one of America's most admired companies. But underneath the success, Enron was carrying enormous amounts of debt and losses that investors weren't seeing. It used complicated special-purpose entities to keep liabilities away from its main balance sheet. On paper, Enron looked profitable. Behind the scenes, it was becoming increasingly unstable.",
       "body": "Complex special-purpose entities kept liabilities out of sight.",
-      "duration": 24525
+      "duration": 24525,
+      "media": "Enron.jpg"
     },
     {
       "type": "point",
@@ -144,7 +145,8 @@
       "headline": "Internal audit followed the entries",
       "voiceover": "The breakthrough came from an internal audit team led by Cynthia Cooper. Her team refused to accept management's explanations, investigated suspicious entries, and followed them to their source, uncovering the scale of the manipulation.",
       "body": "Cynthia Cooper's team refused to accept management's explanations.",
-      "duration": 14461
+      "duration": 14461,
+      "media": "Worldcom.jpg"
     },
     {
       "type": "point",
@@ -206,7 +208,8 @@
       "headline": "Repo 105 made leverage look smaller",
       "voiceover": "Mortgage-related assets were losing value, but Lehman still needed its financial statements to look strong. One controversial mechanism became known as Repo one-oh-five. It temporarily moved assets off the balance sheet around reporting periods, and reduced the appearance of leverage.",
       "body": "Assets moved off the balance sheet around reporting dates.",
-      "duration": 16783
+      "duration": 16783,
+      "media": "Lehman.jpg"
     },
     {
       "type": "point",
@@ -264,7 +267,8 @@
       "headline": "No independent board. Customer funds moved.",
       "voiceover": "F T X went from one of the world's biggest crypto exchanges to bankruptcy in days. Founder Sam Bankman-Fried had become a billionaire celebrity, but governance was extraordinarily weak. There was no effective independent board structure, internal controls were inadequate, and customer funds were transferred to Alameda Research, a closely connected trading firm.",
       "body": "Customer money flowed to Alameda Research, a closely connected trading firm.",
-      "duration": 21816
+      "duration": 21816,
+      "media": "Ftx.jpg"
     },
     {
       "type": "point",
@@ -326,7 +330,8 @@
       "headline": "Software that cheated the emissions test",
       "voiceover": "Volkswagen installed software known as a defeat device in diesel vehicles. During laboratory testing, the software could recognise testing conditions and change engine behaviour. During normal driving, emissions could be dramatically higher.",
       "body": "The car behaved one way in the lab and another on the road.",
-      "duration": 13687
+      "duration": 13687,
+      "media": "Volkswagen.jpg"
     },
     {
       "type": "point",
@@ -396,7 +401,8 @@
       "eyebrow": "How it was exposed",
       "headline": "Complaints, whistleblowers, regulators",
       "voiceover": "Customer complaints, employee concerns, whistleblowers and regulatory investigations eventually brought the scandal into the open. In twenty sixteen, the bank was fined, and C E O John Stumpf resigned. Former Community Bank executive Carrie Tolstedt eventually pleaded guilty to obstructing a regulatory examination.",
-      "duration": 17945
+      "duration": 17945,
+      "media": "wellsfargo.jpg"
     },
     {
       "type": "point",
@@ -457,7 +463,8 @@
       "eyebrow": "The hidden problem",
       "headline": "A famous board without the science to challenge her",
       "voiceover": "But employees and scientists raised concerns about the technology. The board contained many high-profile people, but lacked the scientific expertise needed to challenge the core claims effectively.",
-      "duration": 11751
+      "duration": 11751,
+      "media": "theranos.jpg"
     },
     {
       "type": "point",
@@ -519,7 +526,8 @@
       "eyebrow": "The collapse",
       "headline": "The money probably never existed",
       "voiceover": "Eventually, Wirecard admitted the money probably never existed, and the company collapsed. It was caught through investigative reporting, whistleblower allegations, and auditors being unable to verify the cash.",
-      "duration": 12138
+      "duration": 12138,
+      "media": "Wirecard.jpg"
     },
     {
       "type": "point",
@@ -555,7 +563,8 @@
       "eyebrow": "What went wrong",
       "headline": "A new system pilots weren't properly told about",
       "voiceover": "The Boeing seven-three-seven MAX was developed under enormous commercial pressure. A new flight-control system called M CAS was introduced, but critical information about its behaviour and training requirements was not adequately communicated.",
-      "duration": 13687
+      "duration": 13687,
+      "media": "boeing.jpg"
     },
     {
       "type": "point",
@@ -613,7 +622,8 @@
       "headline": "Two systems that didn't talk to each other",
       "voiceover": "Punjab National Bank had a dangerous technology and control gap. Its SWIFT messaging system was not properly integrated with its core banking system. Fraudsters exploited that weakness to issue fraudulent Letters of Undertaking.",
       "body": "SWIFT messages never matched against core banking records.",
-      "duration": 14074
+      "duration": 14074,
+      "media": "pnb.jpg"
     },
     {
       "type": "point",
