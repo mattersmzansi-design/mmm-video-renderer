@@ -708,5 +708,23 @@
     "subtitle": "Subscribe for more on money, markets and governance.",
     "handle": "@MzansiMoneyMatters",
     "duration": 5200
+  },
+  "youtube": {
+    "title": "10 Corporate Governance Disasters That Could Have Been Prevented",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "corporate governance",
+      "Enron",
+      "FTX",
+      "Wirecard",
+      "Lehman Brothers",
+      "Wells Fargo",
+      "Theranos",
+      "finance",
+      "Mzansi Money Matters"
+    ],
+    "description": "Ten corporate disasters where someone saw the warning signs, and the system failed to respond. From Enron and WorldCom to FTX, Wirecard and Boeing: what happened, how it was exposed, who was held responsible, and where they are now.\n\n{chapters}\n\nEducation, not financial or legal advice. Facts as at October 2026. Narration and some images are AI-generated.\n\n#corporategovernance #finance"
   }
 }
