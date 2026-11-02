@@ -1,0 +1,117 @@
+{
+  "slug": "short-enron",
+  "template": "template-countdown.html",
+  "size": [
+    1080,
+    1920
+  ],
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "countdown": {
+    "from": 10,
+    "order": "up"
+  },
+  "disclaimer": "Education, not financial or legal advice.",
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "scenes": [
+    {
+      "type": "plain",
+      "eyebrow": "Corporate governance disasters",
+      "headline": "Someone warned them. Nobody listened.",
+      "voiceover": "In two thousand and one, one of America's most admired companies collapsed in weeks. And someone inside had already warned them.",
+      "duration": 9029
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Energy, 2001",
+      "headline": "Enron",
+      "voiceover": "This is Enron.",
+      "duration": 2061
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "What went wrong",
+      "headline": "Debt and losses hidden off the balance sheet",
+      "media": "Enron.jpg",
+      "voiceover": "Enron looked like the future. But it used complicated side companies to keep huge debts and losses away from its main balance sheet. On paper, it looked profitable.",
+      "duration": 11738
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "The warning",
+      "headline": "The CEO quit. Then an executive spoke up.",
+      "body": "Sherron Watkins warned chairman Kenneth Lay the accounting could sink the company.",
+      "voiceover": "Then the C E O suddenly resigned. Executive Sherron Watkins warned the chairman that the accounting could bring the whole company down.",
+      "duration": 9416
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "The collapse",
+      "headline": "Bankrupt by December 2001",
+      "stat": {
+        "value": "$74bn",
+        "label": "Shareholder value wiped out"
+      },
+      "voiceover": "By December, Enron was bankrupt. More than seventy-four billion dollars in shareholder value disappeared.",
+      "duration": 6319
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Enron",
+      "eyebrow": "Court and consequences",
+      "headline": "Prison for the CFO and CEO. The auditor fell too.",
+      "stat": {
+        "value": "14 yrs",
+        "label": "Skilling's final prison sentence"
+      },
+      "voiceover": "The C F O and the C E O went to prison. Even the auditor, Arthur Andersen, collapsed.",
+      "duration": 7867
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The lesson",
+      "headline": "A warning that isn't acted on isn't a control.",
+      "voiceover": "The lesson? A warning that isn't acted on isn't really a control.",
+      "duration": 5545
+    }
+  ],
+  "endcard": {
+    "title": "All <em>10</em> disasters on the channel",
+    "subtitle": "Full video: 10 corporate governance disasters",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all ten on Mzansi Money Matters.",
+    "duration": 4000
+  },
+  "youtube": {
+    "title": "Enron: someone warned them #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "Enron",
+      "corporate governance",
+      "finance",
+      "Mzansi Money Matters"
+    ],
+    "description": "Enron hid billions off its balance sheet, and someone inside warned them. Full video: 10 corporate governance disasters on Mzansi Money Matters.\n\nEducation, not financial or legal advice. Narration and some images are AI-generated."
+  }
+}

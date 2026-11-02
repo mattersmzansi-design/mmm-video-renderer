@@ -85,7 +85,7 @@ def build_html(content_path: Path) -> Path:
     return out
 
 
-def capture(html_path: Path, fps: int) -> int:
+def capture(html_path: Path, fps: int, size=(WIDTH, HEIGHT)) -> int:
     from playwright.sync_api import sync_playwright
 
     if FRAMES.exists():
@@ -95,7 +95,7 @@ def capture(html_path: Path, fps: int) -> int:
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--force-color-profile=srgb",
                                           "--disable-lcd-text"])
-        page = browser.new_page(viewport={"width": WIDTH, "height": HEIGHT},
+        page = browser.new_page(viewport={"width": size[0], "height": size[1]},
                                 device_scale_factor=1)
         page.goto(html_path.as_uri())
         page.wait_for_function("window.READY === true")
@@ -153,11 +153,13 @@ def main():
         print("preview built. open it in your browser.")
         return
 
-    slug = json.loads(content_path.read_text(encoding="utf-8")).get("slug", "video")
-    out = Path(args.out) if args.out else ROOT / "out" / f"{slug}-1920x1080.mp4"
+    content = json.loads(content_path.read_text(encoding="utf-8"))
+    slug = content.get("slug", "video")
+    w, h = content.get("size", [WIDTH, HEIGHT])
+    out = Path(args.out) if args.out else ROOT / "out" / f"{slug}-{w}x{h}.mp4"
 
     print("capturing frames...")
-    capture(html, args.fps)
+    capture(html, args.fps, (w, h))
 
     print("encoding...")
     encode(out, args.fps, Path(args.audio) if args.audio else None)

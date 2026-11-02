@@ -101,6 +101,28 @@
   #spark{fill:none;stroke:var(--orange);stroke-width:4;stroke-linecap:round;
     stroke-linejoin:round;filter:drop-shadow(0 0 14px rgba(239,76,0,.6))}
   #sparkfill{fill:url(#g);opacity:0}
+
+  /* ---------- portrait (Shorts, 1080x1920) ---------- */
+  body.portrait .brandbar{top:96px;left:80px;right:80px}
+  body.portrait .mark{font-size:30px}
+  body.portrait #rail{display:none}
+  body.portrait #disclaimer{top:176px;bottom:auto;left:80px;right:80px;font-size:24px}
+  body.portrait .scene{left:80px;width:920px;height:1920px;top:0;
+    display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:56px;padding:250px 0 420px}
+  body.portrait .s-plain{width:920px}
+  body.portrait .scene h2{font-size:96px}
+  body.portrait .scene p{font-size:42px;max-width:none}
+  body.portrait .eyebrow{font-size:36px}
+  body.portrait .s-intro .ghost{display:none}
+  body.portrait .s-rank{align-items:flex-start;gap:20px}
+  body.portrait .s-rank .num{font-size:760px;text-align:left}
+  body.portrait .s-rank h2{font-size:116px}
+  body.portrait .s-point h2{font-size:82px}
+  body.portrait .badge{margin-bottom:28px}
+  body.portrait .media{width:860px;height:860px}
+  body.portrait .figure .v{font-size:250px}
+  body.portrait #endcard h3{font-size:92px;padding:0 80px}
+  body.portrait #endcard{padding-bottom:300px}
 </style>
 </head>
 <body>
@@ -124,7 +146,7 @@
   <div id="disclaimer"></div>
 
   <div class="chart">
-    <svg viewBox="0 0 1920 132" preserveAspectRatio="none">
+    <svg id="chartsvg" viewBox="0 0 1920 132" preserveAspectRatio="none">
       <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#EF4C00" stop-opacity=".28"/>
         <stop offset="100%" stop-color="#EF4C00" stop-opacity="0"/>
@@ -146,6 +168,14 @@ const asset = k => ASSETS[k] || "";
 const esc = s => String(s ?? "");
 
 const TOTAL_RANKS = CONTENT.countdown?.from ?? 10;
+
+/* ---------- canvas size: 1920x1080 by default, portrait for Shorts ---------- */
+const [W, H] = CONTENT.size || [1920, 1080];
+const PORTRAIT = H > W;
+for (const el of [document.documentElement, document.body, document.getElementById('stage')]) {
+  el.style.width = W + 'px'; el.style.height = H + 'px';
+}
+if (PORTRAIT) document.body.classList.add('portrait');
 
 /* ---------- brand bar + rail ---------- */
 $('barlogo').src = asset(CONTENT.brand.logo);
@@ -212,9 +242,10 @@ function sparkPath(points, w, h){
     (h - 14 - p * (h - 40)).toFixed(1)).join(' ');
 }
 const pts = CONTENT.chart || [0.10,0.16,0.08,0.26,0.20,0.38,0.31,0.52,0.44,0.66,0.58,0.78,0.70,0.92,0.84,1.00];
-const d = sparkPath(pts, 1920, 132);
+$('chartsvg').setAttribute('viewBox', '0 0 ' + W + ' 132');
+const d = sparkPath(pts, W, 132);
 $('spark').setAttribute('d', d);
-$('sparkfill').setAttribute('d', d + ' L1920,132 L0,132 Z');
+$('sparkfill').setAttribute('d', d + ' L' + W + ',132 L0,132 Z');
 
 /* ---------- timeline ---------- */
 const sceneEls = [...document.querySelectorAll('.scene')];
@@ -244,8 +275,8 @@ sceneEls.forEach((el, i) => {
       {clipPath:'inset(0% 0 0 0)',   transform:'translateY(0) scale(1.05)'},
     ], {duration:dur, delay:starts[i], fill:'both', easing:ease});
     el.querySelector('.copy').animate([
-      {opacity:0, transform:'translateX(-30px)'},
-      {opacity:1, transform:'translateX(0)'},
+      {opacity:0, transform: PORTRAIT ? 'translateY(30px)' : 'translateX(-30px)'},
+      {opacity:1, transform: 'translate(0,0)'},
     ], {duration:700, delay:starts[i] + 450, fill:'both', easing:ease});
   } else if (type === 'point' || type === 'intro') {
     el.firstElementChild.animate([
@@ -307,8 +338,8 @@ window.seek = function(ms){
 /* wait for the brand font, then shrink long figures (e.g. "Millions") to fit */
 document.fonts.ready.then(() => {
   document.querySelectorAll('.figure .v').forEach(v => {
-    let size = 230;
-    while (v.getBoundingClientRect().width > 500 && size > 110) { size -= 6; v.style.fontSize = size + 'px'; }
+    let size = PORTRAIT ? 250 : 230;
+    while (v.getBoundingClientRect().width > (PORTRAIT ? 860 : 500) && size > 110) { size -= 6; v.style.fontSize = size + 'px'; }
   });
   window.seek(0);
   window.READY = true;
