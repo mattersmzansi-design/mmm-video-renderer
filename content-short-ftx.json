@@ -1,0 +1,116 @@
+{
+  "slug": "short-ftx",
+  "template": "template-countdown.html",
+  "size": [
+    1080,
+    1920
+  ],
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "countdown": {
+    "from": 10,
+    "order": "up"
+  },
+  "disclaimer": "Education, not financial or legal advice.",
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "crypto trading screen",
+      "eyebrow": "Crypto, 2022",
+      "headline": "$8 billion of customer money. Gone.",
+      "voiceover": "In twenty twenty-two, one of the world's biggest crypto exchanges collapsed in a matter of days. And around eight billion dollars of customer money was missing.",
+      "duration": 10964
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Crypto, 2022",
+      "headline": "FTX",
+      "voiceover": "This is F T X.",
+      "duration": 2835
+    },
+    {
+      "type": "broll",
+      "broll": "server room data center",
+      "eyebrow": "What went wrong",
+      "headline": "No independent board. No real controls.",
+      "voiceover": "Its founder was a billionaire celebrity, but there was no real independent board, and the controls were weak. Customer money was moved to Alameda Research, a trading firm he also controlled.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "The trigger",
+      "headline": "Customers asked for their money back",
+      "stat": {
+        "value": "$8bn",
+        "label": "Estimated customer shortfall"
+      },
+      "voiceover": "When questions came out about Alameda's finances, customers rushed to withdraw. F T X couldn't pay them.",
+      "duration": 7480
+    },
+    {
+      "type": "broll",
+      "broll": "empty office night",
+      "eyebrow": "The collapse",
+      "headline": "The money wasn't there.",
+      "voiceover": "Within days, F T X was bankrupt.",
+      "duration": 3609
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FTX",
+      "eyebrow": "Court and consequences",
+      "headline": "25 years. Appeal rejected in 2026.",
+      "stat": {
+        "value": "25 yrs",
+        "label": "Sentence upheld on appeal, June 2026"
+      },
+      "voiceover": "Sam Bankman-Fried was convicted of fraud and sentenced to twenty-five years in prison. His appeal failed in June twenty twenty-six.",
+      "duration": 8641
+    },
+    {
+      "type": "broll",
+      "broll": "city skyline night timelapse",
+      "eyebrow": "The lesson",
+      "headline": "Technology doesn't create governance.",
+      "voiceover": "The lesson? Technology doesn't create governance. If nobody independently controls the money, it can disappear.",
+      "duration": 6706
+    }
+  ],
+  "endcard": {
+    "title": "All <em>10</em> disasters on the channel",
+    "subtitle": "Full video: 10 corporate governance disasters",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all ten on Mzansi Money Matters.",
+    "duration": 4000
+  },
+  "youtube": {
+    "title": "FTX: $8 billion of customer money, gone #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "FTX",
+      "crypto",
+      "corporate governance",
+      "finance",
+      "Mzansi Money Matters"
+    ],
+    "description": "FTX had no real independent board, and customer money was moved to a trading firm the founder controlled. Full video: 10 corporate governance disasters on Mzansi Money Matters.\n\nEducation, not financial or legal advice. Narration and some images are AI-generated. Stock footage from Pexels."
+  }
+}

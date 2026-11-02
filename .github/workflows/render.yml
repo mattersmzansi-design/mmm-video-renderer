@@ -41,6 +41,7 @@ jobs:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
     steps:
       - uses: actions/checkout@v4
@@ -74,6 +75,9 @@ jobs:
         if: ${{ github.event_name == 'push' || inputs.voiceover }}
         run: python voice.py --content "${{ matrix.content }}"
 
+      - name: Fetch b-roll footage
+        run: python broll.py --content "${{ matrix.content }}"
+
       - name: Render
         run: |
           FPS="${{ inputs.fps || '30' }}"
@@ -93,6 +97,7 @@ jobs:
           path: |
             out/*.mp4
             build/voiceover.m4a
+            build/broll-sources.json
           retention-days: 30
 
       - name: Upload to YouTube (private)

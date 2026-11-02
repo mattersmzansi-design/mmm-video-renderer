@@ -123,6 +123,19 @@
   body.portrait .figure .v{font-size:250px}
   body.portrait #endcard h3{font-size:92px;padding:0 80px}
   body.portrait #endcard{padding-bottom:300px}
+
+  /* ---------- b-roll: full-bleed footage, navy shade, copy on top ---------- */
+  .scene.s-broll{left:0;top:0;width:100%;height:100%;display:flex;align-items:flex-end;
+    padding:0 120px 230px}
+  .s-broll video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;background:var(--navy-deep)}
+  .s-broll .shade{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(0,27,38,.55) 0%,rgba(0,27,38,.18) 38%,rgba(0,27,38,.82) 78%,rgba(0,27,38,.95) 100%),
+               linear-gradient(90deg,rgba(0,44,61,.55) 0%,rgba(0,44,61,0) 60%)}
+  .s-broll .copy{position:relative;z-index:2;max-width:1200px}
+  .s-broll h2{text-shadow:0 4px 30px rgba(0,0,0,.45)}
+  .s-broll .figure{margin-top:36px}
+  body.portrait .scene.s-broll{left:0;width:100%;padding:250px 80px 440px;justify-content:flex-end}
+  body.portrait .s-broll .copy{max-width:920px}
 </style>
 </head>
 <body>
@@ -207,6 +220,11 @@ CONTENT.scenes.forEach((sc, i) => {
   } else if (type === 'rank') {
     el.innerHTML = '<div class="num cond">' + sc.rank + '</div>' +
       '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>';
+  } else if (type === 'broll') {
+    const stat = sc.stat ? '<div class="figure"><div class="v cond">' + esc(sc.stat.value) + '</div>' +
+      '<div class="l">' + esc(sc.stat.label) + '</div></div>' : '';
+    el.innerHTML = '<video muted playsinline preload="auto" src="broll/s' + i + '.webm"></video><div class="shade"></div>' +
+      '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + stat + '</div>';
   } else if (type === 'point') {
     let right = '';
     if (sc.stat) {
@@ -278,6 +296,14 @@ sceneEls.forEach((el, i) => {
       {opacity:0, transform: PORTRAIT ? 'translateY(30px)' : 'translateX(-30px)'},
       {opacity:1, transform: 'translate(0,0)'},
     ], {duration:700, delay:starts[i] + 450, fill:'both', easing:ease});
+  } else if (type === 'broll') {
+    const v = el.querySelector('video');
+    v.dataset.start = starts[i]; v.dataset.dur = dur;
+    v.animate([{transform:'scale(1.02)'},{transform:'scale(1.12)'}],
+      {duration:dur, delay:starts[i], fill:'both', easing:'linear'});
+    el.querySelector('.copy').animate([
+      {opacity:0, transform:'translateY(36px)'}, {opacity:1, transform:'translateY(0)'},
+    ], {duration:900, delay:starts[i] + 300, fill:'both', easing:ease});
   } else if (type === 'point' || type === 'intro') {
     el.firstElementChild.animate([
       {transform:'translateY(24px)'}, {transform:'translateY(0)'},
@@ -332,17 +358,34 @@ $('endcard').animate([
 ], {duration:800, delay:endStart, fill:'both', easing:ease});
 
 /* ---------- deterministic seeking for render.py ---------- */
+const VIDEOS = [...document.querySelectorAll('.s-broll video')];
+VIDEOS.forEach(v => v.addEventListener('error', () => { v.dataset.bad = '1'; v.style.visibility = 'hidden'; }));
 window.seek = function(ms){
   document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+  const waits = [];
+  for (const v of VIDEOS) {
+    const st = +v.dataset.start, dur = +v.dataset.dur;
+    if (v.dataset.bad || !(v.duration > 0) || ms < st - 50 || ms > st + dur + 50) continue;
+    const t = (Math.max(0, ms - st) / 1000) % Math.max(v.duration - 0.05, 0.1);
+    if (Math.abs(v.currentTime - t) < 0.0005) continue;
+    waits.push(new Promise(res => {
+      const done = () => requestAnimationFrame(() => requestAnimationFrame(res));
+      v.addEventListener('seeked', done, {once: true});
+      setTimeout(res, 3000);           // never hang the render on one clip
+      v.currentTime = t;
+    }));
+  }
+  return waits.length ? Promise.all(waits) : undefined;
 };
+const videosReady = Promise.all(VIDEOS.map(v => v.readyState >= 1 || v.dataset.bad ? null :
+  new Promise(res => { v.addEventListener('loadeddata', res, {once:true}); v.addEventListener('error', res, {once:true}); setTimeout(res, 15000); })));
 /* wait for the brand font, then shrink long figures (e.g. "Millions") to fit */
-document.fonts.ready.then(() => {
+Promise.all([document.fonts.ready, videosReady]).then(() => {
   document.querySelectorAll('.figure .v').forEach(v => {
     let size = PORTRAIT ? 250 : 230;
     while (v.getBoundingClientRect().width > (PORTRAIT ? 860 : 500) && size > 110) { size -= 6; v.style.fontSize = size + 'px'; }
   });
-  window.seek(0);
-  window.READY = true;
+  Promise.resolve(window.seek(0)).then(() => { window.READY = true; });
 });
 </script>
 </body>
