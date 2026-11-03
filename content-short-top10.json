@@ -1,0 +1,194 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 200,
+    "tail_pad": 400
+  },
+  "timing": {
+    "lead_in": 500
+  },
+  "slug": "short-top10-companies",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "city skyline night timelapse",
+      "eyebrow": "Early November 2026",
+      "headline": "The world's 10 most valuable companies in 60 seconds",
+      "voiceover": "The ten most valuable companies on earth, in sixty seconds. Go.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Broadcom",
+      "eyebrow": "Palo Alto, USA",
+      "headline": "Broadcom",
+      "stat": {
+        "value": "$1.57tn",
+        "label": "Market value"
+      },
+      "voiceover": "Ten: Broadcom, one point five seven trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Meta Platforms",
+      "eyebrow": "Menlo Park, USA",
+      "headline": "Meta Platforms",
+      "stat": {
+        "value": "$1.6tn",
+        "label": "Market value"
+      },
+      "voiceover": "Nine: Meta, one point six trillion dollars.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Saudi Aramco",
+      "eyebrow": "Dhahran, Saudi Arabia",
+      "headline": "Saudi Aramco",
+      "stat": {
+        "value": "$1.65tn",
+        "label": "Market value"
+      },
+      "voiceover": "Eight: Saudi Aramco, one point six five trillion dollars.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "TSMC",
+      "eyebrow": "Hsinchu, Taiwan",
+      "headline": "TSMC",
+      "stat": {
+        "value": "$1.9tn",
+        "label": "Market value"
+      },
+      "voiceover": "Seven: T S M C, one point nine trillion dollars.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "SpaceX",
+      "eyebrow": "Starbase, Texas, USA",
+      "headline": "SpaceX",
+      "stat": {
+        "value": "$2.0tn",
+        "label": "Market value"
+      },
+      "voiceover": "Six: SpaceX, two trillion dollars.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Amazon",
+      "eyebrow": "Seattle, USA",
+      "headline": "Amazon",
+      "stat": {
+        "value": "$2.7tn",
+        "label": "Market value"
+      },
+      "voiceover": "Five: Amazon, two point seven trillion dollars.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Alphabet",
+      "eyebrow": "Mountain View, USA",
+      "headline": "Alphabet",
+      "stat": {
+        "value": "$3.9tn",
+        "label": "Market value"
+      },
+      "voiceover": "Four: Alphabet, three point nine trillion dollars.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Microsoft",
+      "eyebrow": "Redmond, USA",
+      "headline": "Microsoft",
+      "stat": {
+        "value": "$4.0tn",
+        "label": "Market value"
+      },
+      "voiceover": "Three: Microsoft, four trillion dollars.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Apple",
+      "eyebrow": "Cupertino, USA",
+      "headline": "Apple",
+      "stat": {
+        "value": "$5.0tn",
+        "label": "Market value"
+      },
+      "voiceover": "Two: Apple, five trillion dollars.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Nvidia",
+      "eyebrow": "Santa Clara, USA",
+      "headline": "Nvidia",
+      "stat": {
+        "value": "$5.2tn",
+        "label": "Market value"
+      },
+      "voiceover": "One: Nvidia, five point two trillion dollars.",
+      "duration": 4009
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Put in perspective",
+      "headline": "Nvidia is worth about 12× South Africa's economy.",
+      "voiceover": "Nvidia alone is worth about twelve times South Africa's entire economy.",
+      "duration": 5558
+    }
+  ],
+  "endcard": {
+    "title": "Full breakdown on the <em>channel</em>",
+    "subtitle": "Founders, staff and what each one does",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Full breakdown on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "The world's 10 most valuable companies in 60 seconds #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "largest companies",
+      "market cap",
+      "Nvidia",
+      "Apple",
+      "Mzansi Money Matters"
+    ],
+    "description": "The 10 most valuable companies in the world, early November 2026. Nvidia alone is worth about 12 times South Africa's economy. Full breakdown on Mzansi Money Matters.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-largest-companies-2026",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice. Market values as at early November 2026.",
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Early November 2026",
+      "headline": "The 10 most valuable companies on earth",
+      "body": "Nvidia. Apple. Microsoft. SpaceX. Aramco. And five more.",
+      "voiceover": "Ten companies on earth are each worth more than one and a half trillion dollars.",
+      "duration": 7106
+    },
+    {
+      "type": "broll",
+      "broll": "stock market trading screen",
+      "eyebrow": "Put in perspective",
+      "headline": "Together: about $30 trillion",
+      "voiceover": "Together, they're worth about thirty trillion dollars. That's roughly ten times the size of Africa's entire economy. Here they are, counted down from ten to one.",
+      "duration": 11364
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "By market value: share price × shares.",
+      "body": "Values as at early November 2026. They move every day.",
+      "voiceover": "We ranked them by market value, which is the share price multiplied by the number of shares. These figures are from early November twenty twenty-six, and they change every day. For each one: where it's based, who founded it, what it does, and what it's known for.",
+      "duration": 19493
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Palo Alto, USA",
+      "headline": "Broadcom",
+      "voiceover": "Number ten. Broadcom. Based in Palo Alto, in the United States.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Broadcom",
+      "eyebrow": "Market value",
+      "headline": "Worth about $1.57 trillion",
+      "stat": {
+        "value": "$1.57tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about one point five seven trillion dollars.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Broadcom",
+      "eyebrow": "Founded 1961",
+      "headline": "1961 roots in HP. Broadcom name from 1991.",
+      "voiceover": "Its roots go back to Hewlett-Packard's chip division in nineteen sixty-one, which became Avago. The Broadcom name comes from a company Henry Samueli and Henry Nicholas founded in nineteen ninety-one. Avago bought it in twenty sixteen and took the name.",
+      "duration": 16783
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Broadcom",
+      "eyebrow": "What it does",
+      "headline": "Chips and software for data centres",
+      "stat": {
+        "value": "33,000",
+        "label": "Employees, end of 2025"
+      },
+      "voiceover": "Broadcom designs the networking and custom AI chips inside the world's data centres, and since buying VMware it's also a major software company. It does all this with about thirty-three thousand employees.",
+      "duration": 13687
+    },
+    {
+      "type": "broll",
+      "broll": "data center server racks",
+      "eyebrow": "Known for",
+      "headline": "The quiet giant of AI",
+      "body": "It helps big tech firms design their own AI chips.",
+      "voiceover": "Most people have never heard of Broadcom, yet it helps companies like Google build their own artificial intelligence chips. That's why its value has soared.",
+      "duration": 10977
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Menlo Park, USA",
+      "headline": "Meta Platforms",
+      "voiceover": "Number nine. Meta Platforms. Based in Menlo Park, in the United States.",
+      "duration": 5945
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Meta Platforms",
+      "eyebrow": "Market value",
+      "headline": "Worth about $1.6 trillion",
+      "stat": {
+        "value": "$1.6tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about one point six trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Meta Platforms",
+      "eyebrow": "Founded 2004",
+      "headline": "2004: Mark Zuckerberg and four Harvard roommates",
+      "voiceover": "Mark Zuckerberg started Facebook in two thousand and four from his Harvard dorm room, with Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes. The company renamed itself Meta in twenty twenty-one.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Meta Platforms",
+      "eyebrow": "What it does",
+      "headline": "Social media and online advertising",
+      "stat": {
+        "value": "78,865",
+        "label": "Employees, end of 2025"
+      },
+      "voiceover": "Meta owns Facebook, Instagram, WhatsApp and Threads, and makes almost all of its money from advertising. It employs just under seventy-nine thousand people.",
+      "duration": 10203
+    },
+    {
+      "type": "broll",
+      "broll": "scrolling social media on phone",
+      "eyebrow": "Known for",
+      "headline": "Over 3.5 billion people a day",
+      "body": "Use at least one Meta app daily, including WhatsApp.",
+      "voiceover": "More than three and a half billion people use at least one of its apps every single day. If you've sent a WhatsApp today, you're one of them.",
+      "duration": 12138
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Dhahran, Saudi Arabia",
+      "headline": "Saudi Aramco",
+      "voiceover": "Number eight. Saudi Aramco. Based in Dhahran, Saudi Arabia.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Saudi Aramco",
+      "eyebrow": "Market value",
+      "headline": "Worth about $1.65 trillion",
+      "stat": {
+        "value": "$1.65tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about one point six five trillion dollars.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Saudi Aramco",
+      "eyebrow": "Founded 1933",
+      "headline": "1933 oil concession. Fully Saudi-owned by 1980.",
+      "voiceover": "Aramco began in nineteen thirty-three, when the Saudi government granted an oil concession to an American company, Standard Oil of California. The Saudi state took full ownership by nineteen eighty.",
+      "duration": 12912
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Saudi Aramco",
+      "eyebrow": "What it does",
+      "headline": "Oil and gas",
+      "stat": {
+        "value": "75,000+",
+        "label": "Employees, over 90 nationalities"
+      },
+      "voiceover": "It's the world's biggest oil producer, and for years one of the most profitable companies on earth. The Saudi government still owns the vast majority of it. Aramco employs more than seventy-five thousand people from over ninety nationalities.",
+      "duration": 16009
+    },
+    {
+      "type": "broll",
+      "broll": "oil refinery at dusk",
+      "eyebrow": "Known for",
+      "headline": "The only non-tech giant in the top 10",
+      "body": "Its 2019 listing was the world's biggest, until SpaceX.",
+      "voiceover": "It's the only company in the top ten that isn't a technology business. Its twenty nineteen stock market listing was the biggest in history, until this year.",
+      "duration": 11751
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Hsinchu, Taiwan",
+      "headline": "TSMC",
+      "voiceover": "Number seven. T S M C. Based in Hsinchu, Taiwan.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "TSMC",
+      "eyebrow": "Market value",
+      "headline": "Worth about $1.9 trillion",
+      "stat": {
+        "value": "$1.9tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about one point nine trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "TSMC",
+      "eyebrow": "Founded 1987",
+      "headline": "1987: Morris Chang",
+      "voiceover": "Taiwan Semiconductor Manufacturing Company was founded in nineteen eighty-seven by Morris Chang, with backing from the Taiwanese government.",
+      "duration": 8267
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "TSMC",
+      "eyebrow": "What it does",
+      "headline": "Making chips for other companies",
+      "stat": {
+        "value": "83,825",
+        "label": "Employees, latest annual report"
+      },
+      "voiceover": "TSMC doesn't sell its own brand. It manufactures chips designed by others, including Apple and Nvidia. It has nearly eighty-four thousand employees.",
+      "duration": 9816
+    },
+    {
+      "type": "broll",
+      "broll": "semiconductor wafer",
+      "eyebrow": "Known for",
+      "headline": "The factory behind your phone",
+      "body": "It makes most of the world's most advanced chips.",
+      "voiceover": "The chip in your phone was very likely made by TSMC. It makes most of the world's most advanced processors, which is why it matters so much to global politics.",
+      "duration": 12912
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Starbase, Texas, USA",
+      "headline": "SpaceX",
+      "voiceover": "Number six. SpaceX. Based in Starbase, Texas, in the United States.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "SpaceX",
+      "eyebrow": "Market value",
+      "headline": "Worth about $2 trillion",
+      "stat": {
+        "value": "$2.0tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about two trillion dollars.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "SpaceX",
+      "eyebrow": "Founded 2002",
+      "headline": "2002: Elon Musk",
+      "voiceover": "Elon Musk founded Space Exploration Technologies in two thousand and two, with the goal of cutting the cost of getting to space.",
+      "duration": 9816
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "SpaceX",
+      "eyebrow": "What it does",
+      "headline": "Rockets and satellite internet",
+      "stat": {
+        "value": "22,000+",
+        "label": "Employees, at its 2026 listing"
+      },
+      "voiceover": "SpaceX launches most of the world's rockets, and its Starlink satellites now sell internet to more than twelve million customers in over a hundred and sixty countries. It has more than twenty-two thousand employees.",
+      "duration": 14461
+    },
+    {
+      "type": "broll",
+      "broll": "rocket launch",
+      "eyebrow": "Known for",
+      "headline": "The biggest stock market listing ever",
+      "body": "It listed on Nasdaq in June 2026, valued at about $2 trillion.",
+      "voiceover": "SpaceX only joined the stock market in June twenty twenty-six, in the biggest listing in history. It went straight into the top ten.",
+      "duration": 10203
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Seattle, USA",
+      "headline": "Amazon",
+      "voiceover": "Number five. Amazon. Based in Seattle, in the United States.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Amazon",
+      "eyebrow": "Market value",
+      "headline": "Worth about $2.7 trillion",
+      "stat": {
+        "value": "$2.7tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about two point seven trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Amazon",
+      "eyebrow": "Founded 1994",
+      "headline": "1994: Jeff Bezos, in a garage",
+      "voiceover": "Jeff Bezos founded Amazon in nineteen ninety-four, in a garage outside Seattle, as an online bookshop.",
+      "duration": 7493
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Amazon",
+      "eyebrow": "What it does",
+      "headline": "Online shopping and cloud computing",
+      "stat": {
+        "value": "1.58m",
+        "label": "Employees, end of 2025"
+      },
+      "voiceover": "Amazon is the world's biggest online store, but most of its profit comes from Amazon Web Services, the cloud computers that run much of the internet. It employs about one point five eight million people, more than any other company on this list.",
+      "duration": 17945
+    },
+    {
+      "type": "broll",
+      "broll": "warehouse boxes conveyor",
+      "eyebrow": "Known for",
+      "headline": "Now shipping in South Africa",
+      "body": "Amazon.co.za launched in 2024.",
+      "voiceover": "And it's close to home. Amazon launched its South African store in twenty twenty-four, and its cloud has run a data centre region in Cape Town since twenty twenty.",
+      "duration": 12525
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Mountain View, USA",
+      "headline": "Alphabet",
+      "voiceover": "Number four. Alphabet. Based in Mountain View, in the United States.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Alphabet",
+      "eyebrow": "Market value",
+      "headline": "Worth about $3.9 trillion",
+      "stat": {
+        "value": "$3.9tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about three point nine trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Alphabet",
+      "eyebrow": "Founded 1998",
+      "headline": "1998: Larry Page and Sergey Brin",
+      "voiceover": "Larry Page and Sergey Brin founded Google in nineteen ninety-eight, while they were PhD students at Stanford. Alphabet was created in twenty fifteen as the parent company.",
+      "duration": 11751
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Alphabet",
+      "eyebrow": "What it does",
+      "headline": "Search, advertising, YouTube and cloud",
+      "stat": {
+        "value": "190,800",
+        "label": "Employees, end of 2025"
+      },
+      "voiceover": "Alphabet owns Google Search, Android, Google Cloud, and YouTube, and it earns most of its money from advertising. It has around one hundred and ninety thousand employees.",
+      "duration": 11751
+    },
+    {
+      "type": "broll",
+      "broll": "typing on laptop search",
+      "eyebrow": "Known for",
+      "headline": "You're on its platform right now",
+      "body": "Google bought YouTube in 2006.",
+      "voiceover": "And if you're watching this on YouTube, you're using one of its products right now. Google bought YouTube in two thousand and six.",
+      "duration": 10203
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Redmond, USA",
+      "headline": "Microsoft",
+      "voiceover": "Number three. Microsoft. Based in Redmond, in the United States.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Microsoft",
+      "eyebrow": "Market value",
+      "headline": "Worth about $4 trillion",
+      "stat": {
+        "value": "$4.0tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about four trillion dollars.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Microsoft",
+      "eyebrow": "Founded 1975",
+      "headline": "1975: Bill Gates and Paul Allen",
+      "voiceover": "Childhood friends Bill Gates and Paul Allen founded Microsoft in nineteen seventy-five.",
+      "duration": 5945
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Microsoft",
+      "eyebrow": "What it does",
+      "headline": "Software and cloud computing",
+      "stat": {
+        "value": "223,000",
+        "label": "Employees, mid-2026"
+      },
+      "voiceover": "Microsoft makes Windows and Office, and runs Azure, one of the world's biggest cloud platforms. It's also a major investor in OpenAI. It employs about two hundred and twenty-three thousand people.",
+      "duration": 13300
+    },
+    {
+      "type": "broll",
+      "broll": "office computers work",
+      "eyebrow": "Known for",
+      "headline": "On almost every office computer",
+      "body": "Its products are sold in more than 190 countries.",
+      "voiceover": "Its software runs on almost every office computer in the world, and it sells in more than one hundred and ninety countries.",
+      "duration": 9816
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Cupertino, USA",
+      "headline": "Apple",
+      "voiceover": "Number two. Apple. Based in Cupertino, in the United States.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Apple",
+      "eyebrow": "Market value",
+      "headline": "Worth about $5 trillion",
+      "stat": {
+        "value": "$5.0tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about five trillion dollars.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Apple",
+      "eyebrow": "Founded 1976",
+      "headline": "1976: Steve Jobs, Steve Wozniak, Ronald Wayne",
+      "voiceover": "Steve Jobs, Steve Wozniak and Ronald Wayne founded Apple in nineteen seventy-six. Wayne sold his ten percent share just days later, for eight hundred dollars.",
+      "duration": 10977
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Apple",
+      "eyebrow": "What it does",
+      "headline": "Phones, computers and services",
+      "stat": {
+        "value": "166,000",
+        "label": "Employees, 2025 annual report"
+      },
+      "voiceover": "Apple makes the iPhone, Mac, iPad and Apple Watch, and earns a fast-growing share of its money from services like the App Store and iCloud. It has about one hundred and sixty-six thousand employees.",
+      "duration": 14461
+    },
+    {
+      "type": "broll",
+      "broll": "smartphone close up",
+      "eyebrow": "Known for",
+      "headline": "First to a trillion dollars",
+      "body": "The first US company worth $1 trillion, in 2018.",
+      "voiceover": "Apple was the first American company to be worth a trillion dollars, in twenty eighteen. It and Nvidia now swap the number one spot almost week to week.",
+      "duration": 12138
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Santa Clara, USA",
+      "headline": "Nvidia",
+      "voiceover": "Number one. Nvidia. Based in Santa Clara, in the United States.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Nvidia",
+      "eyebrow": "Market value",
+      "headline": "Worth about $5.2 trillion",
+      "stat": {
+        "value": "$5.2tn",
+        "label": "Market value, early November 2026"
+      },
+      "voiceover": "Market value: about five point two trillion dollars.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Nvidia",
+      "eyebrow": "Founded 1993",
+      "headline": "1993: Jensen Huang, Chris Malachowsky, Curtis Priem",
+      "voiceover": "Jensen Huang, Chris Malachowsky and Curtis Priem founded Nvidia in nineteen ninety-three. They planned it over meals at a roadside diner.",
+      "duration": 9429
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Nvidia",
+      "eyebrow": "What it does",
+      "headline": "Chips that power artificial intelligence",
+      "stat": {
+        "value": "42,000",
+        "label": "Employees in 38 countries"
+      },
+      "voiceover": "Nvidia started out making graphics chips for video games. Today its processors power most of the world's artificial intelligence. It has about forty-two thousand employees in thirty-eight countries.",
+      "duration": 12138
+    },
+    {
+      "type": "broll",
+      "broll": "computer chip circuit board",
+      "eyebrow": "Known for",
+      "headline": "First company worth $5 trillion",
+      "body": "It crossed $5 trillion in October 2025.",
+      "voiceover": "In October twenty twenty-five, Nvidia became the first company ever worth five trillion dollars. That's about twelve times the size of South Africa's entire economy.",
+      "duration": 10977
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The pattern",
+      "headline": "Eight of the ten are American tech companies.",
+      "voiceover": "Notice the pattern. Eight of the ten are American, and nine of them are technology businesses. The only oil company left is Aramco. Twenty years ago, this list was full of oil companies and banks.",
+      "duration": 14848
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Just outside the top 10",
+      "headline": "Tesla, Eli Lilly and Berkshire Hathaway",
+      "voiceover": "Just missing out: Tesla, only a few billion dollars behind Broadcom, followed by Eli Lilly and Warren Buffett's Berkshire Hathaway. With prices moving every day, this list could look different by next month.",
+      "duration": 14074
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which company will be number one next year?",
+      "voiceover": "So which company do you think will be number one this time next year? Tell us in the comments.",
+      "duration": 8654
+    }
+  ],
+  "endcard": {
+    "title": "Subscribe for the <em>next</em> ten",
+    "subtitle": "South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "The 10 Most Valuable Companies in the World (2026)",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "largest companies",
+      "market cap",
+      "Nvidia",
+      "Apple",
+      "Microsoft",
+      "SpaceX",
+      "Saudi Aramco",
+      "Mzansi Money Matters"
+    ],
+    "description": "The 10 most valuable companies in the world by market value, as at early November 2026: where they're based, who founded them, what they do, how many people they employ, and what they're known for. Nvidia alone is worth about 12 times South Africa's economy.\n\n{chapters}\n\nSources: market values from TradingView (early November 2026); employee numbers from each company's latest annual report; South Africa GDP from Trading Economics / World Bank (2025).\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}
