@@ -1,0 +1,102 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-pengo",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "old paper banknotes",
+      "eyebrow": "Hungary, 1946",
+      "headline": "Prices doubled every 15 hours",
+      "voiceover": "In nineteen forty-six, prices in Hungary doubled every fifteen hours.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Hungarian pengő",
+      "eyebrow": "Your salary",
+      "headline": "Paid on Monday. Worth a ninth by Wednesday.",
+      "voiceover": "Get paid on Monday morning, and by Wednesday your money buys about a ninth of what it did.",
+      "duration": 8267
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Hungarian pengő",
+      "eyebrow": "In one month",
+      "headline": "The worst hyperinflation ever recorded",
+      "stat": {
+        "value": "41 quadrillion %",
+        "label": "Price rise, July 1946"
+      },
+      "voiceover": "In July that year, prices rose forty-one thousand trillion percent in a single month. The worst hyperinflation ever recorded.",
+      "duration": 8654
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Hungarian pengő",
+      "eyebrow": "The biggest note ever printed",
+      "headline": "100 quintillion pengő",
+      "voiceover": "The government printed a one hundred quintillion pengő note. That's a one with twenty zeros.",
+      "duration": 7106
+    },
+    {
+      "type": "broll",
+      "broll": "printing press",
+      "eyebrow": "The cause",
+      "headline": "War ruin, reparations, and the printing press",
+      "voiceover": "War had wrecked the economy, the country owed reparations, and the government just kept printing.",
+      "duration": 7106
+    },
+    {
+      "type": "plain",
+      "eyebrow": "And number two?",
+      "headline": "It happened right next door.",
+      "voiceover": "And number two on the list happened right next door to South Africa.",
+      "duration": 6332
+    }
+  ],
+  "endcard": {
+    "title": "All ten on the <em>channel</em>",
+    "subtitle": "The worst currency collapses in history",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "Prices doubled every 15 hours #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "hyperinflation",
+      "Hungary",
+      "pengo",
+      "Mzansi Money Matters"
+    ],
+    "description": "Hungary, 1946: the worst hyperinflation ever recorded. Full top 10 on Mzansi Money Matters.\n\nSource: Hanke & Krus Hyperinflation Table (Cato Institute).\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}
