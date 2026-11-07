@@ -1,0 +1,526 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-oldest-companies",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Survivors",
+      "headline": "The 10 oldest companies still in business",
+      "body": "Kongō Gumi. The Royal Mint. Beretta. And seven more.",
+      "voiceover": "Most companies don't outlive their founders. These ten have survived for centuries, some for more than a thousand years.",
+      "duration": 8654
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "By the year they were founded",
+      "body": "Number one is the oldest.",
+      "voiceover": "We've ranked them by the year they were founded, counting down to the oldest. For each one: when it started, who has owned it, and the biggest test it survived.",
+      "duration": 12912
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Hamburg, Germany",
+      "headline": "Berenberg",
+      "voiceover": "Number ten. Berenberg. Founded fifteen ninety.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Berenberg",
+      "eyebrow": "Founded",
+      "headline": "A bank founded by two refugee brothers",
+      "stat": {
+        "value": "1590",
+        "label": "Hamburg, Germany"
+      },
+      "voiceover": "Berenberg was founded in Hamburg around fifteen ninety by Hans and Paul Berenberg, Protestant brothers who had fled Antwerp. It calls itself the world's oldest merchant bank, and still employs about sixteen hundred people.",
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Berenberg",
+      "eyebrow": "Ownership",
+      "headline": "Berenberg → Gossler → partners",
+      "body": "The Berenberg line ended in 1822. Gossler descendants still own about 30%.",
+      "voiceover": "Johann Hinrich Gossler married into the family and became a partner in seventeen sixty-nine, and the bank took the name Berenberg, Gossler and Company. The last Berenberg died in eighteen twenty-two. Today the Berenberg-Gossler family holds about thirty percent, alongside the managing partners.",
+      "duration": 17945
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Berenberg",
+      "eyebrow": "Biggest test",
+      "headline": "The Napoleonic Wars",
+      "body": "It lost half its capital, then rebuilt.",
+      "voiceover": "Its biggest test was the Napoleonic Wars, when it lost half its capital. It rebuilt, and grew bigger than before. And the tests haven't stopped: in June twenty twenty-six, Germany's banking regulator suspended its managing partners over possible governance breaches and appointed special commissioners.",
+      "duration": 18332
+    },
+    {
+      "type": "broll",
+      "broll": "Hamburg harbour",
+      "eyebrow": "Berenberg",
+      "headline": "From refugees to a global bank",
+      "voiceover": "Today it has offices in London, Frankfurt and New York.",
+      "duration": 5170
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Gardone Val Trompia, Italy",
+      "headline": "Beretta",
+      "voiceover": "Number nine. Beretta. Founded fifteen twenty-six.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Beretta",
+      "eyebrow": "Founded",
+      "headline": "Gun barrels for the Venetian Republic",
+      "stat": {
+        "value": "1526",
+        "label": "Gardone Val Trompia, Italy"
+      },
+      "voiceover": "Beretta traces its history to fifteen twenty-six, in the iron-working valley of Gardone Val Trompia in northern Italy. This year, it turned five hundred.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Beretta",
+      "eyebrow": "Ownership",
+      "headline": "One family, 500 years",
+      "body": "Now in its 16th generation. Beretta Holding owns brands like Benelli and Sako.",
+      "voiceover": "Ownership has never left the Beretta family. It's now run by the sixteenth generation, and the wider Beretta Holding group earned more than one point seven billion euros in twenty twenty-four.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Beretta",
+      "eyebrow": "Biggest test",
+      "headline": "Plague, and a business that rises and falls with war",
+      "body": "In 1631 plague killed about a third of the town.",
+      "voiceover": "In sixteen thirty-one, plague killed about a third of Gardone's people. And because its customers were armies, its sales rose and fell with every war. Selling hunting guns to civilians kept the family business alive in peacetime.",
+      "duration": 15622
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Siena, Italy",
+      "headline": "Monte dei Paschi di Siena",
+      "voiceover": "Number eight. Monte dei Paschi di Siena. Founded fourteen seventy-two.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Monte dei Paschi di Siena",
+      "eyebrow": "Founded",
+      "headline": "The world's oldest bank",
+      "stat": {
+        "value": "1472",
+        "label": "Siena, Italy"
+      },
+      "voiceover": "Monte dei Paschi was founded in fourteen seventy-two by the Republic of Siena, to lend to the poor and fight loan sharks. It's the oldest bank in the world still operating.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Monte dei Paschi di Siena",
+      "eyebrow": "Ownership",
+      "headline": "City → foundation → state → stock market",
+      "body": "The Italian state owned most of it after 2017; it now holds about 6%.",
+      "voiceover": "For centuries it was tied to the city of Siena, and later controlled by a local foundation. After a state rescue in twenty seventeen, the Italian government became its biggest owner. The state has since sold most of its shares, and in twenty twenty-five, Monte dei Paschi took over its rival Mediobanca.",
+      "duration": 21429
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Monte dei Paschi di Siena",
+      "eyebrow": "Biggest test",
+      "headline": "An expensive deal, a scandal and a bailout",
+      "body": "Losses after buying Antonveneta in 2007, a derivatives scandal, then a 2017 state rescue.",
+      "voiceover": "Its near-death came this century. It paid about nine billion euros for the bank Antonveneta just before the two thousand and eight crash. Then came hidden derivative losses, failed stress tests, and finally a state bailout in twenty seventeen.",
+      "duration": 16396
+    },
+    {
+      "type": "broll",
+      "broll": "Siena Italy",
+      "eyebrow": "Monte dei Paschi di Siena",
+      "headline": "Survived 550 years. Nearly killed in ten.",
+      "voiceover": "Bad deals and hidden losses did what wars couldn't.",
+      "duration": 4783
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Falun, Sweden (now Helsinki)",
+      "headline": "Stora Enso",
+      "voiceover": "Number seven. Stora Enso. Founded twelve eighty-eight.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Stora Enso",
+      "eyebrow": "Founded",
+      "headline": "The world's oldest known share",
+      "stat": {
+        "value": "1288",
+        "label": "Falun, Sweden (now Helsinki)"
+      },
+      "voiceover": "In twelve eighty-eight, a document gave the Bishop of Västerås one eighth of the Stora Kopparberg copper mine in Falun, Sweden. It's the oldest known share certificate in the world.",
+      "duration": 12912
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Stora Enso",
+      "eyebrow": "Ownership",
+      "headline": "Copper mine → company → merger",
+      "body": "Royal charter in 1347. Incorporated in 1862. Merged with Finland's Enso in 1998.",
+      "voiceover": "The king granted it a charter in thirteen forty-seven. It became a modern shareholder company in eighteen sixty-two, and in nineteen ninety-eight it merged with the Finnish company Enso to form Stora Enso, now based in Helsinki with about nineteen thousand employees.",
+      "duration": 17558
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Stora Enso",
+      "eyebrow": "Biggest test",
+      "headline": "The mine ran out",
+      "body": "The Great Pit collapsed in 1687. Mining ended in 1992.",
+      "voiceover": "Its biggest test was its own mine. The Great Pit collapsed in sixteen eighty-seven, and the copper slowly ran out. So the company moved into forests, timber and paper. Mining in Falun ended in nineteen ninety-two, but the company lived on.",
+      "duration": 17170
+    },
+    {
+      "type": "broll",
+      "broll": "copper mine",
+      "eyebrow": "Stora Enso",
+      "headline": "Reinvented: from copper to paper",
+      "voiceover": "Today it makes paper, packaging and wood products.",
+      "duration": 4396
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Llantrisant, Wales",
+      "headline": "The Royal Mint",
+      "voiceover": "Number six. The Royal Mint. Founded around eight eighty-six.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "The Royal Mint",
+      "eyebrow": "Founded",
+      "headline": "Making Britain's money for 1,100 years",
+      "stat": {
+        "value": "c. 886",
+        "label": "Llantrisant, Wales"
+      },
+      "voiceover": "The Royal Mint traces its origins to around eight eighty-six, under King Alfred the Great. For centuries it worked inside the Tower of London, and Isaac Newton served as its Warden.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "The Royal Mint",
+      "eyebrow": "Ownership",
+      "headline": "Always the Crown's",
+      "body": "It became a company in 2009, still owned by HM Treasury.",
+      "voiceover": "It has always been owned by the Crown and the state. It moved to Llantrisant in Wales from nineteen sixty-eight, to make the new decimal coins, and in two thousand and nine it became a limited company owned by His Majesty's Treasury.",
+      "duration": 17558
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "The Royal Mint",
+      "eyebrow": "Biggest test",
+      "headline": "People stopped using cash",
+      "body": "In 2024 it struck no new coins for circulation.",
+      "voiceover": "Its biggest test is happening now. People are using less cash, and in twenty twenty-four it struck no new coins for circulation at all. So the Mint is reinventing itself, selling gold and recovering precious metals from old electronics.",
+      "duration": 16396
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Paris, France",
+      "headline": "Monnaie de Paris",
+      "voiceover": "Number five. Monnaie de Paris. Founded eight sixty-four.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Monnaie de Paris",
+      "eyebrow": "Founded",
+      "headline": "France's oldest institution",
+      "stat": {
+        "value": "864",
+        "label": "Paris, France"
+      },
+      "voiceover": "The Monnaie de Paris was created in eight sixty-four by the Edict of Pîtres, under King Charles the Bald. It's France's oldest institution.",
+      "duration": 10203
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Monnaie de Paris",
+      "eyebrow": "Ownership",
+      "headline": "Kings → Republic → state enterprise",
+      "body": "Under the finance ministry from 1796. A state-owned commercial enterprise since 2007.",
+      "voiceover": "It has always belonged to the French state, first the kings, then the Republic. In seventeen ninety-six it came under the finance ministry, and since two thousand and seven it has been run as a state-owned commercial enterprise.",
+      "duration": 16009
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Monnaie de Paris",
+      "eyebrow": "Biggest test",
+      "headline": "The end of the franc",
+      "body": "In 2002 France switched to the euro.",
+      "voiceover": "Its biggest modern test was the end of the French franc. When France adopted the euro in two thousand and two, the Mint had to make an entirely new currency, and it now helps fight euro counterfeiting across Europe.",
+      "duration": 16396
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Salzburg, Austria",
+      "headline": "St. Peter Stiftskulinarium",
+      "voiceover": "Number four. St. Peter Stiftskulinarium. Founded eight hundred and three.",
+      "duration": 5170
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "St. Peter Stiftskulinarium",
+      "eyebrow": "Founded",
+      "headline": "The world's oldest restaurant",
+      "stat": {
+        "value": "803",
+        "label": "Salzburg, Austria"
+      },
+      "voiceover": "The St. Peter restaurant in Salzburg, Austria, was first mentioned in eight hundred and three. It started as the wine cellar of St. Peter's Abbey, and grew into an inn for pilgrims and travellers.",
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "St. Peter Stiftskulinarium",
+      "eyebrow": "Ownership",
+      "headline": "Still inside the abbey",
+      "body": "Run by outside operators on a lease since the early 1990s.",
+      "voiceover": "It still sits inside the Benedictine abbey's walls. Since the early nineteen nineties it has been leased to outside operators, who renovated the kitchen and the menu. Mozart is said to have dined there.",
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "St. Peter Stiftskulinarium",
+      "eyebrow": "Biggest test",
+      "headline": "Staying relevant for 1,200 years",
+      "body": "From a monks' wine cellar to a tourist landmark.",
+      "voiceover": "Its test has been staying relevant for twelve hundred years: from a monastery cellar, to a pilgrims' inn, to a restaurant that now hosts Mozart dinner concerts for tourists.",
+      "duration": 12525
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Komatsu, Ishikawa, Japan",
+      "headline": "Hōshi Ryokan",
+      "voiceover": "Number three. Hōshi Ryokan. Founded seven eighteen.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Hōshi Ryokan",
+      "eyebrow": "Founded",
+      "headline": "A hot spring inn, 1,300 years old",
+      "stat": {
+        "value": "718",
+        "label": "Komatsu, Ishikawa, Japan"
+      },
+      "voiceover": "Hōshi Ryokan, a hot spring inn in Japan's Ishikawa Prefecture, was founded in seven eighteen.",
+      "duration": 7106
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Hōshi Ryokan",
+      "eyebrow": "Ownership",
+      "headline": "One family, 46 generations",
+      "body": "Passed from father to son, or adopted son, for 46 generations.",
+      "voiceover": "It has been owned and run by the same family for forty-six generations, passed down to a son, or when there was no son, to an adopted son.",
+      "duration": 12138
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Hōshi Ryokan",
+      "eyebrow": "Biggest test",
+      "headline": "Who takes over?",
+      "body": "The next owner is set to be the first woman in over 1,300 years.",
+      "voiceover": "Its biggest test is succession. Every family business must find the next leader, and for the first time in its history, the heir is expected to be a woman: the owner's daughter.",
+      "duration": 13687
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Yamanashi, Japan",
+      "headline": "Nishiyama Onsen Keiunkan",
+      "voiceover": "Number two. Nishiyama Onsen Keiunkan. Founded seven oh five.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Nishiyama Onsen Keiunkan",
+      "eyebrow": "Founded",
+      "headline": "The world's oldest hotel",
+      "stat": {
+        "value": "705",
+        "label": "Yamanashi, Japan"
+      },
+      "voiceover": "Nishiyama Onsen Keiunkan was founded in seven oh five by Fujiwara Mahito, beside a hot spring in the mountains of Yamanashi, Japan. Guinness World Records recognises it as the oldest hotel in the world.",
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Nishiyama Onsen Keiunkan",
+      "eyebrow": "Ownership",
+      "headline": "One family, 52 generations",
+      "body": "Including adopted heirs, to keep the line going.",
+      "voiceover": "It has been run by the same family for fifty-two generations, including adopted heirs, when the family needed one. It has just thirty-five rooms.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Nishiyama Onsen Keiunkan",
+      "eyebrow": "Biggest test",
+      "headline": "Never closing",
+      "body": "Same family, same spring, through 1,300 years of Japanese history.",
+      "voiceover": "Its test is the hardest kind: thirteen centuries of wars, earthquakes and economic crashes, without changing hands. The hot spring that started it still feeds the baths today.",
+      "duration": 12138
+    },
+    {
+      "type": "broll",
+      "broll": "Japanese hot spring onsen",
+      "eyebrow": "Nishiyama Onsen Keiunkan",
+      "headline": "The water that built a business",
+      "voiceover": "The same spring has fed its baths for 1,300 years.",
+      "duration": 5170
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Osaka, Japan",
+      "headline": "Kongō Gumi",
+      "voiceover": "Number one. Kongō Gumi. Founded five seventy-eight.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "Founded",
+      "headline": "Temple builders for 1,400 years",
+      "stat": {
+        "value": "578",
+        "label": "Osaka, Japan"
+      },
+      "voiceover": "Kongō Gumi was founded in five seventy-eight, when Prince Shōtoku invited the carpenter Kongō Shigemitsu from Korea's Baekje kingdom to build the Shitennō-ji temple in Osaka. It's the oldest company in the world still operating.",
+      "duration": 14848
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "Ownership",
+      "headline": "40 Kongōs, then a takeover",
+      "body": "Led by 40 generations of the Kongō family. Bought by Takamatsu Construction in 2006.",
+      "voiceover": "Forty generations of the Kongō family led it. Then in January two thousand and six, its business was bought by Takamatsu Construction Group, and it still operates today as a Takamatsu subsidiary.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "Biggest test",
+      "headline": "Debt",
+      "body": "After 1,400 years, it couldn't service its debts. The old company owed about ¥4 billion.",
+      "voiceover": "What wars and earthquakes couldn't do, debt nearly did. By the early two thousands it couldn't service its loans. The old company went bankrupt owing about four billion yen. Its craft survived only because another company bought it.",
+      "duration": 16009
+    },
+    {
+      "type": "broll",
+      "broll": "Japanese temple wood",
+      "eyebrow": "Kongō Gumi",
+      "headline": "Still building temples",
+      "voiceover": "Its carpenters still build and restore temples and shrines.",
+      "duration": 4783
+    },
+    {
+      "type": "plain",
+      "eyebrow": "What the survivors share",
+      "headline": "Slow growth. Low debt. A plan for the next generation.",
+      "voiceover": "What do the survivors have in common? They grew slowly, they planned who would take over next, and when their main business faded, they changed. And the two that came closest to dying, Kongō Gumi and Monte dei Paschi, were both brought down by debt.",
+      "duration": 18719
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which South African business will last 500 years?",
+      "voiceover": "Which South African business do you think could still be around in five hundred years? Tell us in the comments.",
+      "duration": 9041
+    }
+  ],
+  "endcard": {
+    "title": "Built to <em>last</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "The 10 Oldest Companies Still in Business (One Is 1,448 Years Old)",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "oldest companies",
+      "Kongo Gumi",
+      "oldest bank",
+      "Monte dei Paschi",
+      "Royal Mint",
+      "family business",
+      "Mzansi Money Matters"
+    ],
+    "description": "The 10 oldest companies in the world that are still operating, ranked by founding year: when they started, who has owned them, and the biggest test each one survived.\n\n{chapters}\n\nSources: company histories and annual reports; Guinness World Records; Reuters and The Star (Monte dei Paschi/Mediobanca, 2025); Wikipedia company articles.\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}

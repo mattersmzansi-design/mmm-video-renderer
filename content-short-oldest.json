@@ -1,0 +1,98 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-kongo-gumi",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "Japanese temple wood",
+      "eyebrow": "Founded 578",
+      "headline": "The oldest company on earth",
+      "voiceover": "This company was founded in the year five seventy-eight. It's the oldest company on earth.",
+      "duration": 7106
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "Osaka, Japan",
+      "headline": "Temple builders for 1,400 years",
+      "stat": {
+        "value": "40",
+        "label": "Generations of the Kongō family"
+      },
+      "voiceover": "Kongō Gumi built Japan's temples, led by forty generations of the same family.",
+      "duration": 6332
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "It survived",
+      "headline": "Wars. Earthquakes. Empires.",
+      "voiceover": "It survived wars, earthquakes, and the rise and fall of empires.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Kongō Gumi",
+      "eyebrow": "What nearly killed it",
+      "headline": "Debt.",
+      "stat": {
+        "value": "¥4bn",
+        "label": "Debt when the old company went bust, 2006"
+      },
+      "voiceover": "What finally nearly killed it? Debt. In two thousand and six, it was sold to save the business.",
+      "duration": 8267
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The lesson",
+      "headline": "1,400 years of survival. Undone by borrowing.",
+      "voiceover": "Fourteen hundred years of survival, undone by borrowing.",
+      "duration": 4396
+    }
+  ],
+  "endcard": {
+    "title": "All ten on the <em>channel</em>",
+    "subtitle": "The oldest companies still in business",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "The oldest company on earth was nearly killed by debt #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "Kongo Gumi",
+      "oldest company",
+      "debt",
+      "Mzansi Money Matters"
+    ],
+    "description": "Kongō Gumi, founded in 578, survived 1,400 years, then nearly died of debt. Full top 10 on Mzansi Money Matters.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}
