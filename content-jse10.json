@@ -1,0 +1,523 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "jse10-biggest-sa-companies-2026",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice. JSE closing prices, 6 November 2026.",
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Friday, 6 November 2026",
+      "headline": "R568 billion: South Africa's new number one",
+      "body": "Capitec vs Naspers. About R2 billion apart.",
+      "voiceover": "On Thursday, the most valuable South African company on the JSE was a media giant founded in nineteen fifteen. By Friday's close, it was a bank that only opened its doors in two thousand and one.",
+      "duration": 15235
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The gap",
+      "headline": "About R2 billion apart.",
+      "body": "Both worth more than half a trillion rand.",
+      "voiceover": "The gap between them? About two billion rand. That sounds like a lot, until you realise both are worth more than half a trillion.",
+      "duration": 10590
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Today",
+      "headline": "The 10 biggest homegrown companies on the JSE",
+      "body": "Education only. Not financial advice.",
+      "voiceover": "Today we count down the ten biggest homegrown companies on the Johannesburg Stock Exchange, using closing prices from Friday, the sixth of November twenty twenty-six. Quick note before we start: this video is for education only. It is not financial advice. Do your own research, or speak to a registered financial adviser, before you invest.",
+      "duration": 22590
+    },
+    {
+      "type": "broll",
+      "broll": "stock exchange trading screen",
+      "eyebrow": "Not on our list",
+      "headline": "BHP, AB InBev, BAT and more",
+      "body": "Global giants that also trade on the JSE.",
+      "voiceover": "First, the elephants in the room. The biggest listings on the JSE are global companies that also trade here. B H P is worth about three point three trillion rand. A B InBev, the world's biggest brewer, about two point five trillion. British American Tobacco, two point two trillion. Then Richemont, Prosus, Glencore, Anglo American and AngloGold Ashanti.",
+      "duration": 23751
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Our rule",
+      "headline": "Headquartered in South Africa. JSE as its main listing.",
+      "voiceover": "Some have deep South African roots. Anglo American was founded in Johannesburg in nineteen seventeen. AngloGold Ashanti moved its head office to the United States in twenty twenty-three. But today, their main home is somewhere else. So here's our rule: to make this list, a company must be headquartered in South Africa, with the JSE as its main listing. Let's go.",
+      "duration": 24912
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Cape Town",
+      "headline": "Sanlam",
+      "voiceover": "Number ten. Sanlam.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Sanlam",
+      "eyebrow": "Market value",
+      "headline": "Worth R187bn",
+      "stat": {
+        "value": "R187bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about one hundred and eighty-seven billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Sanlam",
+      "eyebrow": "Founded 1918",
+      "headline": "A Cape Town insurer, over 100 years old",
+      "voiceover": "Sanlam is a Cape Town insurer, founded in nineteen eighteen.",
+      "duration": 5170
+    },
+    {
+      "type": "broll",
+      "broll": "insurance office meeting",
+      "eyebrow": "Why it matters",
+      "headline": "A photo finish for tenth",
+      "body": "Discovery and Shoprite are within about R6 billion.",
+      "voiceover": "But number ten is a photo finish. Discovery and Shoprite are right behind Sanlam, all three within about six billion rand of each other. One good week for either, and the order flips.",
+      "duration": 14074
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Johannesburg",
+      "headline": "Absa",
+      "voiceover": "Number nine. Absa.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Absa",
+      "eyebrow": "Market value",
+      "headline": "Worth R200bn",
+      "stat": {
+        "value": "R200bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about two hundred billion rand.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Absa",
+      "eyebrow": "Renamed 2018",
+      "headline": "Once Barclays Africa",
+      "voiceover": "Absa was once known as Barclays Africa, and took back its South African name in twenty eighteen.",
+      "duration": 7880
+    },
+    {
+      "type": "broll",
+      "broll": "bank atm city street",
+      "eyebrow": "Why it matters",
+      "headline": "The smallest of four banks on this list",
+      "body": "Four of the ten biggest are banks.",
+      "voiceover": "It's the smallest of the four banks on this list. And yes, four of South Africa's ten biggest companies are banks.",
+      "duration": 9429
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Johannesburg",
+      "headline": "Valterra Platinum",
+      "voiceover": "Number eight. Valterra Platinum.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Valterra Platinum",
+      "eyebrow": "Market value",
+      "headline": "Worth R302bn",
+      "stat": {
+        "value": "R302bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about three hundred and two billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Valterra Platinum",
+      "eyebrow": "Split off in 2025",
+      "headline": "Formerly Anglo American Platinum",
+      "voiceover": "You may know it by its old name, Anglo American Platinum. In twenty twenty-five it was split off from Anglo American and renamed Valterra.",
+      "duration": 10590
+    },
+    {
+      "type": "broll",
+      "broll": "platinum mine underground",
+      "eyebrow": "Why it matters",
+      "headline": "Platinum swings hard",
+      "body": "Worth about R347 billion in early October.",
+      "voiceover": "It produces the platinum group metals used in car catalytic converters and jewellery. Platinum prices swing hard, and so does this share. It was worth about three hundred and forty-seven billion rand in early October.",
+      "duration": 14848
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Midrand",
+      "headline": "Vodacom",
+      "voiceover": "Number seven. Vodacom.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Vodacom",
+      "eyebrow": "Market value",
+      "headline": "Worth R310bn+",
+      "stat": {
+        "value": "R310bn+",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: over three hundred and ten billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Vodacom",
+      "eyebrow": "Controlled by Vodafone",
+      "headline": "But headquartered in Midrand",
+      "voiceover": "Vodacom is controlled by Britain's Vodafone, but it's headquartered in Midrand and its main listing is the JSE, so it makes our list.",
+      "body": "Its main listing is the JSE, so it makes our list.",
+      "duration": 10203
+    },
+    {
+      "type": "broll",
+      "broll": "cell tower sunset",
+      "eyebrow": "Why it matters",
+      "headline": "One of two telecom giants",
+      "body": "Vodacom and MTN both make the top ten.",
+      "voiceover": "It's one of two telecom giants in this top ten. The other one is next.",
+      "duration": 7106
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Johannesburg",
+      "headline": "MTN",
+      "voiceover": "Number six. M T N.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "MTN",
+      "eyebrow": "Market value",
+      "headline": "Worth R391bn",
+      "stat": {
+        "value": "R391bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about three hundred and ninety-one billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "MTN",
+      "eyebrow": "The yellow network",
+      "headline": "The bigger of SA's two telecom giants",
+      "voiceover": "The yellow network is the bigger of South Africa's two telecom giants on the JSE.",
+      "duration": 7106
+    },
+    {
+      "type": "broll",
+      "broll": "african city mobile phone",
+      "eyebrow": "Why it matters",
+      "headline": "A pan-African business",
+      "body": "Its value moves with currencies far beyond the rand.",
+      "voiceover": "It operates across Africa, which means its value moves with currencies far beyond the rand.",
+      "duration": 7106
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Johannesburg",
+      "headline": "Standard Bank",
+      "voiceover": "Number five. Standard Bank.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Standard Bank",
+      "eyebrow": "Market value",
+      "headline": "Worth R510bn",
+      "stat": {
+        "value": "R510bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about five hundred and ten billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Standard Bank",
+      "eyebrow": "Founded 1862",
+      "headline": "Older than the JSE itself",
+      "voiceover": "Now we enter the half-trillion club. Standard Bank was founded in eighteen sixty-two, before the JSE even existed.",
+      "duration": 8267
+    },
+    {
+      "type": "broll",
+      "broll": "johannesburg skyline",
+      "eyebrow": "Why it matters",
+      "headline": "Welcome to the half-trillion club",
+      "body": "The top five are each worth over R500 billion.",
+      "voiceover": "From here on, every company on this list is worth more than half a trillion rand.",
+      "duration": 7493
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Johannesburg",
+      "headline": "FirstRand",
+      "voiceover": "Number four. FirstRand.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FirstRand",
+      "eyebrow": "Market value",
+      "headline": "Worth R541bn",
+      "stat": {
+        "value": "R541bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about five hundred and forty-one billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "FirstRand",
+      "eyebrow": "The group behind",
+      "headline": "FNB, RMB and WesBank",
+      "voiceover": "You may not know the name FirstRand, but you know its brands: F N B, R M B and WesBank.",
+      "duration": 9041
+    },
+    {
+      "type": "broll",
+      "broll": "banking app on phone",
+      "eyebrow": "Why it matters",
+      "headline": "The top four are within 3%",
+      "body": "Any of them could be number one next week.",
+      "voiceover": "And here's the twist. The top four companies are all within about three percent of each other. Any of them could be number one next week.",
+      "duration": 11364
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Sandton",
+      "headline": "Gold Fields",
+      "voiceover": "Number three. Gold Fields.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Gold Fields",
+      "eyebrow": "Market value",
+      "headline": "Worth R555bn",
+      "stat": {
+        "value": "R555bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about five hundred and fifty-five billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Gold Fields",
+      "eyebrow": "Founded 1887",
+      "headline": "The same year as the JSE",
+      "voiceover": "Gold Fields was founded in eighteen eighty-seven, the same year as the JSE itself.",
+      "duration": 6719
+    },
+    {
+      "type": "broll",
+      "broll": "gold bars",
+      "eyebrow": "Why it matters",
+      "headline": "A possible mega-merger",
+      "body": "A proposed tie-up with Australia's Northern Star.",
+      "voiceover": "It's also weighing a proposed tie-up with Australia's Northern Star, which could create the world's second-largest gold producer. Watch this space.",
+      "duration": 9429
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Cape Town",
+      "headline": "Naspers",
+      "voiceover": "Number two. Naspers.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Naspers",
+      "eyebrow": "Market value",
+      "headline": "Worth R566bn",
+      "stat": {
+        "value": "R566bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about five hundred and sixty-six billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Naspers",
+      "eyebrow": "Founded 1915",
+      "headline": "From newspapers to global tech",
+      "voiceover": "Naspers started as a Cape Town newspaper publisher in nineteen fifteen. Today it's a global tech investor.",
+      "duration": 7880
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Naspers",
+      "eyebrow": "A rough 2026",
+      "headline": "Shares down about 30% this year",
+      "voiceover": "But twenty twenty-six has been rough. Its share price fell about thirty percent between January and early November, wiping roughly two hundred and forty-nine billion rand off its value.",
+      "body": "Roughly R249 billion of value lost.",
+      "duration": 12525
+    },
+    {
+      "type": "broll",
+      "broll": "newspaper printing press",
+      "eyebrow": "Why it matters",
+      "headline": "Number one on Thursday",
+      "body": "By Friday's close, it had slipped.",
+      "voiceover": "On Thursday, it was still number one. By Friday's close, it had slipped.",
+      "duration": 6332
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Stellenbosch",
+      "headline": "Capitec",
+      "voiceover": "Number one. Capitec.",
+      "duration": 2461
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Capitec",
+      "eyebrow": "Market value",
+      "headline": "Worth R568bn",
+      "stat": {
+        "value": "R568bn",
+        "label": "Market value, close 6 Nov 2026"
+      },
+      "voiceover": "Market value: about five hundred and sixty-eight billion rand.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Capitec",
+      "eyebrow": "Opened 2001",
+      "headline": "Now officially Capitec Limited",
+      "voiceover": "And the most valuable South African company on the JSE is Capitec. It opened in two thousand and one, and in October twenty twenty-six officially changed its name to Capitec Limited.",
+      "body": "The new name took effect in October 2026.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Capitec",
+      "eyebrow": "Five-year rise",
+      "headline": "Shares up about 191%",
+      "voiceover": "Its shares rose about one hundred and ninety-one percent in the five years to July twenty twenty-six.",
+      "body": "In the five years to July 2026.",
+      "duration": 7880
+    },
+    {
+      "type": "broll",
+      "broll": "bank branch customers",
+      "eyebrow": "Why it matters",
+      "headline": "About R2 billion ahead of Naspers",
+      "body": "Closing prices, Friday 6 November 2026.",
+      "voiceover": "On the sixth of November, it was worth about five hundred and sixty-eight billion rand, just ahead of Naspers.",
+      "duration": 8654
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The top ten",
+      "headline": "Together: about R4.1 trillion",
+      "body": "Four banks, two telecoms, two miners, an insurer and a tech investor.",
+      "voiceover": "So that's the top ten: four banks, two telecom companies, two miners, an insurer and a tech investor. Together they're worth about four point one trillion rand.",
+      "duration": 11751
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Will Capitec still be number one by year-end?",
+      "voiceover": "And the top spot is a coin toss. Will Capitec still be number one by the end of twenty twenty-six, or will Naspers or Gold Fields take it back? Tell us in the comments.",
+      "duration": 14461
+    },
+    {
+      "type": "plain",
+      "eyebrow": "One last reminder",
+      "headline": "Values change every day. Not financial advice.",
+      "voiceover": "If you want more videos like this, subscribe and check out our J S E Top Tens playlist. One last reminder: share values change every day, and this video is not financial advice. Do your own research before you invest. This is Mzansi Money Matters.",
+      "duration": 18719
+    }
+  ],
+  "endcard": {
+    "title": "Subscribe for the <em>next</em> ten",
+    "subtitle": "South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "10 Biggest South African Companies on the JSE (2026)",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "JSE",
+      "biggest companies South Africa",
+      "Capitec",
+      "Naspers",
+      "Gold Fields",
+      "FirstRand",
+      "Standard Bank",
+      "MTN",
+      "market cap",
+      "Mzansi Money Matters"
+    ],
+    "description": "The 10 biggest South African companies on the Johannesburg Stock Exchange by market value, using closing prices from Friday 6 November 2026. Our rule: headquartered in South Africa, with the JSE as its main listing. Capitec edged past Naspers by about R2 billion.\n\n{chapters}\n\nSources: closing prices and shares in issue from Mansa Markets (JSE close, 6 November 2026), cross-checked with Yahoo Finance, Morningstar and Simply Wall St. Naspers figures from MyBroadband (7 Nov 2026); Capitec facts from its public company record.\n\nEducation, not financial advice. Values change every day. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}

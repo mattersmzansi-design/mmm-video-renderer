@@ -1,0 +1,90 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 200,
+    "tail_pad": 400
+  },
+  "timing": {
+    "lead_in": 500
+  },
+  "slug": "short-jse10-capitec-naspers",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 2
+  },
+  "disclaimer": "Education, not financial advice. JSE close, 6 Nov 2026.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "johannesburg skyline",
+      "eyebrow": "Friday, 6 November 2026",
+      "headline": "South Africa's most valuable company just changed",
+      "voiceover": "South Africa's most valuable homegrown company just changed, and the gap is tiny.",
+      "duration": 6332
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Naspers",
+      "eyebrow": "Founded 1915",
+      "headline": "Naspers",
+      "stat": {
+        "value": "R566bn",
+        "label": "Market value"
+      },
+      "voiceover": "Naspers, a media giant founded in nineteen fifteen, was number one on Thursday. It's down about thirty percent this year, and now it's worth about five hundred and sixty-six billion rand.",
+      "duration": 13300
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Capitec",
+      "eyebrow": "Opened 2001",
+      "headline": "Capitec",
+      "stat": {
+        "value": "R568bn",
+        "label": "Market value"
+      },
+      "voiceover": "By Friday's close, Capitec, a bank that only opened in two thousand and one, had squeezed past. About five hundred and sixty-eight billion rand.",
+      "duration": 10590
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The gap",
+      "headline": "About R2 billion apart.",
+      "body": "It could flip any day.",
+      "voiceover": "About two billion rand apart. It could flip any day. Who's number one by year-end? Not financial advice.",
+      "duration": 8267
+    }
+  ],
+  "endcard": {
+    "title": "Full top 10 on the <em>channel</em>",
+    "subtitle": "SA's 10 biggest companies on the JSE",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "Capitec vs Naspers: R2 billion apart #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "Capitec",
+      "Naspers",
+      "JSE",
+      "Mzansi Money Matters"
+    ],
+    "description": "Capitec edged past Naspers as South Africa's most valuable homegrown company on the JSE, closing prices Friday 6 November 2026. Full top 10 on Mzansi Money Matters.\n\nSources: closing prices and shares in issue from Mansa Markets (JSE close, 6 November 2026), cross-checked with Yahoo Finance, Morningstar and Simply Wall St. Naspers figures from MyBroadband (7 Nov 2026); Capitec facts from its public company record.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}
