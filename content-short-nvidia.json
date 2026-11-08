@@ -1,0 +1,33 @@
+{
+  "template": "template-countdown.html",
+  "slug": "short-nvidia-vs-sa",
+  "size": [1080, 1920],
+  "brand": {"name": "Mzansi Money Matters", "logo": "logo.jpg"},
+  "countdown": {"from": 10},
+  "disclaimer": "Education, not financial advice. Values as at early November 2026.",
+  "voice": {"name": "en-US-BrianMultilingualNeural", "rate": "+6%", "pitch": "+0Hz", "lead_pad": 300, "tail_pad": 600},
+  "timing": {"lead_in": 600},
+  "scenes": [
+    {"type": "point", "rank": 1, "name": "Nvidia", "eyebrow": "One company", "headline": "Worth more than 5 trillion dollars",
+     "stat": {"value": "$5.2tn", "label": "Nvidia market value, early November 2026",
+              "count": {"from": 0, "to": 5.2, "decimals": 1, "prefix": "$", "suffix": "tn", "dur": 2200}},
+     "voiceover": "One company is now worth about five point two trillion dollars. That's Nvidia, the chip maker behind artificial intelligence.",
+     "duration": 7000},
+    {"type": "chart", "eyebrow": "Market value vs South Africa's GDP", "headline": "Bigger than our whole economy. Twelve times over.",
+     "chart": {"kind": "bar", "labels": ["Nvidia", "Apple", "Microsoft", "Amazon", "SA GDP"],
+               "values": [5.2, 5.0, 4.0, 2.7, 0.427], "display": ["$5.2tn", "$5.0tn", "$4.0tn", "$2.7tn", "$0.43tn"],
+               "highlight": [4]},
+     "voiceover": "South Africa's whole economy produced about four hundred and twenty-seven billion dollars in twenty twenty-five. Nvidia is worth about twelve times that. So are Apple and Microsoft, almost.",
+     "duration": 10000},
+    {"type": "point", "rank": 1, "name": "Nvidia", "eyebrow": "Put another way", "headline": "Nvidia ≈ 12 South Africas",
+     "stat": {"value": "12×", "label": "Nvidia's value vs SA's yearly GDP",
+              "count": {"from": 1, "to": 12, "decimals": 0, "suffix": "×", "dur": 1600}},
+     "voiceover": "Twelve South Africas. In one company.",
+     "duration": 4000}
+  ],
+  "endcard": {"title": "The full top <em>10</em>", "subtitle": "On Mzansi Money Matters", "handle": "@MzansiMoneyMatters",
+              "voiceover": "See the full top ten on Mzansi Money Matters.", "duration": 3500},
+  "youtube": {"title": "One company is worth 12 South Africas #shorts", "privacy": "private", "synthetic_media": true, "category_id": "27",
+              "tags": ["Nvidia", "South Africa", "GDP", "market cap", "Mzansi Money Matters"],
+              "description": "Nvidia's market value vs South Africa's entire economy. Market values as at early November 2026; SA GDP 2025 (World Bank / Trading Economics).\n\nEducation, not financial advice. Narration is AI-generated."}
+}

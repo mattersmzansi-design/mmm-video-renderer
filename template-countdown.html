@@ -136,6 +136,30 @@
   .s-broll .figure{margin-top:36px}
   body.portrait .scene.s-broll{left:0;width:100%;padding:250px 80px 440px;justify-content:flex-end}
   body.portrait .s-broll .copy{max-width:920px}
+
+  /* ---------- chart scene: animated line or bar chart ---------- */
+  .s-chart{display:flex;flex-direction:column;justify-content:center;padding:150px 0 230px}
+  .s-chart h2{font-size:76px}
+  .s-chart p{margin-top:18px;font-size:32px}
+  .s-chart .eyebrow{margin-bottom:18px}
+  .cbox{margin-top:40px;width:1680px;flex:1;min-height:0}
+  .cbox svg{width:100%;height:100%;overflow:visible;display:block}
+  .cgrid{stroke:#7FA5AC;stroke-opacity:.16;stroke-width:2}
+  .caxis{fill:#7FA5AC;font-size:28px;font-weight:600}
+  .cline{fill:none;stroke:#EF4C00;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;
+    filter:drop-shadow(0 0 18px rgba(239,76,0,.55))}
+  .cbar{fill:#7FA5AC;transform-box:fill-box;transform-origin:50% 100%}
+  .cbar.hi{fill:#EF4C00}
+  .cval{fill:#F2EFE9;font-size:44px;letter-spacing:-.01em}
+  .cval.hi{fill:#EF4C00}
+  .cdot{fill:#EF4C00}
+  .figure .v.counting{font-variant-numeric:tabular-nums}
+  body.portrait .s-chart{padding:250px 0 420px}
+  body.portrait .s-chart .cbox{flex:none}
+  body.portrait .cbox{width:920px;height:860px;margin-top:30px}
+  body.portrait .s-chart h2{font-size:78px}
+  body.portrait .caxis{font-size:30px}
+  body.portrait .cval{font-size:48px}
 </style>
 </head>
 <body>
@@ -211,6 +235,7 @@ CONTENT.scenes.forEach((sc, i) => {
   const type = sc.type || 'plain';
   const el = document.createElement('section');
   el.className = 'scene s-' + type;
+  el.dataset.i = i;
   const eyebrow = sc.eyebrow ? '<div class="eyebrow">' + esc(sc.eyebrow) + '</div>' : '';
   const body = sc.body ? '<p>' + esc(sc.body) + '</p>' : '';
 
@@ -225,6 +250,9 @@ CONTENT.scenes.forEach((sc, i) => {
       '<div class="l">' + esc(sc.stat.label) + '</div></div>' : '';
     el.innerHTML = '<video muted playsinline preload="auto" src="broll/s' + i + '.webm"></video><div class="shade"></div>' +
       '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + stat + '</div>';
+  } else if (type === 'chart') {
+    el.innerHTML = '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body +
+      '</div><div class="cbox"></div>';
   } else if (type === 'point') {
     let right = '';
     if (sc.stat) {
@@ -242,7 +270,62 @@ CONTENT.scenes.forEach((sc, i) => {
     el.innerHTML = eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body;
   }
   scenesEl.appendChild(el);
+  if (type === 'chart') buildChart(el.querySelector('.cbox'), sc.chart || {});
 });
+
+/* ---------- chart builder ----------
+   "chart": {"kind": "bar"|"line", "labels": [...], "values": [...],
+             "display": ["$5.2tn", ...] (optional text per value),
+             "highlight": [index, ...], "log": true (line only), "show": [index, ...] (line value labels)} */
+function buildChart(box, c){
+  const NS = 'http://www.w3.org/2000/svg';
+  const cw = PORTRAIT ? 920 : 1680, ch = PORTRAIT ? 860 : Math.max(380, Math.round(box.getBoundingClientRect().height) || 480);
+  const top = 76, bottom = 64, plotH = ch - top - bottom;
+  const vals = c.values || [], n = vals.length, labels = c.labels || [];
+  const hi = new Set(c.highlight || []);
+  const tf = v => c.log ? Math.log10(Math.max(v, 1e-9)) : v;
+  const tv = vals.map(tf);
+  const lo = c.log ? Math.floor(Math.min(...tv)) : 0;
+  const hiV = Math.max(...tv) * (c.log ? 1 : 1.0);
+  const y = v => top + plotH - (tf(v) - lo) / ((hiV - lo) || 1) * plotH;
+  const fmt = i => (c.display && c.display[i] != null) ? c.display[i] :
+    (c.prefix || '') + Number(vals[i]).toLocaleString('en-US', {maximumFractionDigits: c.decimals ?? 1}) + (c.suffix || '');
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + cw + ' ' + ch);
+  const mk = (tag, attrs, cls, text) => { const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]); if (cls) e.setAttribute('class', cls);
+    if (text != null) e.textContent = text; svg.appendChild(e); return e; };
+  for (let g = 0; g <= 4; g++) { const gy = top + plotH * g / 4; mk('line', {x1:0, x2:cw, y1:gy, y2:gy}, 'cgrid'); }
+  const parts = {bars: [], vals: [], dots: [], line: null, area: null};
+  if (c.kind === 'line') {
+    const xs = vals.map((_, i) => n > 1 ? 40 + i * (cw - 80) / (n - 1) : cw / 2);
+    const d = vals.map((v, i) => (i ? 'L' : 'M') + xs[i].toFixed(1) + ',' + y(v).toFixed(1)).join(' ');
+    const defs = mk('defs', {}); defs.innerHTML = '<linearGradient id="cg' + box.parentNode.dataset.i + '" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="#EF4C00" stop-opacity=".35"/><stop offset="100%" stop-color="#EF4C00" stop-opacity="0"/></linearGradient>';
+    parts.area = mk('path', {d: d + ' L' + xs[n-1] + ',' + (top + plotH) + ' L' + xs[0] + ',' + (top + plotH) + ' Z',
+      fill: 'url(#cg' + box.parentNode.dataset.i + ')'});
+    parts.line = mk('path', {d}, 'cline');
+    const show = new Set(c.show || [n - 1]);
+    vals.forEach((v, i) => {
+      parts.dots.push(mk('circle', {cx: xs[i], cy: y(v), r: hi.has(i) || show.has(i) ? 13 : 8}, 'cdot'));
+      if (labels[i] != null) mk('text', {x: xs[i], y: ch - 12, 'text-anchor': 'middle'}, 'caxis', labels[i]);
+      if (show.has(i)) {
+        const anchor = i === n - 1 ? 'end' : (i === 0 ? 'start' : 'middle');
+        parts.vals.push(mk('text', {x: xs[i] + (anchor === 'end' ? 10 : 0), y: y(v) - 30, 'text-anchor': anchor}, 'cval cond' + (hi.has(i) ? ' hi' : ''), fmt(i)));
+      } else parts.vals.push(null);
+    });
+  } else {
+    const slot = cw / n, bw = Math.min(slot * 0.62, 220);
+    vals.forEach((v, i) => {
+      const cx = slot * i + slot / 2, by = y(v);
+      parts.bars.push(mk('rect', {x: cx - bw / 2, y: by, width: bw, height: Math.max(top + plotH - by, 3), rx: 8}, 'cbar' + (hi.has(i) ? ' hi' : '')));
+      parts.vals.push(mk('text', {x: cx, y: by - 20, 'text-anchor': 'middle'}, 'cval cond' + (hi.has(i) ? ' hi' : ''), fmt(i)));
+      if (labels[i] != null) mk('text', {x: cx, y: ch - 12, 'text-anchor': 'middle'}, 'caxis', labels[i]);
+    });
+  }
+  box.appendChild(svg);
+  box.parentNode._chart = parts;
+}
 
 /* ---------- end card ---------- */
 const ec = CONTENT.endcard;
@@ -304,6 +387,26 @@ sceneEls.forEach((el, i) => {
     el.querySelector('.copy').animate([
       {opacity:0, transform:'translateY(36px)'}, {opacity:1, transform:'translateY(0)'},
     ], {duration:900, delay:starts[i] + 300, fill:'both', easing:ease});
+  } else if (type === 'chart') {
+    el.firstElementChild.animate([{opacity:0, transform:'translateY(24px)'}, {opacity:1, transform:'translateY(0)'}],
+      {duration:800, delay:starts[i], fill:'both', easing:ease});
+    const P = el._chart, t0 = starts[i] + 600, draw = Math.min(2400, dur * 0.5);
+    if (P.line) {
+      const L = P.line.getTotalLength();
+      P.line.style.strokeDasharray = L;
+      P.line.animate([{strokeDashoffset:L}, {strokeDashoffset:0}], {duration:draw, delay:t0, fill:'both', easing:'cubic-bezier(.45,0,.55,1)'});
+      P.area.animate([{opacity:0}, {opacity:1}], {duration:900, delay:t0 + draw * 0.6, fill:'both', easing:ease});
+      const k = P.dots.length;
+      P.dots.forEach((d, j) => d.animate([{opacity:0}, {opacity:1}], {duration:250, delay:t0 + draw * (k > 1 ? j / (k - 1) : 1), fill:'both'}));
+      P.vals.forEach((v, j) => v && v.animate([{opacity:0, transform:'translateY(14px)'}, {opacity:1, transform:'translateY(0)'}],
+        {duration:500, delay:t0 + draw * (k > 1 ? j / (k - 1) : 1) + 150, fill:'both', easing:ease}));
+    } else {
+      const step = Math.min(260, (dur * 0.45) / Math.max(P.bars.length, 1));
+      P.bars.forEach((b, j) => b.animate([{transform:'scaleY(0)'}, {transform:'scaleY(1)'}],
+        {duration:900, delay:t0 + j * step, fill:'both', easing:ease}));
+      P.vals.forEach((v, j) => v.animate([{opacity:0, transform:'translateY(14px)'}, {opacity:1, transform:'translateY(0)'}],
+        {duration:500, delay:t0 + j * step + 650, fill:'both', easing:ease}));
+    }
   } else if (type === 'point' || type === 'intro') {
     el.firstElementChild.animate([
       {transform:'translateY(24px)'}, {transform:'translateY(0)'},
@@ -314,6 +417,19 @@ sceneEls.forEach((el, i) => {
     ], {duration:800, delay:starts[i] + 350, fill:'both', easing:ease});
   }
 });
+
+/* counters: a stat with "count": {"to": 5.2, "from": 0, "decimals": 1, "prefix": "$", "suffix": "tn"} ticks up */
+const COUNTERS = [];
+CONTENT.scenes.forEach((sc, i) => {
+  const c = sc.stat && sc.stat.count; if (!c) return;
+  const v = sceneEls[i].querySelector('.figure .v'); if (!v) return;
+  v.classList.add('counting');
+  COUNTERS.push({v, c, t0: starts[i] + (c.delay ?? 450), dur: c.dur ?? Math.min(1800, (CONTENT.scenes[i].duration ?? 5000) * 0.45)});
+});
+function counterText(c, x){
+  const d = c.decimals ?? 0;
+  return (c.prefix || '') + x.toLocaleString('en-US', {minimumFractionDigits:d, maximumFractionDigits:d}) + (c.suffix || '');
+}
 
 /* rail: upcoming = dim, current = orange with underline, done = paper, faint */
 const rankStart = {};
@@ -362,6 +478,11 @@ const VIDEOS = [...document.querySelectorAll('.s-broll video')];
 VIDEOS.forEach(v => v.addEventListener('error', () => { v.dataset.bad = '1'; v.style.visibility = 'hidden'; }));
 window.seek = function(ms){
   document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+  for (const k of COUNTERS) {
+    const p = Math.max(0, Math.min(1, (ms - k.t0) / k.dur)), e = 1 - Math.pow(1 - p, 3);
+    const from = k.c.from ?? 0;
+    k.v.textContent = counterText(k.c, from + (k.c.to - from) * e);
+  }
   const waits = [];
   for (const v of VIDEOS) {
     const st = +v.dataset.start, dur = +v.dataset.dur;
