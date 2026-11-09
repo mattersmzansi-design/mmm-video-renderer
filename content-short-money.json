@@ -1,0 +1,120 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-evolution-of-money",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 9,
+    "order": "up"
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "cattle herd",
+      "eyebrow": "5,000 years of money",
+      "headline": "From cows to crypto in 45 seconds",
+      "voiceover": "Five thousand years of money, in forty-five seconds.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Commodity money",
+      "eyebrow": "First",
+      "headline": "Cattle, grain, salt and shells",
+      "voiceover": "First, money was things everyone valued: cattle, grain, salt and shells.",
+      "duration": 5558
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Coins",
+      "eyebrow": "Then",
+      "headline": "Coins, stamped by a king",
+      "stat": {
+        "value": "600 BC",
+        "label": "Lydia's first coins"
+      },
+      "voiceover": "Around six hundred BC, kings started stamping metal coins.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Paper",
+      "eyebrow": "Then",
+      "headline": "Paper money, invented in China",
+      "stat": {
+        "value": "1024",
+        "label": "Song dynasty jiaozi"
+      },
+      "voiceover": "China invented government paper money in ten twenty-four.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Central banks",
+      "eyebrow": "Then",
+      "headline": "Central banks, to keep it all stable",
+      "stat": {
+        "value": "1668",
+        "label": "Sweden's Riksbank"
+      },
+      "voiceover": "Then came central banks, starting with Sweden's in sixteen sixty-eight.",
+      "duration": 5170
+    },
+    {
+      "type": "broll",
+      "broll": "credit card payment",
+      "eyebrow": "Then",
+      "headline": "Cards, phones, and now code",
+      "voiceover": "Then cards, phones, and now Bitcoin and digital currencies.",
+      "duration": 4783
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The secret",
+      "headline": "Every form of money runs on one thing: trust.",
+      "voiceover": "The form keeps changing. But every kind of money runs on one thing: trust.",
+      "duration": 6719
+    }
+  ],
+  "endcard": {
+    "title": "All 9 stages on the <em>channel</em>",
+    "subtitle": "The evolution of money",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all nine stages on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "5,000 years of money in 45 seconds #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "history of money",
+      "Bitcoin",
+      "central bank",
+      "Mzansi Money Matters"
+    ],
+    "description": "From cattle and shells to coins, paper, central banks, cards and crypto. Full video on Mzansi Money Matters.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}
