@@ -263,8 +263,9 @@ CONTENT.scenes.forEach((sc, i) => {
     } else {
       el.classList.add('nostat');
     }
-    el.innerHTML = '<div class="copy"><div class="badge"><span class="n cond">' + sc.rank +
-      '</span><span class="who">' + esc(sc.name || '') + '</span></div>' + eyebrow +
+    const badge = sc.rank != null ? '<div class="badge"><span class="n cond">' + sc.rank +
+      '</span><span class="who">' + esc(sc.name || '') + '</span></div>' : '';
+    el.innerHTML = '<div class="copy">' + badge + eyebrow +
       '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' + right;
   } else {
     el.innerHTML = eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body;

@@ -1,0 +1,434 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-poverty-money-leaks",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial or political advice. Research data 2013–2018.",
+  "thumbnail": {
+    "kicker": "Economists found",
+    "big": "WHERE DID",
+    "line": "the <em>poverty money</em> go?",
+    "photo": "water pipe leak"
+  },
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Page & Pande, 2018",
+      "headline": "Why money alone can't end poverty",
+      "body": "10 places poverty money disappears before it reaches the poor.",
+      "voiceover": "Over three decades, the world achieved something extraordinary. And then progress started to slow. Two economists asked why money alone isn't finishing the job.",
+      "duration": 10590
+    },
+    {
+      "type": "point",
+      "eyebrow": "The good news",
+      "headline": "The share of people in extreme poverty fell by 34 points",
+      "stat": {
+        "value": "−34 pts",
+        "label": "Fall in the share of the world in extreme poverty, 1981–2013",
+        "count": {
+          "from": 0,
+          "to": 34,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": " pts"
+        }
+      },
+      "voiceover": "Between nineteen eighty-one and twenty thirteen, the share of the world living in extreme poverty fell by thirty-four percentage points, to about eleven percent.",
+      "duration": 10590
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Our source, and our ranking",
+      "headline": "Ranked by how directly money is lost before it reaches the poor",
+      "body": "Lucy Page (MIT) and Rohini Pande (then Harvard Kennedy School, now Yale). Journal of Economic Perspectives, 2018. The ranking is ours, not the authors'.",
+      "voiceover": "This video is based on research by economists Lucy Page and Rohini Pande, published in the Journal of Economic Perspectives. They describe the obstacles. The ranking is ours: by how directly money is lost before it reaches the poor.",
+      "duration": 16396
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Information",
+      "headline": "Citizens can't see where money goes",
+      "voiceover": "Number ten. Citizens can't see where money goes.",
+      "duration": 4396
+    },
+    {
+      "type": "point",
+      "eyebrow": "The problem",
+      "headline": "You can't hold anyone accountable for spending you can't see",
+      "voiceover": "If poor citizens can't see how public money is spent, they can't push for better services. The authors argue that information is part of the plumbing.",
+      "rank": 10,
+      "name": "Citizens can't see where money goes",
+      "duration": 11364
+    },
+    {
+      "type": "point",
+      "eyebrow": "What worked",
+      "headline": "Report cards on politicians, printed in local newspapers",
+      "voiceover": "In Delhi, researchers worked with civil society groups to publish report cards on politicians in local newspapers, using right to information data. Politicians shifted spending towards the public services voters wanted.",
+      "rank": 10,
+      "name": "Citizens can't see where money goes",
+      "body": "Delhi, India: candidate report cards built from Right to Information data.",
+      "duration": 13300
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Political will",
+      "headline": "Prestige projects",
+      "voiceover": "Number nine. Prestige projects.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "What the authors call vanity projects",
+      "headline": "High-visibility spending vs the basics",
+      "voiceover": "Governments also choose where money goes. The authors point to prestige spending, such as Rwanda's roughly thirty million pound tourism sponsorship deal with Arsenal football club in twenty eighteen, while basic services remain thin.",
+      "rank": 9,
+      "name": "Prestige projects",
+      "stat": {
+        "value": "£30m",
+        "label": "Rwanda's 'Visit Rwanda' Arsenal deal, 2018",
+        "count": {
+          "from": 0,
+          "to": 30,
+          "decimals": 0,
+          "prefix": "£",
+          "suffix": "m"
+        }
+      },
+      "duration": 14461
+    },
+    {
+      "type": "point",
+      "eyebrow": "What worked",
+      "headline": "One boss, clear accountability",
+      "voiceover": "Their fix is about accountability. In India, districts where officials answered to a single politician delivered the national workfare programme better than districts with several competing bosses.",
+      "rank": 9,
+      "name": "Prestige projects",
+      "body": "Indian districts where officials answered to a single politician ran the workfare programme better.",
+      "duration": 11751
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Health",
+      "headline": "Campaigns that go around the health system",
+      "voiceover": "Number eight. Campaigns that go around the health system.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "eyebrow": "1920s: two hookworm campaigns",
+      "headline": "One bypassed the government. One built on it.",
+      "voiceover": "Donors love single-disease campaigns because the results are easy to count. But in the nineteen twenties, a hookworm campaign in Madras, India, worked around the government and left little behind. In Costa Rica, a similar campaign worked through schools and local health boards, and helped lay the foundation for its health ministry, created in nineteen twenty-seven.",
+      "rank": 8,
+      "name": "Campaigns that go around the health system",
+      "stat": {
+        "value": "1927",
+        "label": "Costa Rica's public health ministry founded"
+      },
+      "duration": 22977
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Regulation",
+      "headline": "Weak 'invisible infrastructure'",
+      "voiceover": "Number seven. Weak invisible infrastructure.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "eyebrow": "Invisible infrastructure",
+      "headline": "Schools, clinics, property rights, and rules on lending",
+      "voiceover": "The authors call it invisible infrastructure: working schools and clinics, property rights, and rules that protect people from bad lenders. Roads and buildings are easy to see. These aren't.",
+      "rank": 7,
+      "name": "Weak 'invisible infrastructure'",
+      "duration": 12525
+    },
+    {
+      "type": "point",
+      "eyebrow": "When the state doesn't regulate",
+      "headline": "Microfinance boom, then crash",
+      "voiceover": "In the Indian state of Andhra Pradesh, a boom in for-profit microloans led to aggressive lending and a crisis in twenty ten. When credit then dried up, household earnings fell. And in Liberia, when public schools were handed to private operators, one operator pushed weaker pupils back to public schools.",
+      "rank": 7,
+      "name": "Weak 'invisible infrastructure'",
+      "body": "Andhra Pradesh, India, 2010: aggressive lending, then a crisis and a credit collapse.",
+      "duration": 20654
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Cash transfers",
+      "headline": "Cash alone isn't enough",
+      "voiceover": "Number six. Cash alone isn't enough.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "eyebrow": "Cash helps, for a while",
+      "headline": "One illness or flood can wipe it out",
+      "voiceover": "Giving poor families cash works. Studies show it raises spending and savings. But one illness, flood or lawsuit can wipe it out.",
+      "rank": 6,
+      "name": "Cash alone isn't enough",
+      "duration": 9816
+    },
+    {
+      "type": "broll",
+      "eyebrow": "What lasts longer",
+      "headline": "Assets, coaching, savings and health, together",
+      "voiceover": "So-called graduation programmes combine a productive asset, like livestock, with coaching, savings accounts and health support. Tested across six countries, they produced gains that lasted for years.",
+      "broll": "goats farm village",
+      "duration": 11751
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Geography",
+      "headline": "Poverty moved to middle-income countries",
+      "voiceover": "Number five. Poverty moved to middle-income countries.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "eyebrow": "The paper's data, 1987 vs 2013",
+      "headline": "Most of the extreme poor now live in middle-income countries",
+      "voiceover": "In nineteen eighty-seven, most of the world's extremely poor people lived in low-income countries. By twenty thirteen, the paper estimates more than sixty percent lived in middle-income countries, which get little aid per poor person. It lists eight countries holding about half of them, and South Africa is one of the eight.",
+      "rank": 5,
+      "name": "Poverty moved to middle-income countries",
+      "body": "The paper lists South Africa among eight countries holding about half the world's extreme poor.",
+      "duration": 21429
+    },
+    {
+      "type": "plain",
+      "eyebrow": "A note on dates",
+      "headline": "Data 2013–2018. The poverty line has since been revised.",
+      "voiceover": "A note on dates. This research uses data up to twenty thirteen, and the World Bank's poverty line has since been raised from one dollar ninety to three dollars a day. More recent data shows extreme poverty concentrating again in sub-Saharan Africa.",
+      "body": "The World Bank's extreme poverty line has risen from $1.90 to $3.00 a day.",
+      "duration": 17558
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Foreign aid",
+      "headline": "Aid that bypasses the state",
+      "voiceover": "Number four. Aid that bypasses the state.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "eyebrow": "Going around government",
+      "headline": "When donors avoid the state, the state never learns",
+      "voiceover": "Donors often route money through charities and contractors instead of governments, to avoid red tape and corruption. The paper estimates that in twenty thirteen, less than half of social aid and only about seven percent of humanitarian aid went through recipient governments' own systems.",
+      "rank": 4,
+      "name": "Aid that bypasses the state",
+      "duration": 18332
+    },
+    {
+      "type": "point",
+      "eyebrow": "The authors' fix",
+      "headline": "Work through government, with a plan to hand over",
+      "voiceover": "That can make sense in a disaster. But long term, the authors argue, ministries that never run programmes never get better at running them. Their fix: work through government, with a clear plan to hand over.",
+      "rank": 4,
+      "name": "Aid that bypasses the state",
+      "duration": 15235
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Tax",
+      "headline": "The tax gap",
+      "voiceover": "Number three. The tax gap.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "eyebrow": "Too little, collected the wrong way",
+      "headline": "Middle-income countries lean on taxes that hit the poor hardest",
+      "voiceover": "The paper estimates that high-poverty middle-income countries collect only about seventeen percent of their economy in tax, and lean on taxes like VAT that hit poor households hardest.",
+      "rank": 3,
+      "name": "The tax gap",
+      "duration": 12138
+    },
+    {
+      "type": "point",
+      "eyebrow": "A surprising finding",
+      "headline": "Paying tax made citizens demand more",
+      "voiceover": "Here's the surprise. In the Democratic Republic of the Congo, economist Jonathan Weigel found that when the government collected property tax door to door, citizens' political participation rose by five percentage points, about twenty-eight percent. People who pay tax start demanding something back.",
+      "rank": 3,
+      "name": "The tax gap",
+      "stat": {
+        "value": "+28%",
+        "label": "Rise in political participation after door-to-door tax collection, DRC (Weigel)",
+        "count": {
+          "from": 0,
+          "to": 28,
+          "decimals": 0,
+          "prefix": "+",
+          "suffix": "%"
+        }
+      },
+      "duration": 17945
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Inequality",
+      "headline": "Growth captured at the top",
+      "voiceover": "Number two. Growth captured at the top.",
+      "duration": 4009
+    },
+    {
+      "type": "chart",
+      "eyebrow": "India, share of total income growth since 1980",
+      "headline": "The top 10% took six times more than the bottom half",
+      "voiceover": "Growth lifts many people, but not evenly. In India, according to the World Inequality Report, the top ten percent of earners captured about sixty-six percent of all income growth since nineteen eighty. The bottom half got about eleven percent.",
+      "rank": 2,
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "Top 10%",
+          "Bottom 50%"
+        ],
+        "values": [
+          66,
+          11
+        ],
+        "display": [
+          "66%",
+          "11%"
+        ],
+        "highlight": [
+          0
+        ]
+      },
+      "duration": 16396
+    },
+    {
+      "type": "point",
+      "eyebrow": "The authors' point",
+      "headline": "Growth needs to be paired with targeted support",
+      "voiceover": "The authors argue that growth alone won't reach the poorest. It needs to come with targeted support and protection for groups that keep getting left behind.",
+      "rank": 2,
+      "name": "Growth captured at the top",
+      "duration": 11364
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Leakage",
+      "headline": "The leaky human chain",
+      "voiceover": "Number one. The leaky human chain.",
+      "duration": 3622
+    },
+    {
+      "type": "point",
+      "eyebrow": "The human chain",
+      "headline": "Every link between budget and citizen is a chance for money to leak",
+      "voiceover": "And number one. Public money passes through a long human chain: politicians, senior officials, district offices, and the clerk who finally pays you. Every link is a chance for money to leak away before it reaches the people it was meant for.",
+      "rank": 1,
+      "name": "The leaky human chain",
+      "duration": 17558
+    },
+    {
+      "type": "point",
+      "eyebrow": "India's rural jobs programme",
+      "headline": "Payments that didn't match real work",
+      "voiceover": "India's huge rural jobs programme showed it clearly. The paper cites survey data suggesting that only about half of the work recorded on paper in two thousand seven and eight matched real workers.",
+      "rank": 1,
+      "name": "The leaky human chain",
+      "duration": 14074
+    },
+    {
+      "type": "point",
+      "eyebrow": "Fix one: biometric smartcards",
+      "headline": "Leakage cut by about 41%",
+      "voiceover": "The fix wasn't more money. In Andhra Pradesh, paying wages through biometric smartcards cut leakage by about forty-one percent, payments arrived faster, and workers' incomes went up.",
+      "rank": 1,
+      "name": "The leaky human chain",
+      "stat": {
+        "value": "41%",
+        "label": "Relative drop in leakage, Andhra Pradesh (Muralidharan, Niehaus & Sukhtankar)",
+        "count": {
+          "from": 0,
+          "to": 41,
+          "decimals": 0,
+          "suffix": "%"
+        }
+      },
+      "duration": 11751
+    },
+    {
+      "type": "point",
+      "eyebrow": "Fix two: digital fund flows",
+      "headline": "Spending down 24%, wages unchanged",
+      "voiceover": "In Bihar, sending funds digitally, skipping layers of officials, cut programme spending by twenty-four percent, with no drop in wages paid to real workers. Same money in, more of it arriving.",
+      "rank": 1,
+      "name": "The leaky human chain",
+      "stat": {
+        "value": "24%",
+        "label": "Drop in programme spending, Bihar (Banerjee et al.)",
+        "count": {
+          "from": 0,
+          "to": 24,
+          "decimals": 0,
+          "suffix": "%"
+        }
+      },
+      "duration": 13300
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The big idea",
+      "headline": "More money helps. Fixing the pipe helps more.",
+      "voiceover": "The big idea: ending poverty isn't only about how much money there is. It's about whether the pipes carrying it work, and whether citizens can see inside them.",
+      "duration": 12138
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which of these surprised you most?",
+      "voiceover": "Which of these surprised you most? Tell us in the comments.",
+      "duration": 5558
+    }
+  ],
+  "endcard": {
+    "title": "Follow the <em>money</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "10 Places Poverty Money Disappears Before It Reaches the Poor",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "poverty",
+      "economics",
+      "foreign aid",
+      "corruption",
+      "development",
+      "Rohini Pande",
+      "Mzansi Money Matters"
+    ],
+    "description": "Why money alone hasn't ended extreme poverty: 10 places it leaks between the budget and the people it's meant for, and the fixes that worked.\n\n{chapters}\n\nSource: Lucy Page (MIT) and Rohini Pande (then Harvard Kennedy School, now Yale), \"Ending Global Poverty: Why Money Isn't Enough\", Journal of Economic Perspectives 32(4), 2018. Also cited: World Inequality Report 2018; Muralidharan, Niehaus & Sukhtankar (2016); Banerjee et al. (2016); Weigel (2020). The ranking is ours, not the authors'. Research data covers 2013–2018; the World Bank's extreme poverty line has since been revised to $3.00 a day.\n\nEducation, not financial or political advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}

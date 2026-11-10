@@ -1,0 +1,78 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-poverty-leak",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial or political advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "water pipe leak",
+      "eyebrow": "Economists found",
+      "headline": "Money for the poor leaks on the way",
+      "voiceover": "Money meant for the poor doesn't always reach them. It leaks on the way.",
+      "duration": 6719
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "The leaky human chain",
+      "eyebrow": "India's rural jobs programme",
+      "headline": "Payments that didn't match real work",
+      "voiceover": "In one of the world's biggest jobs programmes, researchers found that payments often didn't match real work.",
+      "duration": 7880
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The fix",
+      "headline": "It wasn't more money.",
+      "voiceover": "The fix that worked wasn't more money. It was cheaper, and simpler.",
+      "duration": 5945
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Number 1 of 10",
+      "headline": "See what it was in the full video.",
+      "voiceover": "It's number one of ten in our full video.",
+      "duration": 4783
+    }
+  ],
+  "endcard": {
+    "title": "The full top <em>10</em>",
+    "subtitle": "Where poverty money disappears",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "The fix wasn't more money #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "poverty",
+      "economics",
+      "Mzansi Money Matters"
+    ],
+    "description": "Money meant for the poor leaks on the way. Based on Page & Pande (2018), Journal of Economic Perspectives. Full top 10 on Mzansi Money Matters.\n\nEducation, not financial or political advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}
