@@ -148,7 +148,7 @@ base = {
  "voice":{"name":"en-US-BrianMultilingualNeural","rate":"+4%","pitch":"+0Hz","lead_pad":400,"tail_pad":900},
  "timing":{"lead_in":900},
 }
-long = dict(base, slug="top10-largest-companies-2026", countdown={"from":10},
+long = dict(base, thumbnail={"kicker": "World's biggest", "big": "$5.2tn", "line": "One company. <em>12× SA's economy.</em>", "photo": "computer chip circuit board"}, slug="top10-largest-companies-2026", countdown={"from":10},
  disclaimer="Education, not financial advice. Market values as at early November 2026.",
  scenes=scenes,
  endcard={"title":"Subscribe for the <em>next</em> ten","subtitle":"South African money, explained.","handle":"@MzansiMoneyMatters","duration":5000},

@@ -1,0 +1,48 @@
+name: Set thumbnail
+
+# Renders the thumbnail from a content file's "thumbnail" block and sets it
+# on a video that is already on YouTube. Type the content file and the video id
+# (the part after youtu.be/) into the form.
+on:
+  workflow_dispatch:
+    inputs:
+      content:
+        description: "Content file with a thumbnail block"
+        required: true
+        default: "content.json"
+      video_id:
+        description: "YouTube video id (after youtu.be/)"
+        required: true
+
+jobs:
+  thumbnail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Fetch brand fonts
+        run: |
+          mkdir -p fonts
+          curl -sSfL "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth,wght%5D.ttf" \
+            -o fonts/Archivo-Bold.ttf || echo "archivo fetch failed, using fallback"
+      - name: Render thumbnail
+        run: python thumbnail.py --content "${{ inputs.content }}"
+      - name: Save thumbnail
+        uses: actions/upload-artifact@v4
+        with:
+          name: thumbnail
+          path: out/thumb-*.jpg
+      - name: Set it on YouTube
+        run: python upload.py --content "${{ inputs.content }}" --thumbnail-only "${{ inputs.video_id }}"

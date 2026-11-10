@@ -125,7 +125,7 @@ base = {"template": "template-countdown.html", "brand": {"name": "Mzansi Money M
         "voice": {"name": "en-US-BrianMultilingualNeural", "rate": "+4%", "pitch": "+0Hz", "lead_pad": 400, "tail_pad": 900},
         "timing": {"lead_in": 900}}
 
-long = dict(base, slug="top10-currency-failures", countdown={"from": 10},
+long = dict(base, thumbnail={"kicker": "Hungary, 1946", "big": "15 HOURS", "line": "for prices to <em>double</em>", "photo": "old paper money banknotes"}, slug="top10-currency-failures", countdown={"from": 10},
  disclaimer="Education, not financial advice.", scenes=scenes,
  endcard={"title": "Protect your <em>money</em>", "subtitle": "Subscribe for South African money, explained.",
           "handle": "@MzansiMoneyMatters", "duration": 5000},

@@ -608,5 +608,11 @@
       "Mzansi Money Matters"
     ],
     "description": "The 10 most valuable companies in the world by market value, as at early November 2026: where they're based, who founded them, what they do, how many people they employ, and what they're known for. Nvidia alone is worth about 12 times South Africa's economy.\n\n{chapters}\n\nSources: market values from TradingView (early November 2026); employee numbers from each company's latest annual report; South Africa GDP from Trading Economics / World Bank (2025).\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  },
+  "thumbnail": {
+    "kicker": "World's biggest",
+    "big": "$5.2tn",
+    "line": "One company. <em>12× SA's economy.</em>",
+    "photo": "computer chip circuit board"
   }
 }

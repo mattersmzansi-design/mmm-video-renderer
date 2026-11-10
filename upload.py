@@ -123,15 +123,28 @@ def set_thumbnail(yt_api, video_id: str, thumb: Path):
         yt_api.thumbnails().set(videoId=video_id,
                                 media_body=MediaFileUpload(str(thumb))).execute()
         print(f"  thumbnail set: {thumb.name}")
+        return True
     except Exception as e:   # custom thumbnails need a phone-verified channel
         print(f"  thumbnail not set ({e}). The video is uploaded; add it in YouTube Studio.")
+        return False
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--content", default="content.json")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--thumbnail-only", metavar="VIDEO_ID",
+                    help="don't upload; just set this video's thumbnail from out/thumb-<slug>.jpg")
     args = ap.parse_args()
+
+    if args.thumbnail_only:
+        content = json.loads((ROOT / args.content).read_text(encoding="utf-8"))
+        thumb = ROOT / "out" / f"thumb-{content.get('slug', 'video')}.jpg"
+        if not thumb.is_file():
+            sys.exit(f"no thumbnail at {thumb}; run thumbnail.py first")
+        if not set_thumbnail(youtube_client(), args.thumbnail_only, thumb):
+            sys.exit(1)
+        return
 
     content_path = (ROOT / args.content).resolve()
     content, yt, video = load(content_path)
@@ -152,8 +165,11 @@ def main():
     print(f"uploaded: https://youtu.be/{vid}")
 
     thumb = yt.get("thumbnail")
+    made = ROOT / "out" / f"thumb-{content.get('slug', 'video')}.jpg"
     if thumb and (ROOT / "assets" / thumb).exists():
         set_thumbnail(api, vid, ROOT / "assets" / thumb)
+    elif made.is_file() and not content.get("size"):     # long videos only; Shorts use a frame
+        set_thumbnail(api, vid, made)
 
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:

@@ -113,7 +113,7 @@ base = {"template": "template-countdown.html", "brand": {"name": "Mzansi Money M
         "voice": {"name": "en-US-BrianMultilingualNeural", "rate": "+4%", "pitch": "+0Hz", "lead_pad": 400, "tail_pad": 900},
         "timing": {"lead_in": 900}}
 
-long = dict(base, slug="evolution-of-money", countdown={"from": 9, "order": "up"},
+long = dict(base, thumbnail={"kicker": "9 stages", "big": "5,000", "line": "years of <em>money</em>", "photo": "ancient coins"}, slug="evolution-of-money", countdown={"from": 9, "order": "up"},
  disclaimer="Education, not financial advice.", scenes=scenes,
  endcard={"title": "Money is <em>trust</em>", "subtitle": "Subscribe for South African money, explained.",
           "handle": "@MzansiMoneyMatters", "duration": 5000},

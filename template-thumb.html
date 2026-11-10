@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MMM Thumbnail</title>
+<style>
+  __FONTS__
+  :root{--navy:#002C3D;--deep:#001B26;--orange:#EF4C00;--paper:#F2EFE9;--slate:#7FA5AC;
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1280px;height:720px;overflow:hidden;background:var(--deep);font-family:var(--display)}
+  #t{position:relative;width:1280px;height:720px;overflow:hidden;
+    background:radial-gradient(110% 90% at 80% 20%,#06506A 0%,var(--navy) 45%,var(--deep) 100%)}
+  #bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.15) contrast(1.08)}
+  #shade{position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(0,27,38,.97) 0%,rgba(0,27,38,.9) 38%,rgba(0,27,38,.35) 72%,rgba(0,27,38,.1) 100%)}
+  #edge{position:absolute;left:0;top:0;bottom:0;width:16px;background:var(--orange)}
+  #copy{position:absolute;left:64px;top:52px;bottom:118px;width:760px;display:flex;flex-direction:column;justify-content:center}
+  .kicker{align-self:flex-start;background:var(--orange);color:var(--paper);font-weight:800;font-size:34px;
+    letter-spacing:.04em;text-transform:uppercase;padding:8px 18px 10px;border-radius:6px;margin-bottom:14px}
+  .big{font-variation-settings:"wdth" 62,"wght" 900;font-weight:900;font-stretch:62%;
+    font-size:300px;line-height:.86;letter-spacing:-.02em;white-space:nowrap;color:var(--orange);
+    text-shadow:0 10px 40px rgba(0,0,0,.55)}
+  .big.paper{color:var(--paper)}
+  .line{margin-top:14px;font-weight:800;font-size:76px;line-height:1.0;letter-spacing:-.02em;color:var(--paper);
+    text-transform:uppercase;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+  .line em{font-style:normal;color:var(--orange)}
+  #brand{position:absolute;left:64px;bottom:44px;display:flex;align-items:center;gap:16px;
+    color:var(--paper);font-weight:700;font-size:28px;letter-spacing:.02em}
+  #brand img{width:58px;height:58px;border-radius:12px;object-fit:cover}
+</style>
+</head>
+<body>
+<div id="t">
+  <img id="bg" alt="">
+  <div id="shade"></div>
+  <div id="edge"></div>
+  <div id="copy"></div>
+  <div id="brand"><img id="logo" alt=""><span>MZANSI MONEY MATTERS</span></div>
+</div>
+<script>
+const T = __THUMB__;
+const BG = __BG__, LOGO = __LOGO__;
+const bg = document.getElementById('bg');
+if (BG) { bg.src = BG; bg.style.objectPosition = T.focus || 'center'; } else bg.style.display = 'none';
+if (!BG) document.getElementById('shade').style.display = 'none';
+document.getElementById('logo').src = LOGO;
+const c = document.getElementById('copy');
+c.innerHTML = (T.kicker ? '<div class="kicker">' + T.kicker + '</div>' : '') +
+  (T.big ? '<div class="big' + (T.big_color === 'paper' ? ' paper' : '') + '">' + T.big + '</div>' : '') +
+  (T.line ? '<div class="line">' + T.line + '</div>' : '');
+function fit(el, maxW, maxH, min){
+  let s = parseFloat(getComputedStyle(el).fontSize);
+  while ((el.scrollWidth > maxW || el.getBoundingClientRect().height > maxH) && s > min) { s -= 4; el.style.fontSize = s + 'px'; }
+}
+document.fonts.ready.then(() => {
+  const big = c.querySelector('.big'), line = c.querySelector('.line');
+  if (big) fit(big, 760, 270, 120);
+  if (line) fit(line, 760, 240, 44);
+  const pending = BG ? new Promise(r => { if (bg.complete) r(); else { bg.onload = r; bg.onerror = r; } }) : Promise.resolve();
+  pending.then(() => { window.READY = true; });
+});
+</script>
+</body>
+</html>

@@ -123,7 +123,7 @@ base = {"template": "template-countdown.html", "brand": {"name": "Mzansi Money M
         "voice": {"name": "en-US-BrianMultilingualNeural", "rate": "+4%", "pitch": "+0Hz", "lead_pad": 400, "tail_pad": 900},
         "timing": {"lead_in": 900}}
 
-long = dict(base, slug="top10-oldest-companies", countdown={"from": 10},
+long = dict(base, thumbnail={"kicker": "Top 10", "big": "1,448", "line": "years old. <em>Still open.</em>", "photo": "japanese temple"}, slug="top10-oldest-companies", countdown={"from": 10},
  disclaimer="Education, not financial advice.", scenes=scenes,
  endcard={"title": "Built to <em>last</em>", "subtitle": "Subscribe for South African money, explained.",
           "handle": "@MzansiMoneyMatters", "duration": 5000},

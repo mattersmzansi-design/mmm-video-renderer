@@ -78,6 +78,10 @@ jobs:
       - name: Fetch b-roll footage
         run: python broll.py --content "${{ matrix.content }}"
 
+      - name: Render thumbnail
+        continue-on-error: true
+        run: python thumbnail.py --content "${{ matrix.content }}"
+
       - name: Render
         run: |
           FPS="${{ inputs.fps || '30' }}"
@@ -96,6 +100,7 @@ jobs:
           name: video-${{ matrix.content }}
           path: |
             out/*.mp4
+            out/thumb-*.jpg
             build/voiceover.m4a
             build/broll-sources.json
           retention-days: 30

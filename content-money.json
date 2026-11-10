@@ -352,5 +352,11 @@
       "Mzansi Money Matters"
     ],
     "description": "How money evolved, from barter and cattle to coins, paper, banks, central banks, cards and digital currencies, and why it all comes down to trust.\n\n{chapters}\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  },
+  "thumbnail": {
+    "kicker": "9 stages",
+    "big": "5,000",
+    "line": "years of <em>money</em>",
+    "photo": "ancient coins"
   }
 }
