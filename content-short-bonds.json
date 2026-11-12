@@ -1,0 +1,89 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-bonds-risk-free",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "bank vault door",
+      "eyebrow": "Risk-free?",
+      "headline": "They told you government bonds are risk-free",
+      "voiceover": "They told you government bonds are risk-free.",
+      "duration": 4009
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Greece, 2012",
+      "eyebrow": "Greece, 2012",
+      "headline": "Bondholders accepted a 53.5% cut",
+      "stat": {
+        "value": "53.5%",
+        "label": "Cut to face value",
+        "count": {
+          "from": 0,
+          "to": 53.5,
+          "decimals": 1,
+          "suffix": "%"
+        }
+      },
+      "voiceover": "In twenty twelve, Greek bondholders accepted a fifty-three point five percent cut to the face value of their bonds.",
+      "duration": 8654
+    },
+    {
+      "type": "plain",
+      "eyebrow": "And number one?",
+      "headline": "Local-currency bonds. Local pension funds.",
+      "voiceover": "But number one on our list happened to a country's own-currency bonds, held by its own pension funds.",
+      "duration": 8267
+    },
+    {
+      "type": "plain",
+      "eyebrow": "And South Africa?",
+      "headline": "We have our own 1985 story.",
+      "voiceover": "And South Africa has its own story, from nineteen eighty-five.",
+      "duration": 5170
+    }
+  ],
+  "endcard": {
+    "title": "All 10 on the <em>channel</em>",
+    "subtitle": "10 times government bonds weren't risk-free",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch all ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "Government bonds are risk-free... right? #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "government bonds",
+      "risk-free",
+      "Greece",
+      "Mzansi Money Matters"
+    ],
+    "description": "Greek bondholders accepted a 53.5% cut in 2012. Number one on our list is even closer to home. Full video on Mzansi Money Matters.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}

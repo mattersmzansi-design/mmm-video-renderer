@@ -1,0 +1,421 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-bonds-not-risk-free",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice. Outcomes as of 2026.",
+  "thumbnail": {
+    "kicker": "Government bonds",
+    "big": "RISK-FREE?",
+    "line": "10 times they <em>weren't</em>",
+    "photo": "torn paper document"
+  },
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Risk-free?",
+      "headline": "10 times government bonds weren't risk-free",
+      "body": "Greece. Argentina. Sri Lanka. Ghana. And one story from South Africa.",
+      "voiceover": "You've probably heard that lending to the government is risk-free. Here are ten times it wasn't, and what risk-free really means for your money.",
+      "duration": 10590
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "From far away to close to your rand bond",
+      "body": "Foreign-currency debt → couldn't print its own money → local-currency debt.",
+      "voiceover": "We've ranked them not by size, but by how close they come to a South African holding a government bond in rands. First, governments that borrowed in someone else's currency. Then one that couldn't print its own money. Then the ones that hit bonds in their own currency.",
+      "duration": 19880
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Zambia, 2020",
+      "voiceover": "Number ten. Zambia, 2020.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "November 2020",
+      "headline": "Missed a $42.5 million bond payment",
+      "voiceover": "In November twenty twenty, Zambia missed a payment of about forty-two and a half million dollars on its dollar bonds. It became the first African government to default in the COVID era.",
+      "rank": 10,
+      "name": "Zambia, 2020",
+      "body": "The first African government to default in the COVID era.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "eyebrow": "As of 2026",
+      "headline": "Restructured, after almost four years of talks",
+      "voiceover": "It wasn't a lot of money. The problem was what it signalled: the debt was too big to keep paying. Bondholders accepted new terms in twenty twenty-four, after almost four years of negotiation.",
+      "rank": 10,
+      "name": "Zambia, 2020",
+      "duration": 14074
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Ecuador, 2008",
+      "voiceover": "Number nine. Ecuador, 2008.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "December 2008",
+      "headline": "Refused to pay $3.2 billion of bonds",
+      "voiceover": "In twenty oh eight, Ecuador's government stopped paying three point two billion dollars of bonds, not because it couldn't, but because it called the debt illegitimate. Then it offered to buy the bonds back at about thirty-five cents per dollar.",
+      "rank": 9,
+      "name": "Ecuador, 2008",
+      "body": "The government called the debt illegitimate, then offered about 35 cents per dollar.",
+      "duration": 16783
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Ukraine, 2015",
+      "voiceover": "Number eight. Ukraine, 2015.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "October 2015, after the war in the east began",
+      "headline": "Bondholders accepted a restructuring",
+      "voiceover": "In twenty fifteen, after conflict broke out in its east and its economy shrank, Ukraine restructured about thirteen point three billion dollars of debt. War is one of the oldest reasons governments stop paying on time.",
+      "rank": 8,
+      "name": "Ukraine, 2015",
+      "stat": {
+        "value": "$13.3bn",
+        "label": "Debt in default (Moody's)",
+        "count": {
+          "from": 0,
+          "to": 13.3,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "duration": 15235
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Venezuela, 2017",
+      "voiceover": "Number seven. Venezuela, 2017.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "November 2017",
+      "headline": "An oil giant that ran out of dollars",
+      "voiceover": "Venezuela has some of the world's largest oil reserves. But when oil prices fell and production collapsed, it ran out of the dollars it needed. In twenty seventeen it defaulted on about thirty-one billion dollars of debt.",
+      "rank": 7,
+      "name": "Venezuela, 2017",
+      "stat": {
+        "value": "$31.1bn",
+        "label": "Debt in default (Moody's)",
+        "count": {
+          "from": 0,
+          "to": 31.1,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "duration": 15622
+    },
+    {
+      "type": "broll",
+      "eyebrow": "Venezuela",
+      "headline": "One of the longest-running defaults of recent years",
+      "voiceover": "It became one of the longest-running defaults of recent years.",
+      "broll": "oil refinery",
+      "duration": 5170
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Lebanon, 2020",
+      "voiceover": "Number six. Lebanon, 2020.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "March 2020: its first-ever default",
+      "headline": "Then the banks froze people's savings",
+      "voiceover": "Lebanon had never defaulted. Then in March twenty twenty, it missed a one point two billion dollar bond payment, and about thirty-one billion dollars went into default. Its banks, which held much of that debt, restricted people's access to their own savings.",
+      "rank": 6,
+      "name": "Lebanon, 2020",
+      "stat": {
+        "value": "$31.3bn",
+        "label": "Debt in default (Moody's)",
+        "count": {
+          "from": 0,
+          "to": 31.3,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "duration": 17558
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Sri Lanka, 2022",
+      "voiceover": "Number five. Sri Lanka, 2022.",
+      "duration": 3235
+    },
+    {
+      "type": "point",
+      "eyebrow": "April 2022",
+      "headline": "Suspended about $51 billion of foreign debt",
+      "voiceover": "In April twenty twenty-two, Sri Lanka ran so low on dollars it couldn't import enough fuel or medicine. It suspended payments on about fifty-one billion dollars of foreign debt. Inflation hit almost seventy percent, and the president fled the country.",
+      "rank": 5,
+      "name": "Sri Lanka, 2022",
+      "body": "Inflation hit 69.8% in September 2022. The rupee lost about 80% of its value.",
+      "duration": 16783
+    },
+    {
+      "type": "point",
+      "eyebrow": "As of 2026",
+      "headline": "Mostly restructured, with an IMF programme",
+      "voiceover": "As of twenty twenty-six, most of that debt has been restructured, under an IMF programme.",
+      "rank": 5,
+      "name": "Sri Lanka, 2022",
+      "duration": 7106
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Foreign-currency debt",
+      "headline": "Argentina, 2001",
+      "voiceover": "Number four. Argentina, 2001.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "December 2001",
+      "headline": "The record default of its time",
+      "voiceover": "Argentina had tied its peso one to one with the US dollar, and borrowed heavily in dollars. In December two thousand and one, it defaulted on about eighty-two billion dollars, the biggest default of its time.",
+      "rank": 4,
+      "name": "Argentina, 2001",
+      "stat": {
+        "value": "$82.3bn",
+        "label": "Debt in default (Moody's)",
+        "count": {
+          "from": 0,
+          "to": 82.3,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "duration": 15235
+    },
+    {
+      "type": "broll",
+      "eyebrow": "The corralito",
+      "headline": "Bank deposits frozen. Unemployment near 25%.",
+      "voiceover": "Banks froze people's deposits. The economy shrank by about eleven percent in a year. And Argentina has defaulted nine times since independence.",
+      "broll": "bank vault door",
+      "duration": 9816
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Couldn't print its own money",
+      "headline": "Greece, 2012",
+      "voiceover": "Number three. Greece, 2012.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "March 2012: the largest restructuring ever",
+      "headline": "Bondholders accepted a 53.5% cut to face value",
+      "voiceover": "Greece borrowed in euros, a currency it couldn't print. In March twenty twelve, private bondholders accepted a fifty-three point five percent cut to the face value of their bonds, the largest debt restructuring in history.",
+      "rank": 3,
+      "name": "Greece, 2012",
+      "stat": {
+        "value": "53.5%",
+        "label": "Cut to the face value of private bondholders' Greek bonds",
+        "count": {
+          "from": 0,
+          "to": 53.5,
+          "decimals": 1,
+          "suffix": "%"
+        }
+      },
+      "duration": 14848
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Debt in default, Moody's (1983–2022)",
+      "headline": "Greece dwarfs every other default",
+      "voiceover": "Measured by the debt involved, about two hundred and sixty-four billion dollars, nothing else comes close. And here's the detail that matters for us: most of those bonds were issued under Greek law, and Greece changed its own law to make all holders accept the deal.",
+      "rank": 3,
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "Greece 2012",
+          "Argentina 2001",
+          "Russia 1998",
+          "Lebanon 2020"
+        ],
+        "values": [
+          264.2,
+          82.3,
+          72.7,
+          31.3
+        ],
+        "display": [
+          "$264bn",
+          "$82bn",
+          "$73bn",
+          "$31bn"
+        ],
+        "highlight": [
+          0
+        ]
+      },
+      "duration": 19106
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Its own currency",
+      "headline": "Russia, 1998",
+      "voiceover": "Number two. Russia, 1998.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "August 1998",
+      "headline": "Defaulted on bonds in its own currency",
+      "voiceover": "Here's the one that breaks a common belief: that a government can always pay debt in its own currency, because it can print it. In August nineteen ninety-eight, Russia defaulted on its own ruble bonds, and the ruble lost about three quarters of its value.",
+      "rank": 2,
+      "name": "Russia, 1998",
+      "body": "Short-term ruble bonds called GKOs. The ruble then lost about three quarters of its value.",
+      "duration": 18719
+    },
+    {
+      "type": "point",
+      "eyebrow": "And in 2022",
+      "headline": "Willing to pay, but blocked by sanctions",
+      "voiceover": "And in twenty twenty-two, Russia was ruled in default for a different reason: it had the money, but sanctions blocked the payments. Risk isn't only about money.",
+      "rank": 2,
+      "name": "Russia, 1998",
+      "duration": 11751
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Closer to home: 1985",
+      "headline": "South Africa's debt standstill",
+      "body": "About $13.6 billion of mostly bank and private-sector short-term foreign debt (SARB).",
+      "voiceover": "Before number one, a story from closer to home. In August nineteen eighty-five, after P W Botha's Rubicon speech, foreign banks refused to roll over South Africa's short-term loans. The country declared a standstill on repaying about thirteen point six billion dollars of foreign debt, mostly owed by banks and companies.",
+      "duration": 21041
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Closer to home: 1985",
+      "headline": "Fully repaid in 2001, 16 years to the day",
+      "body": "Historians disagree on whether it counts as a sovereign default.",
+      "voiceover": "Historians still disagree on whether it counts as a sovereign default. The last payment was made in August two thousand and one, sixteen years to the day after the speech.",
+      "duration": 12912
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Its own currency, its own savers",
+      "headline": "Ghana, 2022",
+      "voiceover": "Number one. Ghana, 2022.",
+      "duration": 2848
+    },
+    {
+      "type": "point",
+      "eyebrow": "December 2022",
+      "headline": "Local bonds held by local institutions were restructured too",
+      "voiceover": "And number one. In December twenty twenty-two, Ghana suspended payments on about thirteen billion dollars of foreign bonds. But it also exchanged more than eleven billion dollars' worth of its own local-currency bonds, held largely by local banks, pension funds and insurers, for new bonds that paid less and later.",
+      "rank": 1,
+      "name": "Ghana, 2022",
+      "body": "More than $11bn of cedi bonds, held largely by banks, pension funds and insurers.",
+      "duration": 20654
+    },
+    {
+      "type": "point",
+      "eyebrow": "Why it's number one",
+      "headline": "It happened at home, in the local currency",
+      "voiceover": "That's why it's number one for us. It's close to home, it's recent, and it hit local savers' institutions in the local currency. As of twenty twenty-six, Ghana has restructured its bonds and is paying again.",
+      "rank": 1,
+      "name": "Ghana, 2022",
+      "duration": 15235
+    },
+    {
+      "type": "plain",
+      "eyebrow": "So what does 'risk-free' mean?",
+      "headline": "Low credit risk. Not zero risk. Not inflation-proof.",
+      "body": "Credit risk: will you be paid back? Inflation risk: will the money still buy as much?",
+      "voiceover": "So what does risk-free really mean? Usually, low credit risk: the government is very likely to pay you back. It doesn't mean zero risk, and it doesn't mean your money keeps its value. Weimar Germany and Zimbabwe paid people back in money that had become worthless.",
+      "duration": 19106
+    },
+    {
+      "type": "plain",
+      "eyebrow": "For South Africans",
+      "headline": "RSA Retail Savings Bonds: lower credit risk, not none",
+      "body": "About 90% of SA government debt is in rand. Fixed-rate bonds carry more inflation risk; inflation-linked bonds are designed to reduce it.",
+      "voiceover": "About ninety percent of South Africa's government debt is in rands, so RSA Retail Savings Bonds carry lower credit risk, but not none. They come in fixed-rate and inflation-linked types. Fixed-rate bonds carry more inflation risk. Inflation-linked bonds are designed to reduce it. This is education, not financial advice.",
+      "duration": 20267
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Did you know government bonds could fail?",
+      "voiceover": "Did you know government bonds could fail? Tell us in the comments.",
+      "duration": 5945
+    }
+  ],
+  "endcard": {
+    "title": "Know your <em>risk</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "10 Times Government Bonds Weren't Risk-Free",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "government bonds",
+      "sovereign default",
+      "risk-free",
+      "RSA Retail Savings Bonds",
+      "Greece",
+      "Argentina",
+      "Ghana",
+      "Mzansi Money Matters"
+    ],
+    "description": "They say lending to the government is risk-free. Here are 10 times it wasn't, from Zambia and Argentina to Greece, Russia and Ghana, plus South Africa's 1985 debt standstill, and what 'risk-free' really means for your money.\n\n{chapters}\n\nRanking: by how close each case comes to a South African holding a rand government bond (foreign-currency debt, then a country that couldn't print its own money, then local-currency debt). Default amounts: Moody's data via Aswath Damodaran / Visual Capitalist (1983–2022). SA 1985 standstill: South African Reserve Bank. Outcomes as of 2026.\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}
