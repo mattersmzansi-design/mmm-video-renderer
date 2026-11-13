@@ -1,0 +1,88 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+6%",
+    "pitch": "+0Hz",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-fastest-ipos",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "stock exchange trading screen",
+      "eyebrow": "Startup → stock market",
+      "headline": "Most companies take decades",
+      "voiceover": "Most companies take decades to reach the stock market.",
+      "duration": 4783
+    },
+    {
+      "type": "point",
+      "eyebrow": "One of them took",
+      "headline": "Less than a year",
+      "stat": {
+        "value": "~10 mo",
+        "label": "From registration to IPO",
+        "count": {
+          "from": 0,
+          "to": 10,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "voiceover": "One did it in less than a year.",
+      "duration": 4396
+    },
+    {
+      "type": "plain",
+      "eyebrow": "And the others?",
+      "headline": "Some became giants. One was gone within a year.",
+      "voiceover": "Some of the fastest became giants. One was gone within a year of listing. And one faked its sales.",
+      "duration": 8654
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Every claim. Every source.",
+      "headline": "The full top 10 is on the channel",
+      "voiceover": "Who were they? The full top ten, with every source, is on our channel.",
+      "duration": 6719
+    }
+  ],
+  "endcard": {
+    "title": "Who <em>survived</em>?",
+    "subtitle": "10 fastest IPOs, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "From startup to stock market in under a year #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "IPO",
+      "stock market",
+      "startups",
+      "Mzansi Money Matters"
+    ],
+    "description": "Most companies take decades to go public. One did it in about 10 months. Full top 10 with sources on Mzansi Money Matters.\n\nEducation, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}

@@ -160,6 +160,16 @@
   body.portrait .s-chart h2{font-size:78px}
   body.portrait .caxis{font-size:30px}
   body.portrait .cval{font-size:48px}
+
+  /* ---------- fate tag + source "receipt" lower-third ---------- */
+  .tag{display:inline-block;margin-left:18px;padding:4px 14px 6px;border:2px solid var(--orange);border-radius:8px;
+    font-size:24px;font-weight:800;letter-spacing:.06em;color:var(--paper);background:rgba(239,76,0,.18);vertical-align:3px}
+  .receipt{position:absolute;left:0;bottom:200px;display:flex;align-items:center;gap:16px;max-width:1680px;
+    font-size:24px;font-weight:600;color:var(--paper);background:rgba(0,27,38,.82);border-left:6px solid var(--orange);
+    padding:12px 22px;border-radius:6px}
+  .receipt .rk{font-size:18px;font-weight:800;letter-spacing:.14em;color:var(--orange)}
+  .scene.s-broll .receipt{left:120px}
+  body.portrait .receipt{position:absolute;left:0;bottom:430px;max-width:920px;font-size:24px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -236,7 +246,8 @@ CONTENT.scenes.forEach((sc, i) => {
   const el = document.createElement('section');
   el.className = 'scene s-' + type;
   el.dataset.i = i;
-  const eyebrow = sc.eyebrow ? '<div class="eyebrow">' + esc(sc.eyebrow) + '</div>' : '';
+  const tag = sc.tag ? '<span class="tag">' + esc(sc.tag) + '</span>' : '';
+  const eyebrow = (sc.eyebrow || sc.tag) ? '<div class="eyebrow">' + esc(sc.eyebrow || '') + tag + '</div>' : '';
   const body = sc.body ? '<p>' + esc(sc.body) + '</p>' : '';
 
   if (type === 'intro') {
@@ -269,6 +280,12 @@ CONTENT.scenes.forEach((sc, i) => {
       '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' + right;
   } else {
     el.innerHTML = eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body;
+  }
+  if (sc.receipt) {
+    const r = document.createElement('div');
+    r.className = 'receipt';
+    r.innerHTML = '<span class="rk">SOURCE</span>' + esc(sc.receipt);
+    el.appendChild(r);
   }
   scenesEl.appendChild(el);
   if (type === 'chart') buildChart(el.querySelector('.cbox'), sc.chart || {});

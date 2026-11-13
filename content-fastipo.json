@@ -1,0 +1,542 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "name": "en-US-BrianMultilingualNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-fastest-ipos",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice. Status as of Nov 2026.",
+  "thumbnail": {
+    "kicker": "Startup → stock market",
+    "big": "10 MONTHS",
+    "line": "Who <em>survived</em>?",
+    "photo": "stock exchange trading screen"
+  },
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Startup → stock market",
+      "headline": "10 companies that went public fastest",
+      "body": "And what happened to them next.",
+      "voiceover": "Most companies take ten years or more to reach the stock market. These ten did it in months. But speed didn't always mean success.",
+      "duration": 10590
+    },
+    {
+      "type": "plain",
+      "eyebrow": "First, what's an IPO?",
+      "headline": "IPO: the first time a company sells shares to the public",
+      "body": "An initial public offering, on a stock exchange.",
+      "voiceover": "First, a quick definition. An I P O, or initial public offering, is the first time a company sells its shares to the public on a stock exchange.",
+      "duration": 12138
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we counted",
+      "headline": "From legal registration to its first day of trading",
+      "body": "Traditional IPOs on major exchanges only. No SPACs or over-the-counter listings. The fastest we could verify, as of November 2026.",
+      "voiceover": "Here's how we counted: from the day each company was legally registered to its first day of trading on a major stock exchange. These are the fastest we could verify, and every one has its source on screen.",
+      "duration": 16009
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "China · E-commerce",
+      "headline": "PDD (Pinduoduo)",
+      "voiceover": "Number ten.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "PDD (Pinduoduo)",
+      "eyebrow": "Registration to IPO",
+      "headline": "China · E-commerce",
+      "stat": {
+        "value": "~34 mo",
+        "label": "Registered 2015 → first trading day 26 Jul 2018",
+        "count": {
+          "from": 0,
+          "to": 34,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Founded 2015 → Nasdaq IPO 26 Jul 2018 · DealStreetAsia; Global Venturing",
+      "voiceover": "P D D, better known as Pinduoduo, from China. It's an online shopping platform built on group buying, and today it owns Temu. Founded in twenty fifteen, it listed on Nasdaq in July twenty eighteen, raising one point six billion dollars, about three years after it started.",
+      "duration": 19493
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "PDD (Pinduoduo)",
+      "eyebrow": "What happened next",
+      "tag": "ALIVE (as of Nov 2026)",
+      "headline": "Still listed, and now the owner of Temu",
+      "receipt": "DealStreetAsia; Global Venturing",
+      "voiceover": "Unlike some on this list, it's still very much alive.",
+      "duration": 5170
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "China · Mobile news app",
+      "headline": "Qutoutiao",
+      "voiceover": "Number nine.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Qutoutiao",
+      "eyebrow": "Registration to IPO",
+      "headline": "China · Mobile news app",
+      "stat": {
+        "value": "~27 mo",
+        "label": "Registered Jun 2016 → first trading day 14 Sep 2018",
+        "count": {
+          "from": 0,
+          "to": 27,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Founded Jun 2016 → Nasdaq IPO 14 Sep 2018 · Caixin; Renaissance Capital",
+      "voiceover": "Qutoutiao, a Chinese news app whose name means fun headlines. Founded in June twenty sixteen, it listed on Nasdaq in September twenty eighteen, about twenty-seven months later, and its shares more than doubled on day one.",
+      "duration": 15235
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Qutoutiao",
+      "eyebrow": "What happened next",
+      "tag": "LEFT NASDAQ (as of Nov 2026)",
+      "headline": "Agreed to leave Nasdaq in 2023",
+      "receipt": "Caixin; Renaissance Capital",
+      "voiceover": "But the early excitement didn't last. In twenty twenty-three, it agreed to leave Nasdaq.",
+      "duration": 6719
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "China · Coffee chain",
+      "headline": "Luckin Coffee",
+      "voiceover": "Number eight.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Luckin Coffee",
+      "eyebrow": "Registration to IPO",
+      "headline": "China · Coffee chain",
+      "stat": {
+        "value": "~23 mo",
+        "label": "Registered Jun 2017 → first trading day 17 May 2019",
+        "count": {
+          "from": 0,
+          "to": 23,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Cayman holding co. registered Jun 2017 → Nasdaq IPO 17 May 2019 · Luckin SEC filings; TechCrunch",
+      "voiceover": "Luckin Coffee, a Chinese coffee chain built for app ordering and pickup. Its holding company was registered in June twenty seventeen, and it listed on Nasdaq in May twenty nineteen, raising about six hundred and fifty million dollars.",
+      "duration": 16009
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Luckin Coffee",
+      "eyebrow": "What happened next",
+      "tag": "FRAUD · DELISTED 2020 (as of Nov 2026)",
+      "headline": "Fabricated sales, then removed from Nasdaq",
+      "receipt": "Luckin SEC filings; TechCrunch",
+      "voiceover": "Then, in April twenty twenty, the company itself announced that some of its sales had been fabricated. Trading was halted, and it was removed from Nasdaq. The coffee shops kept running in China, but the listing didn't survive.",
+      "duration": 16009
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "USA · Online travel",
+      "headline": "Priceline",
+      "voiceover": "Number seven.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Priceline",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Online travel",
+      "stat": {
+        "value": "~20 mo",
+        "label": "Registered Jul 1997 → first trading day 30 Mar 1999",
+        "count": {
+          "from": 0,
+          "to": 20,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated 1997* → Nasdaq IPO 30 Mar 1999 · Encyclopedia.com; Benzinga  (*sources differ on 1996–97)",
+      "voiceover": "Priceline, the American name-your-own-price travel site. Incorporated in nineteen ninety-seven, it listed in March nineteen ninety-nine. On its first day, it was valued at around ten billion dollars.",
+      "duration": 12138
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Priceline",
+      "eyebrow": "What happened next",
+      "tag": "ALIVE (as of Nov 2026)",
+      "headline": "Today it's part of Booking Holdings",
+      "receipt": "Encyclopedia.com; Benzinga  (*sources differ on 1996–97)",
+      "voiceover": "It survived the dot-com crash, and today it's part of Booking Holdings, the company behind Booking dot com.",
+      "duration": 8267
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "USA · Telecom equipment",
+      "headline": "Sycamore Networks",
+      "voiceover": "Number six.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Sycamore Networks",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Telecom equipment",
+      "stat": {
+        "value": "20 mo",
+        "label": "Registered 17 Feb 1998 → first trading day 21 Oct 1999",
+        "count": {
+          "from": 0,
+          "to": 20,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated 17 Feb 1998 → Nasdaq IPO 21 Oct 1999 · Sycamore SEC 10-K",
+      "voiceover": "Sycamore Networks, an American maker of fibre-optic network equipment. Incorporated in February nineteen ninety-eight, it listed twenty months later, in October nineteen ninety-nine, with just a few products and one customer. Its shares almost quintupled on day one.",
+      "duration": 16009
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Sycamore Networks",
+      "eyebrow": "What happened next",
+      "tag": "WOUND DOWN 2013 (as of Nov 2026)",
+      "headline": "Sold its business and dissolved",
+      "receipt": "Sycamore SEC 10-K",
+      "voiceover": "When the telecom boom ended, so did its growth. In twenty thirteen, it sold its business and dissolved.",
+      "duration": 8267
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "USA · Web browser",
+      "headline": "Netscape",
+      "voiceover": "Number five.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Netscape",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Web browser",
+      "stat": {
+        "value": "16 mo",
+        "label": "Registered 4 Apr 1994 → first trading day 9 Aug 1995",
+        "count": {
+          "from": 0,
+          "to": 16,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Founded 4 Apr 1994 → Nasdaq IPO 9 Aug 1995 · Britannica; Wikipedia",
+      "voiceover": "Netscape, the company whose web browser brought the internet to millions. Founded in April nineteen ninety-four, it went public just sixteen months later, in August nineteen ninety-five, without ever having made a profit.",
+      "duration": 14074
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Netscape",
+      "eyebrow": "What happened next",
+      "tag": "ACQUIRED 1998 (as of Nov 2026)",
+      "headline": "The IPO that started the dot-com rush",
+      "receipt": "Britannica; Wikipedia",
+      "voiceover": "Its stock doubled on day one, and that moment kicked off the dot-com boom. In nineteen ninety-eight, it was bought by AOL.",
+      "duration": 9816
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "USA · Internet infrastructure",
+      "headline": "Akamai",
+      "voiceover": "Number four.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Akamai",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Internet infrastructure",
+      "stat": {
+        "value": "~14 mo",
+        "label": "Registered 20 Aug 1998 → first trading day 29 Oct 1999",
+        "count": {
+          "from": 0,
+          "to": 14,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated 20 Aug 1998 → Nasdaq IPO 29 Oct 1999 · Akamai company history; Encyclopedia.com",
+      "voiceover": "Akamai, from the United States. It runs the networks of servers that make websites load faster around the world. Incorporated in August nineteen ninety-eight, it listed about fourteen months later.",
+      "duration": 12912
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Akamai",
+      "eyebrow": "What happened next",
+      "tag": "ALIVE (as of Nov 2026)",
+      "headline": "Still a major internet company today",
+      "receipt": "Akamai company history; Encyclopedia.com",
+      "voiceover": "It survived the crash, and it's still a major internet company today.",
+      "duration": 5945
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "USA · Internet portal",
+      "headline": "Yahoo",
+      "voiceover": "Number three.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Yahoo",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Internet portal",
+      "stat": {
+        "value": "~13 mo",
+        "label": "Registered 2 Mar 1995 → first trading day 12 Apr 1996",
+        "count": {
+          "from": 0,
+          "to": 13,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated 2 Mar 1995 → Nasdaq IPO 12 Apr 1996 · History of Yahoo (Wikipedia); Entrepreneur",
+      "voiceover": "Yahoo. It started as two Stanford students' list of websites, but the company was only registered in March nineteen ninety-five. Just over thirteen months later, in April nineteen ninety-six, it went public.",
+      "duration": 13687
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Yahoo",
+      "eyebrow": "What happened next",
+      "tag": "ACQUIRED 2017 (as of Nov 2026)",
+      "headline": "Sold to Verizon for about $4.5 billion",
+      "receipt": "History of Yahoo (Wikipedia); Entrepreneur",
+      "voiceover": "Yahoo became one of the biggest names on the internet. In twenty seventeen, its main business was sold to Verizon for about four and a half billion dollars.",
+      "duration": 12138
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "USA · Online pet supplies",
+      "headline": "Pets.com",
+      "voiceover": "Number two.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Pets.com",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Online pet supplies",
+      "stat": {
+        "value": "~12 mo",
+        "label": "Registered Feb 1999 → first trading day Feb 2000",
+        "count": {
+          "from": 0,
+          "to": 12,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated Feb 1999 → Nasdaq IPO Feb 2000 · Wikipedia (Pets.com S-1); Business Insider",
+      "voiceover": "Pets dot com, an American online pet shop famous for its sock-puppet mascot. Incorporated in February nineteen ninety-nine, it listed on Nasdaq exactly a year later.",
+      "duration": 11364
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Pets.com",
+      "eyebrow": "What happened next",
+      "tag": "COLLAPSED (as of Nov 2026)",
+      "headline": "Liquidated 268 days after its IPO",
+      "receipt": "Wikipedia (Pets.com S-1); Business Insider",
+      "voiceover": "It lost money on almost every sale. Two hundred and sixty-eight days after its IPO, it shut down, and its shares, sold at eleven dollars, were worth nineteen cents.",
+      "duration": 12525
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "USA · Internet search",
+      "headline": "Lycos",
+      "voiceover": "Number one.",
+      "duration": 2074
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Lycos",
+      "eyebrow": "Registration to IPO",
+      "headline": "USA · Internet search",
+      "stat": {
+        "value": "~10 mo",
+        "label": "Registered Jun 1995 → first trading day 2 Apr 1996",
+        "count": {
+          "from": 0,
+          "to": 10,
+          "decimals": 0,
+          "prefix": "~",
+          "suffix": " mo"
+        }
+      },
+      "receipt": "Incorporated Jun 1995 → Nasdaq IPO 2 Apr 1996 · Lycos SEC 10-Q (1996); Encyclopedia.com",
+      "voiceover": "Lycos, an American search engine that began as a Carnegie Mellon University project. The company was incorporated in June nineteen ninety-five, and it went public in April nineteen ninety-six, just ten months later, then the youngest company ever to list on Nasdaq.",
+      "duration": 17558
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Lycos",
+      "eyebrow": "What happened next",
+      "tag": "ACQUIRED 2000 (as of Nov 2026)",
+      "headline": "Sold to Terra Networks for $12.5 billion",
+      "receipt": "Lycos SEC 10-Q (1996); Encyclopedia.com",
+      "voiceover": "Four years later, in twenty hundred, Lycos was bought by Spain's Terra Networks in a twelve and a half billion dollar deal.",
+      "duration": 9816
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Months from registration to IPO",
+      "headline": "Speed didn't predict survival",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "Lycos",
+          "Pets.com",
+          "Yahoo",
+          "Akamai",
+          "Netscape",
+          "Sycamore",
+          "Priceline",
+          "Luckin",
+          "Qutoutiao",
+          "PDD"
+        ],
+        "values": [
+          10,
+          12,
+          13,
+          14,
+          16,
+          20,
+          20,
+          23,
+          27,
+          34
+        ],
+        "display": [
+          "10",
+          "12",
+          "13",
+          "14",
+          "16",
+          "20",
+          "20",
+          "23",
+          "27",
+          "34"
+        ],
+        "highlight": [
+          1
+        ]
+      },
+      "voiceover": "Look at the pattern. Seven of the ten listed during America's nineteen nineties internet boom, and three during China's tech boom of twenty eighteen and nineteen. Some became giants. Others collapsed within a year or two. Going public fast told investors very little about who would survive.",
+      "duration": 19493
+    },
+    {
+      "type": "plain",
+      "eyebrow": "And South Africa?",
+      "headline": "No South African company made this list",
+      "body": "Three questions to ask about any hyped new listing: How old is it? What does it earn? Who is selling shares at the IPO?",
+      "voiceover": "No South African company made this list. But if you ever hear hype about a brand-new listing, ask three questions. How old is the business? What does it actually earn? And who's selling their shares at the I P O? This is education, not financial advice.",
+      "duration": 19106
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which of these surprised you most?",
+      "voiceover": "Which one surprised you most? Tell us in the comments. All our sources are in the description.",
+      "duration": 7880
+    }
+  ],
+  "endcard": {
+    "title": "Speed isn't <em>success</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "10 Companies That Went Public Fastest — and What Happened Next",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "IPO",
+      "fastest IPO",
+      "Lycos",
+      "Pets.com",
+      "Yahoo",
+      "Netscape",
+      "Luckin Coffee",
+      "Pinduoduo",
+      "Mzansi Money Matters"
+    ],
+    "description": "From registration to the stock market in months: the 10 fastest IPOs we could verify, their country and sector, and what happened to each one next.\n\nHow we counted: months from legal registration (incorporation) to the first day of trading in a traditional IPO on a major exchange.\n\n{chapters}\n\nSources (as of November 2026):\n10 PDD — DealStreetAsia, \"Pinduoduo: From Zero to $23B in Three Years\"; Global Venturing (Tencent-backed IPOs)\n9 Qutoutiao — Caixin Global (founded June 2016); Renaissance Capital (IPO 13–14 Sep 2018); Wikipedia (agreed to leave Nasdaq, 2023)\n8 Luckin Coffee — TechNode; TechCrunch (May 2019 IPO, ~$651m); Luckin Form 6-K, 2 Apr 2020 (fabricated transactions); trading suspended 29 Jun 2020\n7 Priceline — Encyclopedia.com; Benzinga \"This Day in Market History\" (IPO 30 Mar 1999); sources differ on 1996–97 incorporation\n6 Sycamore Networks — SEC Form 10-K (incorporated 17 Feb 1998; IPO 21 Oct 1999); SEC Form 8-K/10-Q 2013 (asset sale and dissolution)\n5 Netscape — Britannica; Wikipedia (founded 4 Apr 1994; IPO 9 Aug 1995); The 1995 Blog (AOL acquisition)\n4 Akamai — Wikipedia (incorporated 20 Aug 1998; Nasdaq from 29 Oct 1999); Encyclopedia.com\n3 Yahoo — History of Yahoo, Wikipedia (incorporated 2 Mar 1995; IPO 12 Apr 1996; sold to Verizon 2017 for $4.48bn)\n2 Pets.com — Wikipedia (incorporated Feb 1999; IPO Feb 2000; liquidated Nov 2000); Business Insider\n1 Lycos — Lycos SEC Form 10-Q, 1996 (incorporated June 1995); Encyclopedia.com (IPO April 1996, youngest Nasdaq listing); CNN (Terra deal, $12.5bn)\nExcluded: SPAC mergers; OTC listings (e.g. UCAR on China's NEEQ board).\n\nEducation, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}
