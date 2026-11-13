@@ -2,7 +2,7 @@
 """
 Voiceover generator.
 
-Speaks each scene's `voiceover` line with Edge-TTS, measures how long each clip
+Speaks each scene's `voiceover` line with Kokoro (local, Apache-2.0) or Edge-TTS, measures how long each clip
 actually is, and rebuilds the timing so every scene stays on screen for exactly
 as long as its narration takes. Writes an audio track padded with silence so the
 audio and the visuals line up frame for frame.
@@ -61,6 +61,50 @@ async def speak(text: str, voice: str, rate: str, pitch: str, dst: Path):
     await edge_tts.Communicate(text, voice, **kwargs).save(str(dst))
 
 
+# ---------- Kokoro-82M (Apache-2.0), runs locally via kokoro-onnx ----------
+KOKORO_DIR = ROOT / "models" / "kokoro"
+KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+_KOKORO = None
+
+def kokoro():
+    global _KOKORO
+    if _KOKORO is None:
+        import urllib.request
+        from kokoro_onnx import Kokoro
+        KOKORO_DIR.mkdir(parents=True, exist_ok=True)
+        for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+            if not (KOKORO_DIR / f).is_file():
+                print(f"  downloading {f} ...")
+                urllib.request.urlretrieve(KOKORO_URL + f, KOKORO_DIR / f)
+        _KOKORO = Kokoro(str(KOKORO_DIR / "kokoro-v1.0.onnx"), str(KOKORO_DIR / "voices-v1.0.bin"))
+    return _KOKORO
+
+def speak_kokoro(text: str, voice: str, speed: float, lang: str, dst: Path):
+    import soundfile as sf
+    samples, sr = kokoro().create(text, voice=voice, speed=speed, lang=lang)
+    sf.write(str(dst), samples, sr)
+
+def speak_any(text: str, cfg: dict, dst_base: Path) -> Path:
+    """cfg: {"engine": "kokoro"|"edge", "name", "speed"/"rate", "lang", "pitch"}. Returns the audio file written."""
+    if cfg.get("engine") == "kokoro":
+        out = dst_base.with_suffix(".k.wav")
+        speak_kokoro(text, cfg.get("name", "bf_emma"), float(cfg.get("speed", 1.0)),
+                     cfg.get("lang", "en-gb"), out)
+    else:
+        out = dst_base.with_suffix(".mp3")
+        asyncio.run(speak(text, cfg.get("name", "en-US-BrianMultilingualNeural"),
+                          cfg.get("rate", "+0%"), cfg.get("pitch", "+0Hz"), out))
+    if not (out.exists() and out.stat().st_size > 0):
+        raise RuntimeError("no audio written")
+    return out
+
+# when the main voice fails, the other engine takes over so a render never dies on TTS
+BACKUPS = {
+    "kokoro": {"engine": "edge", "name": "en-US-BrianMultilingualNeural", "rate": "+4%"},
+    "edge": {"engine": "kokoro", "name": "bf_emma", "speed": 1.05, "lang": "en-gb"},
+}
+
+
 async def list_voices():
     import edge_tts
     voices = await edge_tts.list_voices()
@@ -95,7 +139,7 @@ def main():
     content = json.loads(content_path.read_text(encoding="utf-8"))
 
     vcfg = content.get("voice", {})
-    voice = vcfg.get("name", "en-ZA-LukeNeural")
+    voice = vcfg.get("name", "bf_emma" if vcfg.get("engine") == "kokoro" else "en-ZA-LukeNeural")
     rate = vcfg.get("rate", "+0%")
     pitch = vcfg.get("pitch", "+0Hz")
     lead_pad = vcfg.get("lead_pad", 400)    # silence before each line
@@ -118,7 +162,8 @@ def main():
     silence(lead_in, VO / "lead.wav")
     segments.append(VO / "lead.wav")
 
-    print(f"voice: {voice}  rate {rate}")
+    print(f"voice: {vcfg.get('engine', 'edge')} / {voice}  "
+          + (f"speed {vcfg.get('speed', 1.0)}" if vcfg.get('engine') == 'kokoro' else f"rate {rate}"))
     for kind, idx, text in blocks:
         tag = f"{kind}{idx}"
         text = strip_markup(text)
@@ -128,26 +173,18 @@ def main():
         segments.append(pre)
 
         if text:
-            mp3 = VO / f"{tag}.mp3"
-            # a scene may override the voice (used for voice comparison tests)
             sc = content["scenes"][idx] if kind == "scene" else content["endcard"]
-            sv = sc.get("voice", {})
-            s_voice = sv.get("name", voice)
-            s_rate = sv.get("rate", rate)
-            s_pitch = sv.get("pitch", pitch)
+            cfg = dict(vcfg); cfg.update(sc.get("voice", {}))   # a scene may override the voice
+            cfg.setdefault("engine", "edge")
             try:
-                asyncio.run(speak(text, s_voice, s_rate, s_pitch, mp3))
-                ok = mp3.exists() and mp3.stat().st_size > 0
+                mp3 = speak_any(text, cfg, VO / tag)
             except Exception as e:
-                print(f"  {tag}: voice {s_voice} failed ({e})")
-                ok = False
-            if not ok and s_voice != voice:
-                print(f"  {tag}: falling back to {voice}")
-                sc["body"] = f"{s_voice} is not available. This line uses {voice} instead."
-                asyncio.run(speak(text, voice, rate, pitch, mp3))
-                ok = mp3.exists() and mp3.stat().st_size > 0
-            if not ok:
-                sys.exit(f"TTS produced no audio for {tag}. Check network/voice name.")
+                backup = vcfg.get("backup") or BACKUPS[cfg["engine"]]
+                print(f"  {tag}: {cfg['engine']} voice {cfg.get('name')} failed ({e}); using backup {backup.get('name')}")
+                try:
+                    mp3 = speak_any(text, backup, VO / f"{tag}-b")
+                except Exception as e2:
+                    sys.exit(f"TTS produced no audio for {tag}: {e2}")
             wav = VO / f"{tag}.wav"
             to_wav(mp3, wav)
             spoken = ffprobe_ms(wav)
