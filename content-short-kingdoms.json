@@ -1,0 +1,92 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-richest-royals",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Published estimates. Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "royal palace gates gold",
+      "eyebrow": "The world's richest royals",
+      "headline": "The British King? About $0.9bn",
+      "voiceover": "The King of the United Kingdom is worth about nine hundred million dollars personally. Among the world's richest royals, that's not even close.",
+      "duration": 10500
+    },
+    {
+      "type": "point",
+      "eyebrow": "Saudi Arabia · whole family",
+      "tag": "FAMILY · ESTIMATE",
+      "headline": "The Al Saud family",
+      "stat": {
+        "value": "$213.6bn",
+        "label": "Bloomberg, Dec 2025",
+        "count": {
+          "from": 0,
+          "to": 213.6,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Bloomberg World's Richest Families, Dec 2025",
+      "voiceover": "Saudi Arabia's royal family is estimated at two hundred and thirteen billion dollars, built on oil.",
+      "duration": 7700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "But here's the twist",
+      "headline": "#1 isn't Saudi",
+      "body": "The top royal fortune is worth over $330 billion.",
+      "voiceover": "But the richest royal family on Earth isn't Saudi. It's worth more than three hundred and thirty billion dollars.",
+      "duration": 8900
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Every figure. Every source.",
+      "headline": "The full top 10 is on the channel",
+      "voiceover": "Who is it, and how did they make it? The full top ten, with every source, is on our channel.",
+      "duration": 9300
+    }
+  ],
+  "endcard": {
+    "title": "#1 isn't <em>Saudi</em>",
+    "subtitle": "10 richest royals, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "The richest royal family isn't Saudi #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "richest royal family",
+      "royal family net worth",
+      "richest royals",
+      "Mzansi Money Matters"
+    ],
+    "description": "King Charles: about $0.9bn personally. Saudi Arabia's royal family: $213.6bn (Bloomberg, Dec 2025). But #1 isn't Saudi. Full top 10 with sources on Mzansi Money Matters.\n\nPublished estimates. Education, not financial advice. Narration is AI-generated. Stock footage from Pexels."
+  }
+}

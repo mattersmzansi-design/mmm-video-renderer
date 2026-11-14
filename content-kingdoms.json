@@ -1,0 +1,576 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-richest-royals",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Published estimates, not audited figures. Education, not financial advice.",
+  "thumbnail": {
+    "kicker": "Richest royal families",
+    "big": "$335.9 BN",
+    "line": "#1 isn't <em>Saudi</em>",
+    "photo": "gold crown jewels"
+  },
+  "scenes": [
+    {
+      "type": "intro",
+      "eyebrow": "Royal wealth, explained",
+      "headline": "The 10 richest royal families in the world",
+      "body": "Their estimated net worth, and how they made it.",
+      "voiceover": "Kings, sultans and sheikhs. These are the ten richest royal families in the world, how much they're estimated to be worth, and how they made it.",
+      "duration": 11700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "One entry per monarchy, ranked by the lowest published estimate",
+      "body": "PERSONAL = the monarch alone. FAMILY = the whole dynasty. They're not like-for-like. Royal wealth is rarely disclosed, so every figure is an estimate, with its source and year on screen.",
+      "voiceover": "Here's how we ranked them. One entry per monarchy, using the latest published estimate we could source, ranked by the low end of that estimate. Some figures cover one monarch personally. Others cover a whole family, so they're not like for like, and we'll label each one. Royal wealth is rarely disclosed, so every number here is an estimate, with its source on screen.",
+      "duration": 26900
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "United Kingdom",
+      "headline": "King Charles III",
+      "voiceover": "Number ten.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "King Charles III",
+      "eyebrow": "United Kingdom · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "King Charles III",
+      "stat": {
+        "value": "£680m",
+        "label": "Personal wealth · ≈ $0.9bn",
+        "count": {
+          "from": 0,
+          "to": 680,
+          "decimals": 0,
+          "prefix": "£",
+          "suffix": "m"
+        }
+      },
+      "receipt": "Sunday Times Rich List, May 2026 · personal assets only",
+      "voiceover": "King Charles the Third of the United Kingdom. The Sunday Times Rich List puts his personal wealth at about six hundred and eighty million pounds, roughly nine hundred million US dollars.",
+      "duration": 13700
+    },
+    {
+      "type": "broll",
+      "broll": "Scottish highlands castle",
+      "eyebrow": "How they made it",
+      "headline": "Private estates, plus an inherited portfolio",
+      "receipt": "Excludes the Crown Estate and the Duchy of Lancaster · Sunday Times Rich List 2026",
+      "voiceover": "That figure counts his private estates, Sandringham and Balmoral, which he inherited from Queen Elizabeth the Second, along with an investment portfolio. It leaves out the Crown Estate and the Duchy of Lancaster, which the Sunday Times doesn't count as his personal property. That's why the most famous monarch in the world comes tenth on this list.",
+      "duration": 24100
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Monaco",
+      "headline": "Prince Albert II",
+      "voiceover": "Number nine.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Prince Albert II",
+      "eyebrow": "Monaco · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "Prince Albert II",
+      "stat": {
+        "value": "~$1bn",
+        "label": "Widely cited estimate",
+        "count": {
+          "from": 0,
+          "to": 1,
+          "decimals": 0,
+          "prefix": "~$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Widely cited estimate; no official disclosure · lovemoney (2025)",
+      "voiceover": "Prince Albert the Second of Monaco. His fortune is widely estimated at around one billion dollars, though the palace has never published a figure.",
+      "duration": 10900
+    },
+    {
+      "type": "broll",
+      "broll": "Monaco harbour yachts",
+      "eyebrow": "How they made it",
+      "headline": "A 700-year-old dynasty in a tiny, expensive country",
+      "receipt": "Grimaldi family, rulers of Monaco since 1297",
+      "voiceover": "The Grimaldi family has ruled Monaco since twelve ninety-seven. Monaco is smaller than many South African suburbs, but it has some of the most expensive property on Earth, and it's a magnet for the world's wealthy, thanks largely to its tax rules.",
+      "duration": 18100
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Dubai, UAE",
+      "headline": "Sheikh Mohammed bin Rashid",
+      "voiceover": "Number eight.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Sheikh Mohammed bin Rashid",
+      "eyebrow": "Dubai, UAE · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "Sheikh Mohammed bin Rashid",
+      "stat": {
+        "value": "$4bn",
+        "label": "Personal wealth estimate",
+        "count": {
+          "from": 0,
+          "to": 4,
+          "decimals": 0,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Forbes richest royals, 2011 · the latest Forbes estimate",
+      "voiceover": "Sheikh Mohammed bin Rashid Al Maktoum, the ruler of Dubai. Forbes last estimated his personal wealth at about four billion dollars, back in twenty eleven.",
+      "duration": 11300
+    },
+    {
+      "type": "broll",
+      "broll": "Dubai skyline aerial",
+      "eyebrow": "How they made it",
+      "headline": "From trading port to global hub",
+      "receipt": "Dubai Holding; Godolphin · Forbes 2011",
+      "voiceover": "Dubai has little oil compared with its neighbours, so it built its wealth on trade, aviation, property and tourism instead. Sheikh Mohammed is linked to Dubai Holding, a large investment group, and he founded Godolphin, one of the best-known horse-racing operations in the world.",
+      "duration": 18900
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Morocco",
+      "headline": "King Mohammed VI",
+      "voiceover": "Number seven.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "King Mohammed VI",
+      "eyebrow": "Morocco · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "King Mohammed VI",
+      "stat": {
+        "value": "$5.7bn",
+        "label": "Personal wealth estimate",
+        "count": {
+          "from": 0,
+          "to": 5.7,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Forbes, 2015 · the latest Forbes estimate",
+      "voiceover": "King Mohammed the Sixth of Morocco. In twenty fifteen, Forbes estimated his wealth at five point seven billion dollars, which made him the richest monarch in Africa on its list.",
+      "duration": 13300
+    },
+    {
+      "type": "broll",
+      "broll": "Casablanca city aerial",
+      "eyebrow": "How they made it",
+      "headline": "A holding company that spans Africa",
+      "receipt": "Al Mada (formerly SNI): ~46.5% of Attijariwafa Bank · company filings via TSA; Afrik.com",
+      "voiceover": "Most of that wealth sits in Al Mada, the investment holding company formerly known as S N I. It holds a stake of almost half in Attijariwafa Bank, one of Africa's largest banks, along with interests in mining, energy and retail. It operates in about two dozen African countries.",
+      "duration": 20900
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Liechtenstein",
+      "headline": "Prince Hans-Adam II",
+      "voiceover": "Number six.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Prince Hans-Adam II",
+      "eyebrow": "Liechtenstein · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "Prince Hans-Adam II",
+      "stat": {
+        "value": "$9.2bn",
+        "label": "Personal wealth estimate",
+        "count": {
+          "from": 0,
+          "to": 9.2,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Bloomberg Billionaires Index, Sep 2023",
+      "voiceover": "Prince Hans-Adam the Second of Liechtenstein. Bloomberg's Billionaires Index put his fortune at about nine point two billion dollars in twenty twenty-three, the highest of any European royal.",
+      "duration": 12500
+    },
+    {
+      "type": "broll",
+      "broll": "Alps castle village",
+      "eyebrow": "How they made it",
+      "headline": "A private bank for the world's wealthy",
+      "receipt": "LGT Group, owned by the princely house · Bloomberg, Sep 2023",
+      "voiceover": "His family owns LGT, a private bank that manages money for wealthy clients and institutions around the world, about three hundred billion dollars of it in twenty twenty-three. The family's wealth goes back to land it held in the twelfth century, which makes it the oldest fortune on Bloomberg's index.",
+      "duration": 21300
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Brunei",
+      "headline": "Sultan Hassanal Bolkiah",
+      "voiceover": "Number five.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Sultan Hassanal Bolkiah",
+      "eyebrow": "Brunei · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "Sultan Hassanal Bolkiah",
+      "stat": {
+        "value": "$20bn",
+        "label": "Personal wealth estimate",
+        "count": {
+          "from": 0,
+          "to": 20,
+          "decimals": 0,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Forbes richest royals, 2011 · later estimates up to $28bn",
+      "voiceover": "Sultan Hassanal Bolkiah of Brunei. Forbes estimated his wealth at twenty billion dollars, and some later estimates go as high as twenty-eight billion.",
+      "duration": 10500
+    },
+    {
+      "type": "broll",
+      "broll": "offshore oil platform",
+      "eyebrow": "How they made it",
+      "headline": "Oil, gas, and a reign since 1967",
+      "receipt": "Oil & gas · Brunei Investment Agency owns the Dorchester Collection",
+      "voiceover": "Brunei is a small country on the island of Borneo, built on oil and gas. Oil was found there in nineteen twenty-nine. The Sultan has reigned since nineteen sixty-seven, making him one of the longest-serving monarchs alive, and Brunei's state investment agency owns luxury hotels abroad, including The Dorchester in London.",
+      "duration": 21700
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Thailand",
+      "headline": "King Vajiralongkorn",
+      "voiceover": "Number four.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "King Vajiralongkorn",
+      "eyebrow": "Thailand · estimated net worth",
+      "tag": "PERSONAL · ESTIMATE",
+      "headline": "King Vajiralongkorn",
+      "stat": {
+        "value": "$30bn+",
+        "label": "Estimates range up to $43bn",
+        "count": {
+          "from": 0,
+          "to": 30,
+          "decimals": 0,
+          "prefix": "$",
+          "suffix": "bn+"
+        }
+      },
+      "receipt": "Forbes (Crown Property Bureau, $30bn+); CEOWORLD 2019 ($43bn); Reuters 2018",
+      "voiceover": "King Maha Vajiralongkorn of Thailand. Estimates of his wealth start at about thirty billion dollars and reach forty-three billion.",
+      "duration": 8900
+    },
+    {
+      "type": "broll",
+      "broll": "Bangkok skyline night",
+      "eyebrow": "How they made it",
+      "headline": "Land in Bangkok, and stakes in a bank and a cement giant",
+      "receipt": "Crown Property Bureau assets registered in the King's name, 2018 · Reuters",
+      "voiceover": "The wealth comes from the assets of the Crown Property Bureau. According to Reuters, those assets were registered in the King's name in twenty eighteen. They include prime land in Bangkok, about twenty-three percent of Siam Commercial Bank and about a third of Siam Cement Group, one of the country's biggest companies.",
+      "duration": 22100
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Now the scale changes",
+      "headline": "From here, we count whole dynasties",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "UK",
+          "Monaco",
+          "Dubai",
+          "Morocco",
+          "Liecht.",
+          "Brunei",
+          "Thailand",
+          "?",
+          "?",
+          "?"
+        ],
+        "values": [
+          0.9,
+          1,
+          4,
+          5.7,
+          9.2,
+          20,
+          30,
+          199.5,
+          213.6,
+          335.9
+        ],
+        "display": [
+          "0.9",
+          "1",
+          "4",
+          "5.7",
+          "9.2",
+          "20",
+          "30",
+          "",
+          "",
+          ""
+        ],
+        "highlight": [
+          7,
+          8,
+          9
+        ]
+      },
+      "voiceover": "Before the top three, a warning. Everything so far has been one person's wealth, topping out at around thirty billion dollars. The top three are whole ruling families, and they're worth around two hundred billion dollars and more.",
+      "duration": 16500
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Qatar",
+      "headline": "The Al Thani family",
+      "voiceover": "Number three.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "The Al Thani family",
+      "eyebrow": "Qatar · estimated net worth",
+      "tag": "FAMILY · ESTIMATE",
+      "headline": "The Al Thani family",
+      "stat": {
+        "value": "$199.5bn",
+        "label": "Whole family · estimate",
+        "count": {
+          "from": 0,
+          "to": 199.5,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Bloomberg World's Richest Families, Dec 2025",
+      "voiceover": "The Al Thani family of Qatar. Bloomberg puts the ruling family's wealth at one hundred and ninety-nine point five billion dollars. They've ruled Qatar since the mid eighteen hundreds.",
+      "duration": 12900
+    },
+    {
+      "type": "broll",
+      "broll": "Doha skyline",
+      "eyebrow": "How they made it",
+      "headline": "One of the world's biggest gas fields",
+      "receipt": "Offshore gas · London property; Valentino stake · Bloomberg, Dec 2025",
+      "voiceover": "Qatar sits on a share of one of the largest natural gas fields in the world, and it's one of the biggest exporters of liquefied natural gas. Over the years, that gas money has gone into assets around the world. Bloomberg points to property in London and a stake in the Italian fashion house Valentino.",
+      "duration": 23300
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Saudi Arabia",
+      "headline": "The Al Saud family",
+      "voiceover": "Number two.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "The Al Saud family",
+      "eyebrow": "Saudi Arabia · estimated net worth",
+      "tag": "FAMILY · ESTIMATE",
+      "headline": "The Al Saud family",
+      "stat": {
+        "value": "$213.6bn",
+        "label": "Whole family · estimate",
+        "count": {
+          "from": 0,
+          "to": 213.6,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Bloomberg World's Richest Families, Dec 2025 · estimated from decades of royal-court payouts",
+      "voiceover": "The Al Saud family of Saudi Arabia, at two hundred and thirteen point six billion dollars. Bloomberg bases this on about fifty years of payments from the royal court to family members, and it says the true figure may well be higher.",
+      "duration": 18100
+    },
+    {
+      "type": "broll",
+      "broll": "oil refinery desert",
+      "eyebrow": "How they made it",
+      "headline": "Oil, since 1938",
+      "receipt": "Oil · Saudi Aramco · Bloomberg, Dec 2025",
+      "voiceover": "The source is oil. Commercial quantities were found in nineteen thirty-eight, and today Saudi Aramco is one of the most valuable companies in the world. The family has thousands of members, so this fortune is shared across a very large dynasty.",
+      "duration": 17700
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Abu Dhabi, UAE",
+      "headline": "The Al Nahyan family",
+      "voiceover": "Number one.",
+      "duration": 2100
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "The Al Nahyan family",
+      "eyebrow": "Abu Dhabi, UAE · estimated net worth",
+      "tag": "FAMILY · ESTIMATE",
+      "headline": "The Al Nahyan family",
+      "stat": {
+        "value": "$335.9bn",
+        "label": "Whole family · estimate",
+        "count": {
+          "from": 0,
+          "to": 335.9,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Bloomberg World's Richest Families, Dec 2025 · #2 family overall, after the Waltons",
+      "voiceover": "it isn't Saudi Arabia. It's the Al Nahyan family of Abu Dhabi, in the United Arab Emirates, at three hundred and thirty-five point nine billion dollars. That makes it the richest royal family on Bloomberg's list, and second only to America's Walton family, who own Walmart.",
+      "duration": 19700
+    },
+    {
+      "type": "broll",
+      "broll": "Abu Dhabi skyline",
+      "eyebrow": "How they made it",
+      "headline": "Oil money, turned into a global investment machine",
+      "receipt": "Oil · global investment groups; Manchester City · Bloomberg, Dec 2025",
+      "voiceover": "It started with oil. But the family turned that oil money into investments around the world. Members of the family are behind investment groups with stakes in everything from technology and A I to Manchester City football club. That's how a desert emirate's ruling family built the biggest royal fortune on Bloomberg's list.",
+      "duration": 22500
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Estimated wealth, US$ billions",
+      "headline": "Families vs individuals: not like-for-like",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "UK",
+          "Monaco",
+          "Dubai",
+          "Morocco",
+          "Liecht.",
+          "Brunei",
+          "Thailand",
+          "Qatar",
+          "Saudi",
+          "Abu Dhabi"
+        ],
+        "values": [
+          0.9,
+          1,
+          4,
+          5.7,
+          9.2,
+          20,
+          30,
+          199.5,
+          213.6,
+          335.9
+        ],
+        "display": [
+          "0.9",
+          "1",
+          "4",
+          "5.7",
+          "9.2",
+          "20",
+          "30",
+          "199.5",
+          "213.6",
+          "335.9"
+        ],
+        "highlight": [
+          9
+        ]
+      },
+      "voiceover": "Put them side by side, and you can see the pattern. Almost every big royal fortune rests on something the family has controlled for generations: oil and gas, land, a bank, or a stake in a nation's biggest companies. What made the top ones truly global was what came next, turning that income into investments around the world.",
+      "duration": 24500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The money lesson",
+      "headline": "Wealth that lasts comes from owning assets",
+      "body": "Income from oil, land or a business, reinvested for decades, is what compounds.",
+      "voiceover": "And there's a lesson in that for the rest of us, on a much smaller scale. Lasting wealth rarely comes from a salary alone. It comes from owning assets that earn an income, and reinvesting that income for a very long time. This is education, not financial advice.",
+      "duration": 20500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which fortune surprised you most?",
+      "voiceover": "Which one surprised you most? Let us know in the comments. All our sources are in the description.",
+      "duration": 8500
+    }
+  ],
+  "endcard": {
+    "title": "Own <em>assets</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 5000
+  },
+  "youtube": {
+    "title": "Richest Royal Families in the World: Top 10 by Net Worth & How They Made It",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "richest royal families",
+      "richest royals",
+      "richest kings in the world",
+      "royal family net worth",
+      "Al Nahyan",
+      "Saudi royal family",
+      "Sultan of Brunei",
+      "King Charles net worth",
+      "Mzansi Money Matters"
+    ],
+    "description": "The 10 richest royal families and monarchs in the world: their estimated net worth, and how each fortune was made, from oil and gas to banks, land and global investments.\n\nHow we ranked them: one entry per reigning monarchy, using the latest published estimate with a named source, ranked by the low end of that estimate. PERSONAL figures cover the monarch alone, and FAMILY figures cover the whole dynasty, so they are not like-for-like.\n\n{chapters}\n\nSources (published estimates; royal wealth is rarely disclosed):\n1 Al Nahyan (Abu Dhabi) $335.9bn, 2 Al Saud $213.6bn, 3 Al Thani $199.5bn: Bloomberg, \"World's Richest Families 2025\" (net worth as of early Dec 2025). Al Saud is estimated from about 50 years of Royal Court payouts.\n4 King Vajiralongkorn (Thailand): Forbes richest royals (Crown Property Bureau, $30bn+); CEOWORLD Magazine 2019 ($43bn); Reuters, 2018 (CPB assets registered in the King's name: SCB and Siam Cement stakes, Bangkok land)\n5 Sultan Hassanal Bolkiah (Brunei): Forbes richest royals, 2011 ($20bn); CEOWORLD 2019 ($28bn)\n6 Prince Hans-Adam II (Liechtenstein): Bloomberg Billionaires Index via Bloomberg/InvestmentNews, Sep 2023 ($9.2bn; LGT)\n7 King Mohammed VI (Morocco): Forbes, 2015 ($5.7bn); Al Mada holdings: TSA Algérie; Afrik.com\n8 Sheikh Mohammed bin Rashid Al Maktoum (Dubai): Forbes richest royals, 2011 (~$4bn)\n9 Prince Albert II (Monaco): widely cited estimate (~$1bn), e.g. lovemoney 2025; no official disclosure\n10 King Charles III (UK): Sunday Times Rich List, May 2026 (£680m, personal assets only; excludes the Crown Estate and the Duchy of Lancaster)\nNot ranked: Kuwait (no reliable named estimate) and Luxembourg (the published figure predates the current Grand Duke).\n\nIndependent channel, not affiliated with any government or royal house. Education, not financial advice. Narration and some visuals are AI-generated. Stock footage from Pexels."
+  }
+}

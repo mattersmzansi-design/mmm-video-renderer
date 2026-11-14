@@ -168,7 +168,10 @@
     font-size:24px;font-weight:600;color:var(--paper);background:rgba(0,27,38,.82);border-left:6px solid var(--orange);
     padding:12px 22px;border-radius:6px}
   .receipt .rk{font-size:18px;font-weight:800;letter-spacing:.14em;color:var(--orange)}
-  .scene.s-broll .receipt{left:120px}
+  .scene.s-broll .receipt{left:120px;z-index:2}
+  .scene.s-broll.has-receipt{padding-bottom:290px}
+  body.portrait .scene.s-broll.has-receipt{padding-bottom:520px}
+  body.portrait .scene.s-broll .receipt{left:80px}
   body.portrait .receipt{position:absolute;left:0;bottom:430px;max-width:920px;font-size:24px;flex-wrap:wrap}
 </style>
 </head>
@@ -286,6 +289,7 @@ CONTENT.scenes.forEach((sc, i) => {
     r.className = 'receipt';
     r.innerHTML = '<span class="rk">SOURCE</span>' + esc(sc.receipt);
     el.appendChild(r);
+    el.classList.add('has-receipt');
   }
   scenesEl.appendChild(el);
   if (type === 'chart') buildChart(el.querySelector('.cbox'), sc.chart || {});
