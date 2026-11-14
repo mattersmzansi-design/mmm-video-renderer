@@ -1,0 +1,36 @@
+name: Thumbnail variants
+
+# Renders A/B test thumbnails from thumb-variants.json and commits them to thumbs/.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  variants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Fetch brand fonts
+        run: |
+          mkdir -p fonts
+          curl -sSfL "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth,wght%5D.ttf" -o fonts/Archivo-Bold.ttf
+      - run: python thumb_variants.py
+      - name: Commit thumbnails
+        run: |
+          git config user.name "mmm-bot"
+          git config user.email "mmm-bot@users.noreply.github.com"
+          git add -f thumbs/*.jpg
+          git commit -m "Thumbnail variants [skip ci]" || echo "nothing to commit"
+          git push

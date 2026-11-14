@@ -75,6 +75,26 @@ def background(t: dict) -> Path | None:
     return None
 
 
+def render_thumb(t: dict, logo: Path, out: Path):
+    bg = background(t)
+    html = ((ROOT / "template-thumb.html").read_text(encoding="utf-8")
+            .replace("__FONTS__", font_face_css(ROOT / "fonts"))
+            .replace("__THUMB__", json.dumps(t))
+            .replace("__BG__", json.dumps(data_uri(bg) if bg else ""))
+            .replace("__LOGO__", json.dumps(data_uri(logo) if logo.is_file() else "")))
+    page_path = BUILD / "thumb.html"
+    page_path.write_text(html, encoding="utf-8")
+    from playwright.sync_api import sync_playwright
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        pg = b.new_page(viewport={"width": 1280, "height": 720})
+        pg.goto(page_path.as_uri())
+        pg.wait_for_function("window.READY === true", timeout=20000)
+        pg.screenshot(path=str(out), type="jpeg", quality=90)
+        b.close()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--content", default="content.json")
@@ -84,26 +104,9 @@ def main():
     if not t:
         print("no thumbnail block; skipping")
         return
-    bg = background(t)
     logo = ROOT / "assets" / content.get("brand", {}).get("logo", "logo.jpg")
-    html = ((ROOT / "template-thumb.html").read_text(encoding="utf-8")
-            .replace("__FONTS__", font_face_css(ROOT / "fonts"))
-            .replace("__THUMB__", json.dumps(t))
-            .replace("__BG__", json.dumps(data_uri(bg) if bg else ""))
-            .replace("__LOGO__", json.dumps(data_uri(logo) if logo.is_file() else "")))
-    page_path = BUILD / "thumb.html"
-    page_path.write_text(html, encoding="utf-8")
-
-    from playwright.sync_api import sync_playwright
-    OUT.mkdir(parents=True, exist_ok=True)
     out = OUT / f"thumb-{content.get('slug', 'video')}.jpg"
-    with sync_playwright() as p:
-        b = p.chromium.launch()
-        pg = b.new_page(viewport={"width": 1280, "height": 720})
-        pg.goto(page_path.as_uri())
-        pg.wait_for_function("window.READY === true", timeout=20000)
-        pg.screenshot(path=str(out), type="jpeg", quality=90)
-        b.close()
+    render_thumb(t, logo, out)
     print(f"thumbnail: {out.relative_to(ROOT)} ({out.stat().st_size / 1e3:.0f} KB)")
 
 
