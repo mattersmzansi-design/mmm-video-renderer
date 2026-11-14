@@ -1,0 +1,30 @@
+name: Channel admin
+
+# List uploads, or retitle videos from a JSON file in the repo.
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "list, or retitle"
+        required: true
+        default: "list"
+      file:
+        description: "For retitle: JSON file of {video_id: new title}"
+        required: false
+        default: "titles.json"
+
+jobs:
+  admin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-api-python-client google-auth
+      - run: python channel_admin.py ${{ inputs.command }} ${{ inputs.command == 'retitle' && inputs.file || '' }}
