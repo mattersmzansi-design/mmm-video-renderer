@@ -157,7 +157,7 @@ Not ranked: Kuwait (no reliable named estimate) and Luxembourg (the published fi
 
 long = dict(base, slug="top10-richest-royals", countdown={"from": 10},
  disclaimer="Published estimates, not audited figures. Education, not financial advice.",
- thumbnail={"kicker": "Richest royal families", "big": "$335.9 BN", "line": "#1 isn't <em>Saudi</em>", "photo": "gold crown jewels"},
+ thumbnail={"big": "$335.9 BN", "line": "#1 isn't <em>Saudi</em>", "photo": "gold crown jewels"},
  scenes=scenes,
  endcard={"title": "Own <em>assets</em>", "subtitle": "Subscribe for South African money, explained.",
           "handle": "@MzansiMoneyMatters", "duration": 5000},
@@ -200,3 +200,49 @@ json.dump(long, open("content-kingdoms.json", "w"), ensure_ascii=False, indent=2
 json.dump(short, open("content-short-kingdoms.json", "w"), ensure_ascii=False, indent=2)
 for n, d in (("long", long), ("short", short)):
     print(n, len(d["scenes"]), "scenes, ~%.1f min" % (sum(s["duration"] for s in d["scenes"]) / 60000))
+
+
+# ---------- 10-day test, version 2 (15 Nov 2026): faster hook, quicker-cut Short, 15 s end card ----------
+import copy
+v2 = copy.deepcopy(long)
+v2["slug"] = "top10-richest-royals-v2"
+v2["scenes"][0]["voiceover"] = ("The richest royal family on Earth is worth over three hundred billion dollars, and it isn't Saudi Arabia. "
+                                "The British King doesn't even make the top five. Let's count down.")
+v2["scenes"][0]["headline"] = "The richest royal family isn't Saudi"
+v2["scenes"][0]["body"] = "10 royal fortunes: what they're worth, and how they made it."
+v2["scenes"][1]["voiceover"] = "Every figure is a published estimate, labelled personal or family, with its source on screen."
+for s_ in v2["scenes"][:2]:
+    s_["duration"] = est(s_["voiceover"])
+v2["endcard"]["duration"] = 15000
+v2["youtube"]["title"] = "Richest Royal Families: Who's Really #1? (Top 10)"
+v2["youtube"]["description"] = v2["youtube"]["description"] + "\n\n#RichestRoyals #RoyalFamily #NetWorth #MzansiMoneyMatters"
+
+q2 = [
+ {"type": "broll", "broll": "royal palace gates gold", "eyebrow": "Richest royals", "headline": "The British King?",
+  "voiceover": "The King of the United Kingdom?"},
+ {"type": "point", "eyebrow": "UK · personal wealth", "tag": "PERSONAL · ESTIMATE", "headline": "King Charles III",
+  "stat": stat("£680m", "≈ $0.9bn", 680, "£", "m"), "receipt": "Sunday Times Rich List, May 2026",
+  "voiceover": "About nine hundred million dollars. Not even close."},
+ {"type": "broll", "broll": "oil refinery desert", "eyebrow": "Saudi Arabia", "headline": "The Saudi royal family?",
+  "voiceover": "Saudi Arabia's royal family?"},
+ {"type": "point", "eyebrow": "Saudi Arabia · whole family", "tag": "FAMILY · ESTIMATE", "headline": "The Al Saud family",
+  "stat": stat("$213.6bn", "Built on oil", 213.6, "$", "bn", 1), "receipt": "Bloomberg World's Richest Families, Dec 2025",
+  "voiceover": "Two hundred and thirteen billion dollars, built on oil."},
+ {"type": "plain", "eyebrow": "But here's the twist", "headline": "#1 isn't Saudi",
+  "voiceover": "But the richest royal family on Earth isn't Saudi."},
+ {"type": "plain", "eyebrow": "#1 is worth", "headline": "Over $330 billion",
+  "voiceover": "It's worth more than three hundred and thirty billion dollars."},
+ {"type": "plain", "eyebrow": "Every figure. Every source.", "headline": "Full top 10 on the channel",
+  "voiceover": "Who is it? The full top ten, with sources, is on our channel."},
+]
+for s_ in q2:
+    s_["duration"] = est(s_["voiceover"])
+short2 = copy.deepcopy(short)
+short2["slug"] = "short-richest-royals-v2"
+short2["scenes"] = q2
+short2["youtube"]["title"] = "Saudi isn't #1? Richest royal families #shorts"
+json.dump(v2, open("content-kingdoms-v2.json", "w"), ensure_ascii=False, indent=2)
+json.dump(short2, open("content-short-kingdoms-v2.json", "w"), ensure_ascii=False, indent=2)
+for n, d in (("long v2", v2), ("short v2", short2)):
+    print(n, len(d["scenes"]), "scenes, ~%.1f min" % (sum(s["duration"] for s in d["scenes"]) / 60000),
+          "| first rank at %.1fs" % (sum(s["duration"] for s in d["scenes"][:2]) / 1000))

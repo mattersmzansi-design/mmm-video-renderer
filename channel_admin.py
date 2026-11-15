@@ -37,15 +37,21 @@ def main():
             print(f"{v['id']}  {v['status']['privacyStatus']:<8} {v['contentDetails']['duration']:<9} {v['snippet']['title']}")
     elif cmd == "retitle":
         titles = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
-        for vid, title in titles.items():
-            if len(title) > 100:
+        for vid, spec in titles.items():
+            # value is a title string, or {"title": ..., "append": text added to the end of the description once}
+            spec = spec if isinstance(spec, dict) else {"title": spec}
+            if len(spec.get("title", "")) > 100:
                 print(f"SKIP {vid}: title over 100 characters"); continue
             cur = api.videos().list(part="snippet", id=vid).execute()["items"]
             if not cur:
                 print(f"SKIP {vid}: not found"); continue
             sn = cur[0]["snippet"]
             old = sn["title"]
-            body = {"id": vid, "snippet": {"title": title, "description": sn.get("description", ""),
+            title = spec.get("title") or old
+            desc = sn.get("description", "")
+            if spec.get("append") and spec["append"] not in desc:
+                desc = desc.rstrip() + "\n\n" + spec["append"]
+            body = {"id": vid, "snippet": {"title": title, "description": desc,
                                             "categoryId": sn["categoryId"], "tags": sn.get("tags", [])}}
             if sn.get("defaultLanguage"):
                 body["snippet"]["defaultLanguage"] = sn["defaultLanguage"]
