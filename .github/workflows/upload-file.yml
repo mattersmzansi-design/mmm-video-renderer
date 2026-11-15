@@ -1,0 +1,38 @@
+name: Upload a finished video
+
+# Uploads a video that is already in the repo (e.g. promos/*.mp4) as PRIVATE,
+# using the "youtube" block of a content file. Nothing is rendered.
+on:
+  workflow_dispatch:
+    inputs:
+      content:
+        description: "Content file with slug, size and youtube block"
+        required: true
+      file:
+        description: "Video file in the repo, e.g. promos/x.mp4"
+        required: true
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Upload (private)
+        run: |
+          mkdir -p out
+          python - <<'PY'
+          import json, shutil
+          c = json.load(open("${{ inputs.content }}"))
+          w, h = c.get("size", [1920, 1080])
+          shutil.copy("${{ inputs.file }}", f"out/{c['slug']}-{w}x{h}.mp4")
+          PY
+          python upload.py --content "${{ inputs.content }}"
