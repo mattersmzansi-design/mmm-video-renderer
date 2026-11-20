@@ -67,11 +67,19 @@ def download(url: str, dest: Path):
             f.write(chunk)
 
 
-def to_webm(src: Path, dest: Path, w: int, h: int, start: float, length: float):
+def to_webm(src: Path, dest: Path, w: int, h: int, start: float, length: float, fit: str = "cover"):
+    """fit="cover" fills the frame by cropping; fit="pad" keeps the whole clip and fills the
+    rest with a blurred copy (used to put 16:9 clips into a 9:16 Short without cutting off hands)."""
     tmp = dest.with_suffix(".part.webm")
+    if fit == "pad":
+        vf = (f"split[a][b];[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},"
+              f"boxblur=30:3,eq=brightness=-0.12[bg];[b]scale={w}:{h}:force_original_aspect_ratio=decrease[fg];"
+              f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps=30,format=yuv420p")
+    else:
+        vf = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps=30,format=yuv420p"
     cmd = ["ffmpeg", "-y", "-v", "error", "-ss", f"{start:.2f}", "-i", str(src),
            "-t", f"{length:.2f}", "-an",
-           "-vf", f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps=30,format=yuv420p",
+           "-vf", vf,
            "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", "33", "-deadline", "realtime",
            "-cpu-used", "8", "-row-mt", "1", "-g", "15", str(tmp)]
     subprocess.run(cmd, check=True)
@@ -116,7 +124,7 @@ def main():
         own = OWN / spec["file"] if spec.get("file") else None
         if own and own.is_file():
             length = min(MAX_CLIP, max(probe_seconds(own) - start, 1.0))
-            to_webm(own, dest, w, h, start, length)
+            to_webm(own, dest, w, h, start, length, spec.get("fit") or content.get("broll_fit", "cover"))
             sources.append({"scene": i, "source": "own", "file": f"assets/broll/{own.name}"})
             print(f"  scene {i:>2}: your clip {own.name}")
             continue

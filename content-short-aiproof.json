@@ -1,0 +1,108 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-ai-proof-businesses",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "broll_fit": "pad",
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "aiproof-00-opening.mp4",
+      "eyebrow": "Jobs AI can't easily replace",
+      "headline": "ChatGPT can write your CV.",
+      "voiceover": "ChatGPT can write your CV.",
+      "duration": 3300
+    },
+    {
+      "type": "broll",
+      "broll": "aiproof-05-roofing.mp4",
+      "eyebrow": "Roofing",
+      "headline": "It can't fix your roof.",
+      "voiceover": "But it can't fix your roof.",
+      "duration": 3700
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-08-tyres.mp4",
+        "start": 3
+      },
+      "eyebrow": "Tyre fitment",
+      "headline": "Or change your tyre.",
+      "voiceover": "Or change your tyre.",
+      "duration": 2900
+    },
+    {
+      "type": "broll",
+      "broll": "aiproof-04-cleaning.mp4",
+      "eyebrow": "Home cleaning",
+      "headline": "Or clean your home.",
+      "voiceover": "Or clean your home.",
+      "duration": 2900
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The research",
+      "headline": "200,000 AI chats studied",
+      "body": "Jobs like these scored among the lowest for AI help.",
+      "receipt": "Microsoft Research, 2025 pre-print (US data)",
+      "voiceover": "Microsoft studied two hundred thousand AI chats. Jobs like these scored among the lowest for AI help.",
+      "duration": 8100
+    },
+    {
+      "type": "plain",
+      "eyebrow": "10 businesses",
+      "headline": "You can start one in South Africa",
+      "voiceover": "We ranked ten businesses like this that you can start in South Africa.",
+      "duration": 6500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Every source on screen",
+      "headline": "Full top 10 on the channel",
+      "voiceover": "Number one might surprise you. The full top ten is on our channel.",
+      "duration": 6500
+    }
+  ],
+  "endcard": {
+    "title": "AI <em>can't</em> do this",
+    "subtitle": "10 businesses, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "ChatGPT can't fix your roof #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "jobs AI can't replace",
+      "AI proof jobs",
+      "small business South Africa",
+      "Mzansi Money Matters"
+    ],
+    "description": "ChatGPT can write your CV, but it can't fix your roof. Microsoft studied 200,000 AI chats to find the work AI helps with least (2025 pre-print, US data). Full top 10 with sources on Mzansi Money Matters.\n\n#JobsAICantReplace #Shorts\n\nEducation, not financial advice. Narration is AI-generated. Clips generated with Google Flow (Veo)."
+  }
+}

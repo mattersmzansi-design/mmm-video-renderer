@@ -1,0 +1,634 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "top10-ai-proof-businesses",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not financial advice. AI exposure isn't replacement.",
+  "thumbnail": {
+    "big": "AI CAN'T DO THIS",
+    "line": "10 businesses you can <em>start</em>",
+    "image": "aiproof-thumb.jpg",
+    "focus": "center"
+  },
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "aiproof-00-opening.mp4",
+      "eyebrow": "Jobs AI can't easily replace",
+      "headline": "ChatGPT can write your CV. It can't fix your roof.",
+      "voiceover": "ChatGPT can write your CV. It can't fix your roof. Microsoft researchers studied two hundred thousand real conversations with an AI chatbot, to find the work it helps with the least. We turned that list into ten businesses you can start in South Africa. And number one is something you walk on every day.",
+      "duration": 22900
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "Microsoft's 40 US jobs AI chatbots apply to least",
+      "body": "Lowest position = our #1. Two-job businesses take the lower position. Hard to replace, not impossible.",
+      "receipt": "Microsoft Research, 'Working with AI' (July 2025 pre-print), US data",
+      "voiceover": "Here's how we ranked them. Microsoft listed the forty American jobs where AI chatbots apply the least. Our order follows each job's position on that list. It's a twenty twenty-five study that hasn't been peer reviewed yet, using US data, and the researchers say every kind of work has some exposure to AI. So think of these as hard to replace, not impossible.",
+      "duration": 26500
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Microsoft list position #37",
+      "headline": "Painting & plastering",
+      "voiceover": "Number ten.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-10-painting.mp4",
+        "start": 0
+      },
+      "rank": 10,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Every wall is different",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #37",
+      "stat": {
+        "value": "#37",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 37,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Painting and plastering. On Microsoft's list, helpers to painters and plasterers sit at number thirty-seven. Every wall is different: cracks, damp, old paint, and a client standing next to you. A chatbot can describe a perfect finish, but it can't hold a roller.",
+      "duration": 18500
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Painting & plastering",
+      "eyebrow": "What you need first",
+      "headline": "Rollers, brushes, a ladder, and a good teacher",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "To start, you need rollers, brushes, a ladder and drop sheets. The best way to learn is to work alongside an experienced painter first.",
+      "duration": 10900
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Painting & plastering",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Let AI work out the paint and the quote",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "Where AI can help: give it the room sizes, and it can estimate how much paint you need and turn that into a neat written quote.",
+      "duration": 11700
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Microsoft list position #33",
+      "headline": "Auto glass fitment",
+      "voiceover": "Number nine.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-09-autoglass.mp4",
+        "start": 0
+      },
+      "rank": 9,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Precise, physical, and done on the spot",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #33",
+      "stat": {
+        "value": "#33",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 33,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Auto glass fitment. Automotive glass installers are number thirty-three on the list. Lifting a windscreen into a car and sealing it properly is careful, physical work, often done right at the customer's car.",
+      "duration": 14500
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Auto glass fitment",
+      "eyebrow": "What you need first",
+      "headline": "Suction lifters, adhesive, and proper training",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "You'd need suction lifters, the right adhesive and proper training in fitting, because a badly fitted windscreen is a safety problem.",
+      "duration": 9700
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "Auto glass fitment",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Never miss a WhatsApp booking",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help you answer booking messages on WhatsApp quickly, even when your hands are full.",
+      "duration": 7700
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "Microsoft list position #31",
+      "headline": "Tyre fitment & repair",
+      "voiceover": "Number eight.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-08-tyres.mp4",
+        "start": 3
+      },
+      "rank": 8,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Hands on the wheel, every time",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #31",
+      "stat": {
+        "value": "#31",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 31,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Tyre fitment and repair. Tyre repairers and changers come in at number thirty-one. Every car that rolls in needs real hands on the wheel, and no chatbot can fix a puncture.",
+      "duration": 13700
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Tyre fitment & repair",
+      "eyebrow": "What you need first",
+      "headline": "Tools, and a plan for old tyres",
+      "receipt": "Waste Tyre Regulations, 2017 (NEM: Waste Act) · gov.za",
+      "voiceover": "You'll need a tyre changer, a wheel balancer and a compressor. And in South Africa, the Waste Tyre Regulations of twenty seventeen set out duties for tyre dealers, including how old tyres must be handled.",
+      "duration": 15300
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Tyre fitment & repair",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Track stock and get found on Google",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help you keep track of your stock, and write your Google business listing so drivers nearby can find you.",
+      "duration": 9700
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Microsoft list position #21",
+      "headline": "Forklift operation & hire",
+      "voiceover": "Number seven.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-07-forklift.mp4",
+        "start": 0
+      },
+      "rank": 7,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Real loads, real warehouses",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #21",
+      "stat": {
+        "value": "#21",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 21,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Forklift operation and hire. Industrial truck and tractor operators, including forklift drivers, are number twenty-one. Moving real loads safely through a busy warehouse is not something a chatbot does.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Forklift operation & hire",
+      "eyebrow": "What you need first",
+      "headline": "A certificate from an accredited trainer",
+      "receipt": "Driven Machinery Regulations, 2015, reg. 18(11) (OHS Act) · acts.co.za",
+      "voiceover": "Here the law is clear. Under South Africa's Driven Machinery Regulations, an operator of a listed lifting machine must hold a certificate of training from an accredited training provider.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Forklift operation & hire",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Scheduling and invoices, sorted",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help you schedule jobs, and send invoices on time.",
+      "duration": 5700
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Microsoft list position #19",
+      "headline": "Massage & spa",
+      "voiceover": "Number six.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-06-massage.mp4",
+        "start": 0
+      },
+      "rank": 6,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Skilled hands and trust",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #19",
+      "stat": {
+        "value": "#19",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 19,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Massage and spa. Massage therapists are number nineteen. People pay for skilled hands and a calm, trusted space, which a chatbot can't give them.",
+      "duration": 10900
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Massage & spa",
+      "eyebrow": "What you need first",
+      "headline": "Training, and know the rules",
+      "receipt": "AHPCSA · SAQA professional designation 472",
+      "voiceover": "Get proper training first. And know this: in South Africa, a registered therapeutic massage therapist is a professional registered with the Allied Health Professions Council, the A H P C S A.",
+      "duration": 14100
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "Massage & spa",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Bookings and reminders on autopilot",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help with bookings and appointment reminders, so fewer clients forget to show up.",
+      "duration": 7300
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Microsoft list position #14 & #16",
+      "headline": "Roofing",
+      "voiceover": "Number five.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-05-roofing.mp4",
+        "start": 0
+      },
+      "rank": 5,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Up on the roof, in the sun and wind",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #14 & #16",
+      "stat": {
+        "value": "#14 & #16",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 14,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Roofing. Roofers are number fourteen on the list, and their helpers number sixteen. The work happens up on the roof, in the sun and wind, on houses that are all built a little differently.",
+      "duration": 14900
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Roofing",
+      "eyebrow": "What you need first",
+      "headline": "Safety gear first, then tools",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "Start with safety gear for working at heights, then a good drill, ladders and the right fixings.",
+      "duration": 8100
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Roofing",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Turn photos into neat quotes",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help you turn your photos and measurements into a clear, professional quote.",
+      "duration": 6900
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Microsoft list position #12",
+      "headline": "Home cleaning",
+      "voiceover": "Number four.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-04-cleaning.mp4",
+        "start": 0
+      },
+      "rank": 4,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Every home is different",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #12",
+      "stat": {
+        "value": "#12",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 12,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Home cleaning, for private households. Maids and housekeeping cleaners are number twelve. Every home is different, and the job needs someone physically there, someone the family trusts.",
+      "duration": 12100
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Home cleaning",
+      "eyebrow": "What you need first",
+      "headline": "Supplies, reliability and references",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "It's one of the cheapest businesses to start: good supplies, reliable transport, and references from happy clients.",
+      "duration": 8100
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Home cleaning",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Plan routes and repeat bookings",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help you plan the day's route between clients, and manage weekly repeat bookings.",
+      "duration": 7300
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Microsoft list position #11",
+      "headline": "Paving & driveways",
+      "voiceover": "Number three.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-03-paving.mp4",
+        "start": 0
+      },
+      "rank": 3,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Heavy, outdoor, site-by-site work",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #11",
+      "stat": {
+        "value": "#11",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 11,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Paving and driveways. Paving and surfacing operators are number eleven. Every driveway has its own slope, soil and drainage, and the bricks have to be laid by hand.",
+      "duration": 12500
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Paving & driveways",
+      "eyebrow": "What you need first",
+      "headline": "A compactor, mallets and a good supplier",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "You'll need a plate compactor, rubber mallets, a level, and a reliable supplier for bricks and sand.",
+      "duration": 8100
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Paving & driveways",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Show clients the pattern first",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI image tools can help you show a client different paving patterns before the first brick goes down.",
+      "duration": 8500
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "Microsoft list position #9",
+      "headline": "Boat skipper & charter",
+      "voiceover": "Number two.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-02-boat.mp4",
+        "start": 0
+      },
+      "rank": 2,
+      "eyebrow": "Why AI struggles here",
+      "headline": "The sea doesn't follow a script",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #9",
+      "stat": {
+        "value": "#9",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 9,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Boat skipper and charter. Motorboat operators are number nine. Weather, tides and passengers change every trip, and someone has to be in charge on the water.",
+      "duration": 11700
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Boat skipper & charter",
+      "eyebrow": "What you need first",
+      "headline": "A SAMSA certificate of competence",
+      "receipt": "SAMSA (South African Maritime Safety Authority) small vessel rules",
+      "voiceover": "This one is regulated. For a commercial vessel in South Africa, the skipper must be over eighteen and hold a suitably endorsed certificate of competence, issued under SAMSA's rules.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "Boat skipper & charter",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Bookings and forecasts, but you decide",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "AI can help with bookings and summarise the forecast, but the skipper still makes the call.",
+      "duration": 7700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Before number one",
+      "headline": "Why aren't plumbers and electricians here?",
+      "body": "They're not in Microsoft's bottom 40. That doesn't mean AI can do their jobs. They just weren't among the very lowest.",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data",
+      "voiceover": "Before number one, a question you might be asking: where are plumbers and electricians? They're not in Microsoft's bottom forty. That doesn't mean AI can do their jobs. It just means they weren't among the very lowest scores.",
+      "duration": 16500
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "Microsoft list position #7 & #23",
+      "headline": "Floor finishing",
+      "voiceover": "Number one.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "aiproof-01-floor.mp4",
+        "start": 0
+      },
+      "rank": 1,
+      "eyebrow": "Why AI struggles here",
+      "headline": "Every floor tells its own story",
+      "receipt": "Microsoft Research, 'Working with AI' (2025 pre-print), US data · position #7 & #23",
+      "stat": {
+        "value": "#7 & #23",
+        "label": "of 40 jobs AI applies to least (Microsoft, US)",
+        "count": {
+          "from": 40,
+          "to": 7,
+          "decimals": 0,
+          "prefix": "#",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Floor finishing: sanding, screeding and polished concrete. Floor sanders and finishers are number seven on Microsoft's list, the lowest position of any business here, and cement masons and concrete finishers come in at twenty-three. Old wood, uneven concrete, dust and noise: every floor is different, and the finish depends on skilled hands.",
+      "duration": 22100
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Floor finishing",
+      "eyebrow": "What you need first",
+      "headline": "A sander, an edger and dust extraction",
+      "receipt": "MMM starter checklist, not a study",
+      "voiceover": "You'll need a floor sander, an edger, good dust extraction and a polisher, plus practice on real floors before you charge for it.",
+      "duration": 10500
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Floor finishing",
+      "eyebrow": "How AI can still help",
+      "tag": "AI ASSIST",
+      "headline": "Before-and-after posts that sell",
+      "receipt": "MMM suggestion, not a study",
+      "voiceover": "And AI can help you write the before-and-after posts that bring in your next client.",
+      "duration": 7300
+    },
+    {
+      "type": "broll",
+      "broll": "aiproof-11-ending.mp4",
+      "eyebrow": "The pattern",
+      "headline": "Skilled hands. AI back office.",
+      "voiceover": "See the pattern? The work itself needs skilled hands, in a real place, for a real person. But the back office, the quotes, bookings, invoices and marketing, is exactly where AI can make a small business faster. The owners who use both will have the edge.",
+      "duration": 19700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Before you start",
+      "headline": "Check the rules for your trade",
+      "body": "Educational only, not financial advice. AI exposure isn't replacement, and no business is guaranteed.",
+      "voiceover": "Before you start anything, check the rules and training for your trade, and talk to people already doing it. This video is education, not financial advice, and no business is guaranteed to succeed.",
+      "duration": 14500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which of these would you start?",
+      "voiceover": "Which of these would you start? Tell us in the comments. All our sources are in the description.",
+      "duration": 8500
+    }
+  ],
+  "endcard": {
+    "title": "Skilled hands. <em>AI back office.</em>",
+    "subtitle": "Subscribe for South African money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 15000
+  },
+  "youtube": {
+    "title": "Jobs AI Can't Easily Replace: 10 Businesses You Can Start in South Africa",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "jobs AI can't replace",
+      "businesses AI can't replace",
+      "AI proof jobs",
+      "AI proof business",
+      "businesses to start in South Africa",
+      "small business ideas South Africa",
+      "future of work",
+      "AI and jobs",
+      "Mzansi Money Matters"
+    ],
+    "description": "Jobs AI can't easily replace: 10 hands-on businesses you can start in South Africa. For each one we cover why AI struggles with it, what you need first, and how AI can still help you run it.\n\nHow we ranked them: each business takes its position on Microsoft Research's 2025 list of the 40 US jobs where AI chatbots apply least (lowest position = #1). A business that combines two jobs takes its lower position.\n\n{chapters}\n\nSources:\nRanking: Microsoft Research, Tomlinson et al., \"Working with AI: Measuring the Occupational Implications of Generative AI\" (pre-print, July 2025). It is based on 200,000 anonymised Bing Copilot conversations (US, 2024). We used its list of the 40 occupations with the lowest AI applicability. Positions used: floor sanders & finishers 7; cement masons & concrete finishers 23; motorboat operators 9; paving, surfacing & tamping equipment operators 11; maids & housekeeping cleaners 12; roofers 14; helpers–roofers 16; massage therapists 19; industrial truck & tractor operators 21; tire repairers & changers 31; automotive glass installers & repairers 33; helpers–painters, plasterers 37. The researchers note that all occupations have some potential for AI impact, and that overlap does not mean replacement.\nContext: World Economic Forum, Future of Jobs Report 2025 (frontline roles such as farmworkers, delivery drivers and construction workers see the largest job growth to 2030). ILO Working Paper 140 (2025), Generative AI and Jobs: A Refined Global Index of Occupational Exposure.\nSA rules mentioned: Waste Tyre Regulations, 2017 (National Environmental Management: Waste Act); Driven Machinery Regulations, 2015, regulation 18(11) (Occupational Health and Safety Act); Allied Health Professions Council of South Africa (AHPCSA), Registered Therapeutic Massage Therapist (SAQA designation 472); South African Maritime Safety Authority (SAMSA), small vessel certificates of competence.\n\"What you need first\" checklists and \"How AI can help\" tips are MMM suggestions, not findings of any study.\n\n#JobsAICantReplace #SmallBusiness #SouthAfrica #MzansiMoneyMatters\n\nIndependent channel. Education, not financial advice. Narration is AI-generated. Video clips were generated with Google Flow (Veo)."
+  }
+}
