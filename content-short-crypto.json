@@ -1,0 +1,112 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-bitcoin-one-cent",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 7
+  },
+  "broll_fit": "pad",
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "crypto-04-server-dark.mp4",
+      "eyebrow": "Bitcoin history · June 2011",
+      "headline": "Bitcoin was worth about $32.",
+      "voiceover": "In June twenty eleven, one Bitcoin was worth about thirty-two dollars.",
+      "duration": 5700
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-05-vault-door.mp4",
+      "eyebrow": "Mt. Gox",
+      "headline": "Then a hacker hit the biggest exchange.",
+      "voiceover": "Then a hacker broke into Mt. Gox, which handled about ninety percent of all Bitcoin trading.",
+      "duration": 7700
+    },
+    {
+      "type": "point",
+      "eyebrow": "On that one exchange",
+      "headline": "Bitcoin's price hit one cent",
+      "stat": {
+        "value": "$0.01",
+        "label": "Mt. Gox, June 2011",
+        "count": {
+          "from": 32,
+          "to": 0.01,
+          "decimals": 2,
+          "prefix": "$",
+          "suffix": ""
+        }
+      },
+      "receipt": "Decrypt",
+      "voiceover": "The stolen coins were dumped, and on that exchange the price crashed to one cent.",
+      "duration": 7300
+    },
+    {
+      "type": "point",
+      "eyebrow": "Across 2011",
+      "headline": "Bitcoin fell 94%",
+      "stat": {
+        "value": "−94%",
+        "label": "From a ~$32 peak",
+        "count": {
+          "from": 0,
+          "to": 94,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bitget",
+      "voiceover": "Across that year, Bitcoin fell ninety-four percent. It's still the worst crash in its history.",
+      "duration": 7300
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Crypto crash explained",
+      "headline": "All 7 worst crashes on the channel",
+      "voiceover": "We ranked Bitcoin's seven worst crashes, including the one happening now. Full video on our channel.",
+      "duration": 7700
+    }
+  ],
+  "endcard": {
+    "title": "Bitcoin fell to <em>1 cent</em>?",
+    "subtitle": "7 worst crashes, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full countdown on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "Bitcoin fell to 1 cent? #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "bitcoin history",
+      "bitcoin crash",
+      "Mt Gox",
+      "crypto crash",
+      "Mzansi Money Matters"
+    ],
+    "description": "In June 2011, a hack at Mt. Gox (about 90% of Bitcoin trading) sent Bitcoin's price on that exchange from about $32 to one cent (Decrypt). Across 2011, Bitcoin fell 94% (Bitget). Full countdown of Bitcoin's 7 worst crashes on Mzansi Money Matters.\n\n#BitcoinHistory #CryptoCrash #Shorts\n\nEducation, not financial advice. Narration is AI-generated. Clips generated with Google Flow (Veo)."
+  }
+}

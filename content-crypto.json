@@ -1,0 +1,423 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "crypto-crash-explained",
+  "countdown": {
+    "from": 7
+  },
+  "disclaimer": "Education, not financial advice. No predictions. Figures as of 21 Nov 2026.",
+  "thumbnail": {
+    "big": "BITCOIN −94%",
+    "line": "7 <em>worst</em> crashes",
+    "frame": 0
+  },
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "crypto-01-falling-coin.mp4",
+      "eyebrow": "Crypto crash explained · as of 21 Nov 2026",
+      "headline": "Bitcoin is down about half from its high",
+      "receipt": "CryptoTicker (CoinGecko data), Nov 2026; Bloomberg",
+      "voiceover": "If you're searching crypto crash, here's where things stand. In October twenty twenty-five, Bitcoin hit about one hundred and twenty-six thousand dollars. In mid-November twenty twenty-six, it's trading at roughly half of that. Is that normal? Bitcoin has fallen further before. These are its seven worst crashes, ranked by one simple rule.",
+      "duration": 22100
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "How far Bitcoin fell from a peak to its next low",
+      "body": "Days or months, each fall counted once. Education, not financial advice. No predictions.",
+      "voiceover": "The rule: how far Bitcoin's price fell from a peak to its next low, whether that took two days or a whole year. And each fall is counted only once. This is education, not financial advice, and we won't be making any predictions.",
+      "duration": 18500
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "March 2020",
+      "headline": "Black Thursday",
+      "voiceover": "Number seven.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-02-red-desk.mp4",
+      "rank": 7,
+      "eyebrow": "March 2020",
+      "headline": "A pandemic panic, and half the price gone in two days",
+      "voiceover": "Black Thursday, March twenty twenty. As COVID-19 shut the world down, investors sold almost everything. Bitcoin went from around eight thousand dollars to under four thousand, losing about half its value in two days.",
+      "duration": 14900
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "Black Thursday",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "Borrowed money made it worse",
+      "stat": {
+        "value": "−50%",
+        "label": "In about two days · ~$8,000 → under ~$4,000",
+        "count": {
+          "from": 0,
+          "to": 50,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "GOBankingRates; Banxa",
+      "voiceover": "What made it so fast? Many traders were using borrowed money. When prices fell, exchanges automatically sold their positions, and those forced sales pushed prices down even further.",
+      "duration": 12500
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "May 2021",
+      "headline": "China crackdown + Tesla U-turn",
+      "voiceover": "Number six.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-07-mining-rigs.mp4",
+      "rank": 6,
+      "eyebrow": "May 2021",
+      "headline": "A record high, then a one-two punch",
+      "voiceover": "May twenty twenty-one. Bitcoin had just hit a record of around sixty-four thousand dollars. Then Tesla stopped accepting Bitcoin, citing energy concerns, and China cracked down on Bitcoin mining.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "China crackdown + Tesla U-turn",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "Nearly $1 trillion gone in a week",
+      "stat": {
+        "value": "−53%",
+        "label": "From ~$64,000 · May 2021",
+        "count": {
+          "from": 0,
+          "to": 53,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "GOBankingRates; Fortune (CoinGecko data)",
+      "voiceover": "Bitcoin fell fifty-three percent. Across the whole crypto market, nearly one trillion dollars in value disappeared in a single week.",
+      "duration": 9300
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "Oct 2025 – still open",
+      "headline": "The 2025–26 crash",
+      "voiceover": "Number five.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-03-collapsing-bars.mp4",
+      "rank": 5,
+      "eyebrow": "Oct 2025 – still open",
+      "headline": "The crash we're living through",
+      "voiceover": "This is the one many of you are living through right now. In October twenty twenty-five, Bitcoin hit a record of about one hundred and twenty-six thousand dollars. On the tenth of October, after a US threat of one hundred percent tariffs on China, about nineteen billion dollars in borrowed trading bets were wiped out in a single day, the largest liquidation on record.",
+      "duration": 26900
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "The 2025–26 crash",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "Biggest in dollars, but not in percent",
+      "stat": {
+        "value": "−53.5%",
+        "label": "So far · ~$126,000 → $58,570 low (1 Jul 2026)",
+        "count": {
+          "from": 0,
+          "to": 53.5,
+          "decimals": 1,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bloomberg; CoinGlass; CryptoTicker (CoinGecko data) · as of 21 Nov 2026",
+      "voiceover": "By February, Bitcoin had fallen to about sixty thousand dollars, and in July twenty twenty-six it touched fifty-eight thousand five hundred. That's a fall of about fifty-three and a half percent so far. Bitcoin Magazine calls it the largest dollar drop in Bitcoin's history. But in percentage terms, Bitcoin has fallen further before. This crash isn't over, so this number could still change.",
+      "duration": 26500
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Nov 2021 – Nov 2022",
+      "headline": "The 2022 collapse",
+      "voiceover": "Number four.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-11-chain-snapping.mp4",
+      "rank": 4,
+      "eyebrow": "Nov 2021 – Nov 2022",
+      "headline": "Terra, Celsius, FTX: one chain breaking",
+      "voiceover": "twenty twenty-two. In May, a so-called stablecoin, UST, that was meant to stay at one dollar fell to just twelve cents, and its partner coin LUNA collapsed with it. An estimated forty billion dollars was wiped out. Next, the crypto lenders Celsius and Three Arrows Capital failed.",
+      "duration": 20100
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "The 2022 collapse",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "Then FTX: an $8 billion hole",
+      "stat": {
+        "value": "−77%",
+        "label": "Peak to low · Nov 2021 → Nov 2022",
+        "count": {
+          "from": 0,
+          "to": 77,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bitget; NerdWallet (−74%); Yahoo Finance; Chainalysis",
+      "voiceover": "Then, in November, the exchange FTX collapsed, with an eight billion dollar hole in its accounts. Customer money had allegedly been moved to a sister trading firm. From its peak, Bitcoin fell seventy-seven percent.",
+      "duration": 14900
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "Dec 2017 – Dec 2018",
+      "headline": "Crypto winter",
+      "voiceover": "Number three.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-10-frost-grid.mp4",
+      "rank": 3,
+      "eyebrow": "Dec 2017 – Dec 2018",
+      "headline": "The ICO bubble bursts",
+      "voiceover": "the crypto winter of twenty eighteen. In late twenty seventeen, Bitcoin reached about nineteen thousand seven hundred dollars, in a frenzy of new coins being sold to the public, called I C Os.",
+      "duration": 14500
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "Crypto winter",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "A whole year of falling",
+      "stat": {
+        "value": "−84%",
+        "label": "From ~$19,700 · Dec 2017 → Dec 2018",
+        "count": {
+          "from": 0,
+          "to": 84,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bitget; NerdWallet (−83%)",
+      "voiceover": "Then the bubble burst. Over the following year, Bitcoin lost eighty-four percent of its value. It took about two years to reach a new high.",
+      "duration": 11300
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "2013 – 2015",
+      "headline": "China ban + Mt. Gox",
+      "voiceover": "Number two.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-05-vault-door.mp4",
+      "rank": 2,
+      "eyebrow": "2013 – 2015",
+      "headline": "A ban, then the biggest exchange goes dark",
+      "voiceover": "twenty thirteen to twenty fifteen. In December twenty thirteen, China's central bank barred banks from handling Bitcoin, and its price halved in about two days, from over twelve hundred dollars to under six hundred.",
+      "duration": 14900
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "China ban + Mt. Gox",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "850,000 bitcoins: gone",
+      "stat": {
+        "value": "−85%",
+        "label": "From ~$1,100 peak · 2013 → 2015",
+        "count": {
+          "from": 0,
+          "to": 85,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bitget; Decrypt; GOBankingRates",
+      "voiceover": "Then, in February twenty fourteen, Mt. Gox, the exchange that once handled most Bitcoin trading, froze withdrawals. It later revealed that about eight hundred and fifty thousand bitcoins had been lost. Bitcoin's fall reached eighty-five percent.",
+      "duration": 15700
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "2011",
+      "headline": "The 2011 crash",
+      "voiceover": "Number one.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-04-server-dark.mp4",
+      "rank": 1,
+      "eyebrow": "2011",
+      "headline": "From $32 to one cent",
+      "voiceover": "twenty eleven, when Bitcoin was barely two years old. In June, a hacker broke into Mt. Gox, which handled about ninety percent of all Bitcoin trading, and sold stolen coins at any price. On that one exchange, Bitcoin's price crashed from about thirty-two dollars to one cent.",
+      "duration": 20100
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "The 2011 crash",
+      "eyebrow": "Bitcoin's fall",
+      "headline": "The worst fall in Bitcoin's history",
+      "stat": {
+        "value": "−94%",
+        "label": "Across 2011 · from a ~$32 peak",
+        "count": {
+          "from": 0,
+          "to": 94,
+          "decimals": 0,
+          "prefix": "−",
+          "suffix": "%"
+        }
+      },
+      "receipt": "Bitget; Decrypt",
+      "voiceover": "The one-cent price only happened on that one exchange. But over the whole of twenty eleven, Bitcoin lost ninety-four percent of its value. By this rule, it's the worst crash in Bitcoin's history.",
+      "duration": 14500
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Bitcoin's fall, peak to low (%) · *still open, as of 21 Nov 2026",
+      "headline": "Seven crashes, one rule",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "2020",
+          "2021",
+          "2025–26*",
+          "2022",
+          "2018",
+          "2013–15",
+          "2011"
+        ],
+        "values": [
+          50,
+          53,
+          53.5,
+          77,
+          84,
+          85,
+          94
+        ],
+        "display": [
+          "50",
+          "53",
+          "53.5",
+          "77",
+          "84",
+          "85",
+          "94"
+        ],
+        "highlight": [
+          6
+        ]
+      },
+      "voiceover": "Here they are side by side. The crash happening now is the biggest ever in dollars, but by percentage, four earlier crashes were deeper.",
+      "duration": 10900
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-06-hourglass.mp4",
+      "eyebrow": "Red flag 1",
+      "headline": "A promise of fixed value",
+      "receipt": "Yahoo Finance (UST fell to $0.12, May 2022)",
+      "voiceover": "So what can we learn, without predicting anything? Red flag one: a promise that something can't lose value. UST was meant to stay at one dollar. It fell to twelve cents.",
+      "duration": 13700
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-08-glass-tower.mp4",
+      "eyebrow": "Red flag 2",
+      "headline": "Not knowing who holds your coins",
+      "receipt": "Mt. Gox (2014); FTX (2022)",
+      "voiceover": "Red flag two: not knowing who actually holds your coins. When Mt. Gox and FTX failed, people who kept coins there were stuck.",
+      "duration": 10500
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-09-coin-dominoes.mp4",
+      "eyebrow": "Red flags 3 & 4",
+      "headline": "Frozen withdrawals. Borrowed money.",
+      "receipt": "Mt. Gox froze withdrawals (Feb 2014); CoinGlass ($19bn liquidated, 10 Oct 2025)",
+      "voiceover": "Red flag three: withdrawals being frozen. That's how the Mt. Gox collapse began. And red flag four: borrowed money. On the tenth of October twenty twenty-five, about nineteen billion dollars of borrowed bets were wiped out in a day.",
+      "duration": 16900
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-12-dawn-city.mp4",
+      "eyebrow": "Is Bitcoin history repeating?",
+      "headline": "History, not a forecast",
+      "receipt": "Axios, Feb 2026",
+      "voiceover": "And is Bitcoin history repeating? Three earlier cycles each saw Bitcoin fall roughly eighty percent before reaching new highs. That's history, not a forecast. Nobody knows what happens next, and anyone who says they do is guessing.",
+      "duration": 16100
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Your turn",
+      "headline": "Which crash surprised you most?",
+      "body": "Education, not financial advice. We can't answer \"should I buy?\" questions.",
+      "voiceover": "Which crash surprised you most? Tell us in the comments. This is education, not financial advice, so we can't answer should-I-buy questions. All our sources are in the description.",
+      "duration": 12900
+    }
+  ],
+  "endcard": {
+    "title": "History, <em>not a forecast</em>",
+    "subtitle": "Subscribe for money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 15000
+  },
+  "youtube": {
+    "title": "Crypto Crash Explained: Bitcoin's 7 Worst Crashes Ever",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "crypto crash",
+      "crypto crash explained",
+      "bitcoin crash",
+      "bitcoin history",
+      "bitcoin crash history",
+      "crypto crash today",
+      "Mt Gox",
+      "FTX collapse",
+      "Terra Luna crash",
+      "crypto winter",
+      "Mzansi Money Matters"
+    ],
+    "description": "Crypto crash explained: Bitcoin's 7 worst crashes in history, ranked by one rule (how far Bitcoin fell from a peak to its next low), from the 2011 Mt. Gox crash to the 2025–26 crash that's still going. Plus four red flags every crypto user should know.\n\n{chapters}\n\nSources (figures as of 21 November 2026):\nRanking rule: Bitcoin's fall from a peak to its next low, each fall counted once.\n7 Black Thursday, Mar 2020 (~50% in two days): GOBankingRates, \"7 of the Biggest Bitcoin Crashes in History\"; Banxa.\n6 May 2021 (−53% from ~$64,000; nearly $1 trillion lost across crypto in a week): GOBankingRates; Fortune (CoinGecko data).\n5 2025–26 (still open; ~$126,000 in Oct 2025 to ~$60,000 on 6 Feb 2026 (Bloomberg) and a $58,570 low on 1 Jul 2026 (CryptoTicker, CoinGecko data)): the 10 Oct 2025 record ~$19bn liquidations come from CoinGlass via Decrypt/Cointelegraph. \"Largest dollar drawdown\" is a claim by Bitcoin Magazine.\n4 2021–22 (−77%, Bitget; −74%, NerdWallet): Terra UST to $0.12 and ~$40bn wiped (Yahoo Finance); Celsius/3AC and FTX realized losses (Chainalysis); FTX $8bn shortfall (CoinMarketCap, Blockworks).\n3 2017–18 (−84% from ~$19,700, Bitget; −83%, NerdWallet).\n2 2013–15 (−85% from ~$1,100, Bitget): China bank ban, Dec 2013 (Decrypt; GOBankingRates); Mt. Gox froze withdrawals in Feb 2014 and lost ~850,000 BTC (Coinpedia; Cointelegraph).\n1 2011 (−94% from $32, Bitget): Mt. Gox flash crash to $0.01 on that exchange, which handled ~90% of trading (Decrypt).\n\"Three earlier cycles ~80%\": Axios, 5 Feb 2026.\n\n#CryptoCrash #Bitcoin #BitcoinHistory #MzansiMoneyMatters\n\nEducation, not financial advice. No price predictions. Narration is AI-generated. Video clips were generated with Google Flow (Veo)."
+  }
+}
