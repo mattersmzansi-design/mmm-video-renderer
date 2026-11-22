@@ -1,0 +1,104 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-bitcoin-fear-gauge",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 5
+  },
+  "broll_fit": "pad",
+  "disclaimer": "Education, not financial advice.",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "bottom-c-gauge.mp4",
+      "eyebrow": "Bitcoin's fear gauge",
+      "headline": "It hit 5. A record low.",
+      "stat": {
+        "value": "5",
+        "label": "6 Feb 2026",
+        "count": {
+          "from": 50,
+          "to": 5,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": ""
+        }
+      },
+      "receipt": "Crypto Fear & Greed Index (via CoinGabbar)",
+      "voiceover": "Bitcoin's fear gauge hit five out of one hundred in February. The lowest since tracking began in twenty eighteen.",
+      "duration": 8900
+    },
+    {
+      "type": "point",
+      "eyebrow": "Early November 2026",
+      "headline": "Now it's 34",
+      "stat": {
+        "value": "34",
+        "label": "4 Nov 2026 · \"fear\", not panic",
+        "count": {
+          "from": 5,
+          "to": 34,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": ""
+        }
+      },
+      "receipt": "Crypto Fear & Greed Index (via CoinGabbar)",
+      "voiceover": "By early November it was back at thirty-four. Still fear, but not panic.",
+      "duration": 6500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "What it measures",
+      "headline": "Mood, not the future",
+      "body": "It scores price swings, volume, momentum and social buzz from 0 to 100.",
+      "voiceover": "It measures the market's mood: price swings, trading volume, momentum and social buzz. It does not tell you what happens next.",
+      "duration": 9700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Not a buy signal",
+      "headline": "Education, not financial advice",
+      "voiceover": "It's not a buy signal, and this isn't advice. We looked at ten signals analysts watch. Full video on our channel.",
+      "duration": 9700
+    }
+  ],
+  "endcard": {
+    "title": "Bitcoin <em>bottom</em>?",
+    "subtitle": "10 signals, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full video on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "Bitcoin's fear gauge hit a record low #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "bitcoin bottom",
+      "fear and greed index",
+      "bitcoin",
+      "Mzansi Money Matters"
+    ],
+    "description": "The Crypto Fear & Greed Index hit 5 on 6 Feb 2026, its lowest since 2018, and was 34 on 4 Nov 2026 (via CoinGabbar). What it measures, and why it isn't a buy signal. Full video: 10 signals analysts watch.\n\n#BitcoinBottom #Shorts\n\nEducation, not financial advice. MMM is not an authorised financial services provider. Narration is AI-generated. Clips generated with Google Flow (Veo)."
+  }
+}

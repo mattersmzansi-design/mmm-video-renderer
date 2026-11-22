@@ -1,0 +1,298 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "bitcoin-bottom-signals",
+  "countdown": {
+    "from": 5,
+    "order": "up"
+  },
+  "disclaimer": "Education, not financial advice. No predictions. Data as of 19 Nov 2026.",
+  "thumbnail": {
+    "big": "BOTTOM?",
+    "line": "Nobody <em>knows</em> yet · 10 signals",
+    "frame": 0
+  },
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "bottom-a-balance-scale.mp4",
+      "eyebrow": "Bitcoin bottom · as of 19 Nov 2026",
+      "headline": "Nobody knows where the bottom is until after",
+      "receipt": "Fortune (BTC $63,747.99, 19 Nov 2026, 6am ET)",
+      "voiceover": "Your cousin says Bitcoin has hit bottom and it's time to buy the dip. The honest answer is that nobody knows where the bottom is until after it has passed. Not analysts, not us. On the nineteenth of November twenty twenty-six, Bitcoin was about sixty-three thousand seven hundred dollars, roughly half its October twenty twenty-five high. So we won't guess. We'll look at ten signals analysts watch: what each one measures, when it was recorded, and where it can be wrong.",
+      "duration": 33700
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Before we start",
+      "headline": "Education, not financial advice",
+      "body": "MMM is not an authorised financial services provider. No price predictions. Never buy or sell advice. Speak to an FSCA-authorised adviser.",
+      "voiceover": "This is general education, not financial advice. Mzansi Money Matters is not an authorised financial services provider. We make no price predictions and never tell you to buy or sell. Crypto can lose value fast. Speak to an FSCA-authorised adviser before you decide anything.",
+      "duration": 18900
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Bitcoin price, US$ · Bloomberg; CoinGecko; Fortune · as of 19 Nov 2026",
+      "headline": "From the peak to now",
+      "chart": {
+        "kind": "line",
+        "labels": [
+          "Peak, Oct 25",
+          "6 Feb 26",
+          "Low, 1 Jul 26",
+          "19 Nov 26"
+        ],
+        "values": [
+          126000,
+          60000,
+          58570,
+          63748
+        ],
+        "display": [
+          "~$126k",
+          "~$60k",
+          "$58,570",
+          "$63,748"
+        ],
+        "highlight": [
+          3
+        ]
+      },
+      "voiceover": "Quick recap. About one hundred and twenty-six thousand dollars at the peak. About sixty thousand in February. A low of fifty-eight thousand five hundred and seventy on the first of July. And around sixty-three thousand seven hundred this week. Now, round one.",
+      "duration": 18100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-06-hourglass.mp4",
+      "eyebrow": "Round 1 · The clock",
+      "tag": "MIGHT BE THE BOTTOM",
+      "headline": "Past lows came about 60 weeks after the peak",
+      "receipt": "Blockworks Research (via KuCoin), ~Jul 2026",
+      "voiceover": "Round one: the clock. Blockworks Research found that past bear markets bottomed around sixty weeks after the all-time high. That would put this low at about the end of November twenty twenty-six. The weakness: it's based on only about three past cycles. And if prices keep falling into December, this signal simply runs out.",
+      "rank": 1,
+      "name": "Round 1",
+      "duration": 22900
+    },
+    {
+      "type": "point",
+      "eyebrow": "Round 1 · The ruler",
+      "headline": "Past bear markets fell further",
+      "receipt": "Bitget; NerdWallet · past cycles 2014, 2018, 2022",
+      "voiceover": "Now the ruler. Past Bitcoin bear markets fell between seventy-seven and eighty-five percent from their peaks. This one is about fifty to fifty-three and a half percent so far. The weakness: there's no rule that says this cycle must copy the old ones.",
+      "tag": "MIGHT NOT BE",
+      "rank": 1,
+      "name": "Round 1",
+      "duration": 18500
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Bitcoin's fall from peak (%) · Bitget; NerdWallet; CoinGecko",
+      "headline": "Past bear markets vs this one (so far)",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "2013–15",
+          "2018",
+          "2022",
+          "2025–26 so far"
+        ],
+        "values": [
+          85,
+          84,
+          77,
+          53.5
+        ],
+        "display": [
+          "85",
+          "84",
+          "77",
+          "53.5"
+        ],
+        "highlight": [
+          3
+        ]
+      },
+      "voiceover": "Here's how that looks side by side.",
+      "duration": 4100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-05-vault-door.mp4",
+      "eyebrow": "Round 2 · What people paid",
+      "tag": "MIGHT BE THE BOTTOM",
+      "headline": "The July low landed in one analyst's range",
+      "receipt": "CryptoQuant's Julio Moreno via Cointelegraph (late 2025)",
+      "voiceover": "Round two: what people paid. The realized price is roughly the average price everyone paid for their Bitcoin. Based on it, CryptoQuant's Julio Moreno said in late twenty twenty-five that the bottom could be between fifty-six and sixty thousand dollars. The July low of fifty-eight thousand five hundred and seventy landed inside that range. But be careful: this is one forecast that happened to land, not proof.",
+      "rank": 2,
+      "name": "Round 2",
+      "duration": 28100
+    },
+    {
+      "type": "point",
+      "eyebrow": "Round 2 · What's missing",
+      "headline": "Only 4 of 13 bottom signs had appeared",
+      "receipt": "Galaxy Research, published 12 Jun 2026 (data as of 9 Jun 2026)",
+      "voiceover": "On the other side, Galaxy Research tracked thirteen signs that have appeared at past bottoms. As of the ninth of June, only four had appeared. The strongest ones, like the price falling below what holders paid, and a big wave of panic selling, had not. This is from June, so it's old, but those missing signs matter.",
+      "tag": "MIGHT NOT BE",
+      "stat": {
+        "value": "4 / 13",
+        "label": "bottom signs present · Galaxy, as of 9 Jun 2026",
+        "count": {
+          "from": 0,
+          "to": 4,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": " / 13"
+        }
+      },
+      "rank": 2,
+      "name": "Round 2",
+      "duration": 24100
+    },
+    {
+      "type": "broll",
+      "broll": "bottom-c-gauge.mp4",
+      "eyebrow": "Round 3 · The mood",
+      "tag": "MIGHT BE THE BOTTOM",
+      "headline": "The fear gauge hit a record low of 5",
+      "receipt": "Crypto Fear & Greed Index via CoinGabbar (6 Feb 2026; 4 Nov 2026)",
+      "stat": {
+        "value": "5",
+        "label": "Fear & Greed, 6 Feb 2026 · record low since 2018",
+        "count": {
+          "from": 50,
+          "to": 5,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": ""
+        }
+      },
+      "voiceover": "Round three: the mood. The Crypto Fear and Greed Index scores market mood from zero to one hundred. On the sixth of February it hit five, its lowest reading since tracking began in twenty eighteen. Extreme fear has often come near past lows. It's also one of Galaxy's four signs. But note: by early November it was back at thirty-four. That's ordinary fear, not panic.",
+      "rank": 3,
+      "name": "Round 3",
+      "duration": 27300
+    },
+    {
+      "type": "point",
+      "eyebrow": "Round 3 · The bets",
+      "headline": "Big bets on, or insurance against, $60k",
+      "receipt": "CryptoPotato (Deribit data), 16 Nov 2026",
+      "voiceover": "Meanwhile, on the options exchange Deribit, the most popular contract is one that pays out if Bitcoin falls below sixty thousand dollars. Some traders are betting on a drop. Others are simply buying insurance. Either way, many expect more risk ahead.",
+      "tag": "MIGHT NOT BE",
+      "rank": 3,
+      "name": "Round 3",
+      "duration": 17700
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-07-mining-rigs.mp4",
+      "eyebrow": "Round 4 · The miners",
+      "tag": "MIGHT BE THE BOTTOM",
+      "headline": "Miners stopped switching machines off",
+      "receipt": "Galaxy Research (Hash Ribbons, early Jun 2026); NewsBTC (difficulty cut, 14 Nov 2026)",
+      "voiceover": "Round four: the miners. A signal called Hash Ribbons fired in early June. In plain words: after a stretch where miners were switching machines off, they started switching them back on. That has come before past lows. But on the fourteenth of November, the network's mining difficulty was cut, which can mean some miners are under pressure again. So this one cuts both ways.",
+      "rank": 4,
+      "name": "Round 4",
+      "duration": 26900
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-08-glass-tower.mp4",
+      "eyebrow": "Round 4 · The big funds",
+      "tag": "MIGHT NOT BE",
+      "headline": "US Bitcoin funds lost $1.07bn in a week",
+      "receipt": "CryptoTicker, week to 13 Nov 2026",
+      "voiceover": "And the big money? US exchange-traded funds that hold Bitcoin saw about one point zero seven billion dollars pulled out in the week to the thirteenth of November, with seven trading days of outflows in a row. Big investors were leaving, not arriving.",
+      "rank": 4,
+      "name": "Round 4",
+      "duration": 18500
+    },
+    {
+      "type": "broll",
+      "broll": "bottom-b-magnifier.mp4",
+      "eyebrow": "Round 5 · Same data house, two readings",
+      "tag": "MIGHT BE THE BOTTOM",
+      "headline": "CryptoQuant: a \"value zone\"",
+      "receipt": "CryptoQuant via The Block, 18 Nov 2026",
+      "voiceover": "Round five shows how messy this is. On the eighteenth of November, the analytics firm CryptoQuant said Bitcoin had reached what it calls a value zone.",
+      "rank": 5,
+      "name": "Round 5",
+      "duration": 11700
+    },
+    {
+      "type": "point",
+      "eyebrow": "Round 5 · Same report",
+      "headline": "…but demand is shrinking fastest since July",
+      "receipt": "CryptoQuant via The Block, 18 Nov 2026",
+      "voiceover": "But in the very same update, CryptoQuant said Bitcoin is back in a bearish phase, with demand growth shrinking at its fastest pace since July. Same firm, same day, two readings. That's what analysis really looks like.",
+      "tag": "MIGHT NOT BE",
+      "rank": 5,
+      "name": "Round 5",
+      "duration": 16100
+    },
+    {
+      "type": "broll",
+      "broll": "bottom-d-checklist.mp4",
+      "eyebrow": "What to watch, not who to believe",
+      "headline": "The signs every true bottom has shown",
+      "body": "Price below what holders paid · holders in loss overall · sustained loss-selling · a panic flush",
+      "receipt": "Galaxy Research (as of 9 Jun 2026)",
+      "voiceover": "So, has Bitcoin hit bottom? We don't know, and neither does anyone else. Instead of watching for someone's call, watch for what Galaxy says every true bottom has shown, and which hadn't happened as of June: the price falling below what holders paid, holders in loss overall, sustained loss-selling, and a panic flush. Galaxy's own scenarios differ widely. Even they don't know.",
+      "duration": 26100
+    },
+    {
+      "type": "broll",
+      "broll": "crypto-10-frost-grid.mp4",
+      "eyebrow": "Red flag",
+      "headline": "Guaranteed returns? Coin \"recovery\"? Walk away.",
+      "voiceover": "And one warning. Crashes bring scammers. Anyone promising guaranteed crypto returns, or offering to recover coins you've lost, is a red flag.",
+      "duration": 10100
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Education only",
+      "headline": "We can't answer \"should I buy?\"",
+      "body": "Which watch-list signs have shown up since? Tell us in the comments.",
+      "voiceover": "This is general education, not financial advice. Mzansi Money Matters is not an authorised financial services provider. We make no price predictions and never tell you to buy or sell. Crypto can lose value fast. Speak to an FSCA-authorised adviser before you decide anything. Which of the watch-list signs have shown up since this video? Tell us in the comments.",
+      "duration": 25300
+    }
+  ],
+  "endcard": {
+    "title": "Watch the <em>signs</em>, not the calls",
+    "subtitle": "Subscribe for money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 15000
+  },
+  "youtube": {
+    "title": "Has Bitcoin Hit Bottom? 10 Signals Analysts Watch (Nov 2026)",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "bitcoin bottom",
+      "has bitcoin hit bottom",
+      "bitcoin bottom signals",
+      "bitcoin crash",
+      "crypto crash",
+      "bitcoin analysis",
+      "fear and greed index",
+      "bitcoin ETF outflows",
+      "Mzansi Money Matters"
+    ],
+    "description": "Has Bitcoin hit bottom? Nobody knows until after. So instead of guessing, we look at 10 signals analysts watch, five that might point to a bottom and five that might not, with what each one measures and when it was recorded.\n\nGeneral education, not financial advice. Mzansi Money Matters is not an authorised financial services provider. We make no price predictions and never tell you to buy or sell. Speak to an FSCA-authorised adviser.\n\n{chapters}\n\nSources (as of 19–22 November 2026; signals change quickly):\nPrice: Fortune, \"Current price of Bitcoin for November 19, 2026\" ($63,747.99 at 6am ET); Bloomberg (Feb 2026 low ~$60k, ATH ~$126k); CryptoTicker/CoinGecko (12-month low $58,570 on 1 Jul 2026; ETF outflows week to 13 Nov 2026).\nRound 1: Blockworks Research via KuCoin (week-60 pattern, ~Jul 2026); Bitget and NerdWallet (past bear-market depths).\nRound 2: Julio Moreno, CryptoQuant, via Cointelegraph (late 2025: $56k–$60k realized-price range); Galaxy Research, \"Bitcoin's four-year cycle: where is the bottom?\" (published 12 Jun 2026, data as of 9 Jun 2026: 4 of 13 bottoming signs).\nRound 3: Crypto Fear & Greed Index via CoinGabbar (5 on 6 Feb 2026; 34 on 4 Nov 2026); CryptoPotato (largest put open interest at the $60k strike on Deribit, 16 Nov 2026).\nRound 4: Galaxy Research (Hash Ribbons recovery cross, early Jun 2026); NewsBTC (difficulty reduction, 14 Nov 2026); CryptoTicker (US spot BTC ETFs −$1.07bn, week to 13 Nov 2026).\nRound 5: CryptoQuant via The Block, 18 Nov 2026.\n\n#BitcoinBottom #Bitcoin #CryptoCrash #MzansiMoneyMatters\n\nNarration is AI-generated. Video clips were generated with Google Flow (Veo)."
+  }
+}
