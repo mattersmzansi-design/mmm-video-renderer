@@ -1,0 +1,531 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 400,
+    "tail_pad": 900
+  },
+  "timing": {
+    "lead_in": 900
+  },
+  "slug": "biggest-ipos-in-history",
+  "countdown": {
+    "from": 10
+  },
+  "disclaimer": "Education, not investment advice. Researched with Claude (made by Anthropic, #1 in this list).",
+  "thumbnail": {
+    "kicker": "10 biggest IPOs ever",
+    "big": "WHO'S #1?",
+    "line": "It depends <em>how you count</em>",
+    "frame": 35
+  },
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "ipo-01-trading-hall.mp4",
+      "eyebrow": "Biggest IPOs in history",
+      "headline": "2026 rewrote the record books",
+      "voiceover": "In twenty twenty-six, three companies broke into the top three biggest IPOs of all time. And who's number one depends on how you count. An IPO is when a company sells pieces of itself to the public for the first time. Here are the ten biggest ever.",
+      "duration": 20100
+    },
+    {
+      "type": "plain",
+      "eyebrow": "Disclosure",
+      "headline": "Researched with help from Claude, an AI made by Anthropic",
+      "body": "Anthropic appears in this list. Ranking follows Renaissance Capital's published rule, and every company gets the same treatment.",
+      "voiceover": "A quick disclosure: this video was researched with help from Claude, an AI made by Anthropic, which appears in this list. So we use a published ranking rule and give every company the same treatment.",
+      "duration": 15300
+    },
+    {
+      "type": "plain",
+      "eyebrow": "How we ranked them",
+      "headline": "Money raised when the IPO was priced",
+      "body": "Renaissance Capital's rule: not counting extra shares banks may sell later. US dollars at the time, not adjusted for inflation.",
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size)",
+      "voiceover": "The rule: we rank by the money raised when each IPO was priced, as listed by Renaissance Capital. That doesn't count extra shares that banks can sell afterwards, and it's in dollars at the time, not adjusted for inflation. We'll show the extra-share totals too, where they matter.",
+      "duration": 20500
+    },
+    {
+      "type": "rank",
+      "rank": 10,
+      "eyebrow": "Italy · 1999 · Milan & NYSE",
+      "headline": "Enel",
+      "voiceover": "Number ten.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-02-power-lines.mp4",
+      "rank": 10,
+      "eyebrow": "Italy · 1999 · Milan & NYSE",
+      "headline": "Italy sells its power company",
+      "voiceover": "Enel. It's basically Italy selling shares in its state electricity company, in November nineteen ninety-nine.",
+      "duration": 7300
+    },
+    {
+      "type": "point",
+      "rank": 10,
+      "name": "Enel",
+      "eyebrow": "Raised at IPO",
+      "headline": "Enel",
+      "stat": {
+        "value": "$16.5bn",
+        "label": "Nov 1999",
+        "count": {
+          "from": 0,
+          "to": 16.5,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); CNN Money (Nov 1999)",
+      "voiceover": "It raised sixteen and a half billion dollars, and a record three point eight million Italians signed up to buy shares. But the first day of trading was weak.",
+      "duration": 12900
+    },
+    {
+      "type": "rank",
+      "rank": 9,
+      "eyebrow": "Hong Kong · 2010",
+      "headline": "AIA",
+      "voiceover": "Number nine.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-03-harbour.mp4",
+      "rank": 9,
+      "eyebrow": "Hong Kong · 2010",
+      "headline": "An insurer born from a crisis",
+      "voiceover": "AIA, an Asian life insurer. It was spun out of the American insurer AIG, which had to sell assets after the two thousand and eight financial crisis.",
+      "duration": 12100
+    },
+    {
+      "type": "point",
+      "rank": 9,
+      "name": "AIA",
+      "eyebrow": "Raised at IPO",
+      "headline": "AIA",
+      "stat": {
+        "value": "$17.8bn",
+        "label": "Oct 2010",
+        "count": {
+          "from": 0,
+          "to": 17.8,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); HKEX statistics (29 Oct 2010)",
+      "voiceover": "It raised seventeen point eight billion dollars in Hong Kong in October twenty ten, and set a record for the most shares of one company traded on that exchange's first day.",
+      "duration": 13700
+    },
+    {
+      "type": "rank",
+      "rank": 8,
+      "eyebrow": "USA · 2008 · NYSE",
+      "headline": "Visa",
+      "voiceover": "Number eight.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-04-card.mp4",
+      "rank": 8,
+      "eyebrow": "USA · 2008 · NYSE",
+      "headline": "A payments giant, mid-crisis",
+      "voiceover": "Visa, the card payments network. It went public in March two thousand and eight, right in the middle of the financial crisis.",
+      "duration": 10100
+    },
+    {
+      "type": "point",
+      "rank": 8,
+      "name": "Visa",
+      "eyebrow": "Raised at IPO",
+      "headline": "Visa",
+      "stat": {
+        "value": "$17.9bn",
+        "label": "Mar 2008",
+        "count": {
+          "from": 0,
+          "to": 17.9,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); vivid.money; ValueWalk",
+      "voiceover": "It raised seventeen point nine billion dollars. Priced at forty-four dollars a share, it closed its first day at fifty-six fifty, up about twenty-eight percent.",
+      "duration": 11300
+    },
+    {
+      "type": "rank",
+      "rank": 7,
+      "eyebrow": "Japan · 1998 · Tokyo",
+      "headline": "NTT DoCoMo",
+      "voiceover": "Number seven.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-05-flip-phones.mp4",
+      "rank": 7,
+      "eyebrow": "Japan · 1998 · Tokyo",
+      "headline": "Japan's mobile phone pioneer",
+      "voiceover": "NTT DoCoMo, Japan's biggest mobile network, split off from the national phone company. It listed in Tokyo in October nineteen ninety-eight.",
+      "duration": 9700
+    },
+    {
+      "type": "point",
+      "rank": 7,
+      "name": "NTT DoCoMo",
+      "eyebrow": "Raised at IPO",
+      "headline": "NTT DoCoMo",
+      "stat": {
+        "value": "$18.1bn",
+        "label": "Oct 1998",
+        "count": {
+          "from": 0,
+          "to": 18.1,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); Goldman Sachs; The Motley Fool",
+      "voiceover": "It raised eighteen point one billion dollars and rose nineteen percent on its first day. In twenty twenty, its parent company NTT took it private again.",
+      "duration": 11700
+    },
+    {
+      "type": "rank",
+      "rank": 6,
+      "eyebrow": "Japan · 2018 · Tokyo",
+      "headline": "SoftBank Corp",
+      "voiceover": "Number six.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-06-telecom-towers.mp4",
+      "rank": 6,
+      "eyebrow": "Japan · 2018 · Tokyo",
+      "headline": "A telecom giant's rough start",
+      "voiceover": "SoftBank Corp, the Japanese mobile phone business of the SoftBank group. It listed in Tokyo in December twenty eighteen.",
+      "duration": 8900
+    },
+    {
+      "type": "point",
+      "rank": 6,
+      "name": "SoftBank Corp",
+      "eyebrow": "Raised at IPO",
+      "headline": "SoftBank Corp",
+      "stat": {
+        "value": "$21.3bn",
+        "label": "Dec 2018",
+        "count": {
+          "from": 0,
+          "to": 21.3,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); TechCrunch",
+      "voiceover": "It raised twenty-one point three billion dollars, but its shares fell fourteen and a half percent on the first day.",
+      "duration": 9300
+    },
+    {
+      "type": "rank",
+      "rank": 5,
+      "eyebrow": "China · 2014 · NYSE",
+      "headline": "Alibaba",
+      "voiceover": "Number five.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-07-parcels.mp4",
+      "rank": 5,
+      "eyebrow": "China · 2014 · NYSE",
+      "headline": "China's online shopping giant",
+      "voiceover": "Alibaba, China's online shopping giant. It listed in New York in September twenty fourteen.",
+      "duration": 6900
+    },
+    {
+      "type": "point",
+      "rank": 5,
+      "name": "Alibaba",
+      "eyebrow": "Raised at IPO",
+      "headline": "Alibaba",
+      "stat": {
+        "value": "$21.8bn",
+        "label": "Sep 2014 · $25bn with extra shares",
+        "count": {
+          "from": 0,
+          "to": 21.8,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); Fortune; Bloomberg",
+      "voiceover": "It raised twenty-one point eight billion dollars at sixty-eight dollars a share, and jumped thirty-eight percent on day one. With extra shares sold later, the total reached twenty-five billion.",
+      "duration": 12900
+    },
+    {
+      "type": "rank",
+      "rank": 4,
+      "eyebrow": "Saudi Arabia · 2019 · Riyadh",
+      "headline": "Saudi Aramco",
+      "voiceover": "Number four.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-08-pumpjacks.mp4",
+      "rank": 4,
+      "eyebrow": "Saudi Arabia · 2019 · Riyadh",
+      "headline": "The world's biggest oil company",
+      "voiceover": "Saudi Aramco, the Saudi state oil company. It listed on the Riyadh exchange in December twenty nineteen.",
+      "duration": 8100
+    },
+    {
+      "type": "point",
+      "rank": 4,
+      "name": "Saudi Aramco",
+      "eyebrow": "Raised at IPO",
+      "headline": "Saudi Aramco",
+      "stat": {
+        "value": "$25.6bn",
+        "label": "Dec 2019 · $29.4bn with extra shares",
+        "count": {
+          "from": 0,
+          "to": 25.6,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); Fortune; Anadolu Agency",
+      "voiceover": "It raised twenty-five point six billion dollars and rose ten percent on day one, the most the exchange allows in one day. With extra shares, the total reached twenty-nine point four billion.",
+      "duration": 14100
+    },
+    {
+      "type": "rank",
+      "rank": 3,
+      "eyebrow": "South Korea · 2026 · Nasdaq",
+      "headline": "SK hynix",
+      "voiceover": "Number three.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-09-wafer.mp4",
+      "rank": 3,
+      "eyebrow": "South Korea · 2026 · Nasdaq",
+      "headline": "The memory chips behind AI",
+      "voiceover": "SK hynix, a South Korean maker of the memory chips used in AI computers. It listed in New York in July twenty twenty-six.",
+      "duration": 10500
+    },
+    {
+      "type": "point",
+      "rank": 3,
+      "name": "SK hynix",
+      "eyebrow": "Raised at IPO",
+      "headline": "SK hynix",
+      "stat": {
+        "value": "$26.5bn",
+        "label": "Jul 2026",
+        "count": {
+          "from": 0,
+          "to": 26.5,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); IPOScoop; The Motley Fool",
+      "voiceover": "It raised twenty-six point five billion dollars, the biggest US listing ever by a foreign company, and closed its first day up about thirteen percent.",
+      "duration": 11300
+    },
+    {
+      "type": "rank",
+      "rank": 2,
+      "eyebrow": "USA · 2026 · Nasdaq",
+      "headline": "SpaceX",
+      "voiceover": "Number two.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-10-rocket.mp4",
+      "rank": 2,
+      "eyebrow": "USA · 2026 · Nasdaq",
+      "headline": "Rockets, satellites and AI",
+      "voiceover": "SpaceX, the rocket and satellite company that also owns the AI firm x A I. It listed in June twenty twenty-six, at one hundred and thirty-five dollars a share.",
+      "duration": 12900
+    },
+    {
+      "type": "point",
+      "rank": 2,
+      "name": "SpaceX",
+      "eyebrow": "Raised at IPO",
+      "headline": "SpaceX",
+      "stat": {
+        "value": "$75.0bn",
+        "label": "Jun 2026 · ~$86bn with extra shares",
+        "count": {
+          "from": 0,
+          "to": 75.0,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); NPR; Al Jazeera; Dealroom",
+      "voiceover": "It raised seventy-five billion dollars and closed day one up nineteen percent. With extra shares sold later, it reached about eighty-six billion, which would make it number one on that measure. It also reported a four point three billion dollar loss in early twenty twenty-six.",
+      "duration": 19300
+    },
+    {
+      "type": "rank",
+      "rank": 1,
+      "eyebrow": "USA · 2026 · Nasdaq",
+      "headline": "Anthropic",
+      "voiceover": "Number one.",
+      "duration": 2100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-11-data-centre.mp4",
+      "rank": 1,
+      "eyebrow": "USA · 2026 · Nasdaq",
+      "headline": "The AI company behind Claude",
+      "receipt": "Research assisted by Claude, an AI made by Anthropic, which appears in this list. Ranking follows Renaissance Capital's published rule.",
+      "voiceover": "Anthropic, the AI company that makes the Claude assistant. It listed in November twenty twenty-six, selling nine hundred and eighty million shares at eighty-three dollars each.",
+      "duration": 11700
+    },
+    {
+      "type": "point",
+      "rank": 1,
+      "name": "Anthropic",
+      "eyebrow": "Raised at IPO",
+      "headline": "Anthropic",
+      "stat": {
+        "value": "$81.34bn",
+        "label": "Nov 2026 · up to ~$93.5bn if option used",
+        "count": {
+          "from": 0,
+          "to": 81.34,
+          "decimals": 2,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital, All Time Largest Global IPOs (base deal size); Anthropic press release (18 Nov 2026); CNBC",
+      "voiceover": "It raised eighty-one point three four billion dollars. Its shares opened at one hundred and eleven fifty, but closed the day at ninety-seven seventeen. An option for its banks to sell up to one hundred and forty-seven million more shares is still pending. If fully used, about ninety-three and a half billion.",
+      "duration": 22100
+    },
+    {
+      "type": "chart",
+      "eyebrow": "Raised at IPO, US$ billions · Renaissance Capital",
+      "headline": "Then 2026 happened",
+      "chart": {
+        "kind": "bar",
+        "labels": [
+          "Enel",
+          "AIA",
+          "Visa",
+          "DoCoMo",
+          "SoftBank",
+          "Alibaba",
+          "Aramco",
+          "SK hynix",
+          "SpaceX",
+          "Anthropic"
+        ],
+        "values": [
+          16.5,
+          17.8,
+          17.9,
+          18.1,
+          21.3,
+          21.8,
+          25.6,
+          26.5,
+          75.0,
+          81.34
+        ],
+        "display": [
+          "16.5",
+          "17.8",
+          "17.9",
+          "18.1",
+          "21.3",
+          "21.8",
+          "25.6",
+          "26.5",
+          "75.0",
+          "81.3"
+        ],
+        "highlight": [
+          8,
+          9
+        ]
+      },
+      "voiceover": "Put them side by side, and you can see it. For decades, the record sat between about sixteen and twenty-six billion dollars. Then two companies in twenty twenty-six raised around three times that.",
+      "duration": 14500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "The lesson",
+      "headline": "A first-day jump isn't your gain",
+      "body": "Most people can't buy at the IPO price. They buy when trading opens.",
+      "receipt": "Anthropic: opened $111.50, closed $97.17 on 19 Nov 2026 (CNBC)",
+      "voiceover": "One lesson. Most ordinary investors don't get the IPO price. They buy when trading opens. Anyone who bought Anthropic at the one hundred and eleven fifty opening price was about thirteen percent down by the close. A first-day jump isn't your gain.",
+      "duration": 18100
+    },
+    {
+      "type": "broll",
+      "broll": "ipo-12-bell.mp4",
+      "eyebrow": "What's next",
+      "headline": "OpenAI could be next",
+      "receipt": "CNBC (reported 2027 plan); GovInfoSecurity",
+      "voiceover": "And what's next? OpenAI delayed its own IPO, and CNBC reports a plan to list in twenty twenty-seven. This video is education, not investment advice. Which IPO surprised you most? Tell us in the comments.",
+      "duration": 15300
+    }
+  ],
+  "endcard": {
+    "title": "Biggest IPOs <em>ever</em>",
+    "subtitle": "Subscribe for money, explained.",
+    "handle": "@MzansiMoneyMatters",
+    "duration": 15000
+  },
+  "youtube": {
+    "title": "The 10 Biggest IPOs in History (2026): SpaceX, Anthropic, Aramco & More",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "biggest IPO",
+      "biggest IPOs in history",
+      "largest IPO in history",
+      "largest IPO ever",
+      "SpaceX IPO",
+      "Anthropic IPO",
+      "Saudi Aramco IPO",
+      "Alibaba IPO",
+      "SK hynix IPO",
+      "IPO explained",
+      "Mzansi Money Matters"
+    ],
+    "description": "Disclosure: this video was researched with help from Claude, an AI made by Anthropic, which appears in this list. The ranking follows Renaissance Capital's published rule, and every company gets the same treatment.\n\nThe 10 biggest IPOs in history, from Enel in 1999 to SpaceX and Anthropic in 2026: how much each raised, how the first day went, and who's really #1 depending on how you count.\n\n{chapters}\n\nRanking: Renaissance Capital, \"All Time Largest Global IPOs by Deal Size\" (deal size excludes underwriter over-allotment; nominal US dollars).\n1 Anthropic: Anthropic press release \"Anthropic prices initial public offering\" (18 Nov 2026: 980,000,000 shares at $83; 30-day underwriter option for up to 147,000,000 additional shares); first-day open $111.50 and close $97.17 (Nasdaq/CNBC); ~$1.5T valuation (Al Jazeera/AP); ~$93.5bn if the option is fully exercised (techi.com estimate).\n2 SpaceX: NPR (11–12 Jun 2026: $75bn, $135/share, first-day close $160.95, Q1 2026 net loss $4.3bn); Al Jazeera/Dealroom (~$85.7–86.2bn after additional shares).\n3 SK hynix: IPOScoop (9–10 Jul 2026: $26.51bn at $149/ADS; first-day close $168.01); The Motley Fool (largest US listing by a foreign company).\n4 Saudi Aramco: Fortune (11 Dec 2019: +10% first day); Anadolu Agency ($29.4bn including greenshoe).\n5 Alibaba: Fortune/Bloomberg (Sep 2014: $68, +38% first day; $25bn including greenshoe).\n6 SoftBank Corp: TechCrunch (Dec 2018: −14.5% first day).\n7 NTT DoCoMo: Goldman Sachs (Oct 1998: +19% first day); The Motley Fool (taken private 2020).\n8 Visa: vivid.money/ValueWalk (Mar 2008: $44 IPO price, $56.50 first-day close).\n9 AIA: HKEX statistics (29 Oct 2010: record first-day turnover for a single company); spin-off from AIG (G2/Investopedia).\n10 Enel: CNN Money (Nov 1999: weak debut; 3.8 million Italians signed up).\nOpenAI: CNBC via Alhurra (reported 2027 IPO plan); GovInfoSecurity (IPO delayed).\n\n#BiggestIPO #IPO #SpaceX #Anthropic #MzansiMoneyMatters\n\nEducation, not investment advice. Narration is AI-generated. Video clips were generated with Google Flow (Veo)."
+  }
+}

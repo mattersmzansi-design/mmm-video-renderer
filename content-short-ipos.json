@@ -1,0 +1,105 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.05,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 600
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "slug": "short-spacex-vs-anthropic-ipo",
+  "size": [
+    1080,
+    1920
+  ],
+  "countdown": {
+    "from": 10
+  },
+  "broll_fit": "pad",
+  "disclaimer": "Education, not investment advice. Researched with Claude (made by Anthropic).",
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": "ipo-12-bell.mp4",
+      "eyebrow": "Biggest IPO ever?",
+      "headline": "SpaceX or Anthropic?",
+      "voiceover": "Who had the biggest IPO in history? SpaceX, or Anthropic?",
+      "duration": 5300
+    },
+    {
+      "type": "point",
+      "eyebrow": "Raised when priced",
+      "headline": "Anthropic $81.3bn · SpaceX $75.0bn",
+      "stat": {
+        "value": "$81.3bn",
+        "label": "Anthropic, Nov 2026 · SpaceX $75.0bn, Jun 2026",
+        "count": {
+          "from": 0,
+          "to": 81.3,
+          "decimals": 1,
+          "prefix": "$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Renaissance Capital",
+      "voiceover": "Count the money raised when the shares were priced, and it's Anthropic, at eighty-one billion, ahead of SpaceX at seventy-five.",
+      "duration": 9300
+    },
+    {
+      "type": "point",
+      "eyebrow": "With extra shares",
+      "headline": "SpaceX ~$86bn · Anthropic up to ~$93.5bn",
+      "stat": {
+        "value": "~$86bn",
+        "label": "SpaceX, after extra shares · Anthropic's option still pending",
+        "count": {
+          "from": 0,
+          "to": 86,
+          "decimals": 0,
+          "prefix": "~$",
+          "suffix": "bn"
+        }
+      },
+      "receipt": "Al Jazeera; Anthropic press release (147M-share option)",
+      "voiceover": "But add the extra shares banks sold later, and SpaceX reached about eighty-six billion. Anthropic's own option, worth up to about ninety-three billion in total, is still pending.",
+      "duration": 12500
+    },
+    {
+      "type": "plain",
+      "eyebrow": "So who's #1?",
+      "headline": "It depends how you count",
+      "body": "Researched with Claude, an AI made by Anthropic. Education, not investment advice.",
+      "voiceover": "So who's number one? It depends how you count. Full top ten on our channel.",
+      "duration": 7300
+    }
+  ],
+  "endcard": {
+    "title": "Who's <em>#1</em>?",
+    "subtitle": "10 biggest IPOs, sources included",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Watch the full top ten on Mzansi Money Matters.",
+    "duration": 3500
+  },
+  "youtube": {
+    "title": "SpaceX or Anthropic: who had the biggest IPO? #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "biggest IPO",
+      "SpaceX IPO",
+      "Anthropic IPO",
+      "largest IPO ever",
+      "Mzansi Money Matters"
+    ],
+    "description": "Anthropic raised $81.34bn when its IPO was priced (Nov 2026), and SpaceX $75bn (Jun 2026) (Renaissance Capital). With extra shares, SpaceX reached ~$86bn (Al Jazeera); Anthropic's option for up to 147M more shares is pending (Anthropic press release). It depends how you count.\n\nDisclosure: researched with Claude, an AI made by Anthropic.\n\n#BiggestIPO #Shorts\n\nEducation, not investment advice. Narration is AI-generated. Clips generated with Google Flow (Veo)."
+  }
+}
