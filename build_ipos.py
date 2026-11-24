@@ -144,7 +144,7 @@ long = dict(base, slug="biggest-ipos-in-history", countdown={"from": 10},
    "The 10 biggest IPOs in history, from Enel in 1999 to SpaceX and Anthropic in 2026: how much each raised, how the first day went, "
    "and who's really #1 depending on how you count.\n\n{chapters}\n\n" + SOURCES +
    "\n\n#BiggestIPO #IPO #SpaceX #Anthropic #MzansiMoneyMatters\n\nEducation, not investment advice. Narration is AI-generated. "
-   "Video clips were generated with Google Flow (Veo).")})
+   "Video clips were generated with AI tools (TAAFT and Google Flow/Veo).")})
 
 q = [
  {"type": "broll", "broll": "ipo-12-bell.mp4", "eyebrow": "Biggest IPO ever?", "headline": "SpaceX or Anthropic?",
@@ -170,7 +170,7 @@ short = dict(base, slug="short-spacex-vs-anthropic-ipo", size=[1080, 1920], coun
           "voiceover": "Watch the full top ten on Mzansi Money Matters.", "duration": 3500},
  youtube={"title": "SpaceX or Anthropic: who had the biggest IPO? #shorts", "privacy": "private", "synthetic_media": True,
   "category_id": "27", "tags": ["biggest IPO", "SpaceX IPO", "Anthropic IPO", "largest IPO ever", "Mzansi Money Matters"],
-  "description": "Anthropic raised $81.34bn when its IPO was priced (Nov 2026), and SpaceX $75bn (Jun 2026) (Renaissance Capital). With extra shares, SpaceX reached ~$86bn (Al Jazeera); Anthropic's option for up to 147M more shares is pending (Anthropic press release). It depends how you count.\n\nDisclosure: researched with Claude, an AI made by Anthropic.\n\n#BiggestIPO #Shorts\n\nEducation, not investment advice. Narration is AI-generated. Clips generated with Google Flow (Veo)."})
+  "description": "Anthropic raised $81.34bn when its IPO was priced (Nov 2026), and SpaceX $75bn (Jun 2026) (Renaissance Capital). With extra shares, SpaceX reached ~$86bn (Al Jazeera); Anthropic's option for up to 147M more shares is pending (Anthropic press release). It depends how you count.\n\nDisclosure: researched with Claude, an AI made by Anthropic.\n\n#BiggestIPO #Shorts\n\nEducation, not investment advice. Narration is AI-generated. Clips generated with AI tools (TAAFT and Google Flow/Veo)."})
 
 json.dump(long, open("content-ipos.json", "w"), ensure_ascii=False, indent=2)
 json.dump(short, open("content-short-ipos.json", "w"), ensure_ascii=False, indent=2)
