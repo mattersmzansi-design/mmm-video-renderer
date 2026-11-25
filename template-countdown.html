@@ -173,6 +173,29 @@
   body.portrait .scene.s-broll.has-receipt{padding-bottom:520px}
   body.portrait .scene.s-broll .receipt{left:80px}
   body.portrait .receipt{position:absolute;left:0;bottom:430px;max-width:920px;font-size:24px;flex-wrap:wrap}
+
+  /* ---------- map scene: metro-style network that grows line by line ---------- */
+  .s-map{display:flex;flex-direction:column;justify-content:flex-start;padding:150px 0 230px}
+  .s-map .head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+  .s-map h2{font-size:72px}
+  .s-map .eyebrow{margin-bottom:16px}
+  .s-map .figure{padding:4px 0 6px 28px;border-left-width:5px}
+  .s-map .figure .v{font-size:120px}
+  .s-map .figure .l{font-size:26px;margin-top:8px}
+  .mbox{margin-top:30px;width:1680px;flex:1;min-height:0}
+  .mbox svg{width:100%;height:100%;display:block;overflow:visible}
+  .mline{fill:none;stroke-width:16;stroke-linecap:round;stroke-linejoin:round}
+  .mline.new{filter:drop-shadow(0 0 16px currentColor)}
+  .mst{fill:#F2EFE9;stroke:#002C3D;stroke-width:7}
+  .mhub{fill:#F2EFE9;stroke:#EF4C00;stroke-width:9}
+  .mlab{fill:#F2EFE9;font-size:38px;font-weight:800}
+  .msub{fill:#EF4C00;font-size:34px;font-weight:800}
+  .mhubl{fill:#F2EFE9;font-size:46px;font-weight:800}
+  body.portrait .s-map{padding:250px 0 470px;justify-content:flex-start}
+  body.portrait .s-map .head{flex-direction:column;align-items:flex-start;gap:24px}
+  body.portrait .s-map h2{font-size:70px}
+  body.portrait .s-map .figure .v{font-size:150px}
+  body.portrait .mbox{position:absolute;left:0;top:760px;width:920px;height:680px;margin:0}
 </style>
 </head>
 <body>
@@ -264,6 +287,11 @@ CONTENT.scenes.forEach((sc, i) => {
       '<div class="l">' + esc(sc.stat.label) + '</div></div>' : '';
     el.innerHTML = '<video muted playsinline preload="auto" src="broll/s' + i + '.webm"></video><div class="shade"></div>' +
       '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + stat + '</div>';
+  } else if (type === 'map') {
+    const stat = sc.stat ? '<div class="figure"><div class="v cond">' + esc(sc.stat.value) + '</div>' +
+      '<div class="l">' + esc(sc.stat.label) + '</div></div>' : '';
+    el.innerHTML = '<div class="head"><div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body + '</div>' + stat +
+      '</div><div class="mbox"></div>';
   } else if (type === 'chart') {
     el.innerHTML = '<div class="copy">' + eyebrow + '<h2>' + esc(sc.headline) + '</h2>' + body +
       '</div><div class="cbox"></div>';
@@ -293,7 +321,56 @@ CONTENT.scenes.forEach((sc, i) => {
   }
   scenesEl.appendChild(el);
   if (type === 'chart') buildChart(el.querySelector('.cbox'), sc.chart || {});
+  if (type === 'map') buildMap(el.querySelector('.mbox'), sc, i);
 });
+
+/* ---------- metro map ----------
+   CONTENT.metro = {"view": [w, h], "hub": {"x","y","label"},
+                    "lines": [{"id","color","d","stations":[{"x","y","label","sub","anchor"}]}]}
+   scene: {"type":"map", "map": {"show": [line ids]}}; lines not shown in the previous map scene draw in. */
+function buildMap(box, sc, i){
+  const NS = 'http://www.w3.org/2000/svg', M = CONTENT.metro || {lines: []};
+  const [vw, vh] = M.view || [920, 1000];
+  const show = new Set((sc.map || {}).show || []);
+  let prev = new Set();
+  for (let j = i - 1; j >= 0; j--) { const p = CONTENT.scenes[j]; if (p.type === 'map') { prev = new Set((p.map || {}).show || []); break; } }
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + vw + ' ' + vh);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  const mk = (tag, attrs, cls, text) => { const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]); if (cls) e.setAttribute('class', cls);
+    if (text != null) e.textContent = text; svg.appendChild(e); return e; };
+  const parts = {lines: [], stations: []};
+  const lines = M.lines.filter(l => show.has(l.id));
+  for (const l of lines) {
+    const isNew = !prev.has(l.id);
+    const p = mk('path', {d: l.d, stroke: l.color, color: l.color}, 'mline' + (isNew ? ' new' : ''));
+    if (isNew) parts.lines.push(p);
+  }
+  for (const l of lines) {
+    const isNew = !prev.has(l.id);
+    for (const st of (l.stations || [])) {
+      const g = document.createElementNS(NS, 'g'); svg.appendChild(g);
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', st.x); c.setAttribute('cy', st.y); c.setAttribute('r', st.big ? 26 : 18); c.setAttribute('class', 'mst');
+      g.appendChild(c);
+      const a = st.anchor || 'start', dx = st.dx ?? (a === 'end' ? -36 : (a === 'middle' ? 0 : 36)), dy = st.dy ?? (a === 'middle' ? 66 : 12);
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', st.x + dx); t1.setAttribute('y', st.y + dy); t1.setAttribute('text-anchor', a);
+      t1.setAttribute('class', 'mlab'); t1.textContent = st.label; g.appendChild(t1);
+      if (st.sub) { const t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', st.x + dx); t2.setAttribute('y', st.y + dy + 42); t2.setAttribute('text-anchor', a);
+        t2.setAttribute('class', 'msub cond'); t2.textContent = st.sub; g.appendChild(t2); }
+      if (isNew) parts.stations.push({g, lineIdx: parts.lines.length - 1, frac: st.frac ?? 1});
+    }
+  }
+  if (M.hub) {
+    mk('circle', {cx: M.hub.x, cy: M.hub.y, r: 34}, 'mhub');
+    mk('text', {x: M.hub.x + 56, y: M.hub.y + 16}, 'mhubl', M.hub.label);
+  }
+  box.appendChild(svg);
+  box.parentNode._map = parts;
+}
 
 /* ---------- chart builder ----------
    "chart": {"kind": "bar"|"line", "labels": [...], "values": [...],
@@ -429,6 +506,16 @@ sceneEls.forEach((el, i) => {
       P.vals.forEach((v, j) => v.animate([{opacity:0, transform:'translateY(14px)'}, {opacity:1, transform:'translateY(0)'}],
         {duration:500, delay:t0 + j * step + 650, fill:'both', easing:ease}));
     }
+  } else if (type === 'map') {
+    el.querySelector('.head').animate([{opacity:0, transform:'translateY(24px)'}, {opacity:1, transform:'translateY(0)'}],
+      {duration:800, delay:starts[i], fill:'both', easing:ease});
+    const P = el._map, t0 = starts[i] + 700, draw = Math.min(1800, dur * 0.4);
+    P.lines.forEach((ln, j) => {
+      const L = ln.getTotalLength(); ln.style.strokeDasharray = L;
+      ln.animate([{strokeDashoffset:L}, {strokeDashoffset:0}], {duration:draw, delay:t0 + j * 350, fill:'both', easing:'cubic-bezier(.45,0,.55,1)'});
+    });
+    P.stations.forEach(st => st.g.animate([{opacity:0, transform:'translateY(10px)'}, {opacity:1, transform:'translateY(0)'}],
+      {duration:500, delay:t0 + Math.max(st.lineIdx, 0) * 350 + draw * st.frac, fill:'both', easing:ease}));
   } else if (type === 'point' || type === 'intro') {
     el.firstElementChild.animate([
       {transform:'translateY(24px)'}, {transform:'translateY(0)'},
