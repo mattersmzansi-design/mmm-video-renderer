@@ -12,7 +12,6 @@
   "countdown": {
     "from": 5
   },
-  "broll_fit": "pad",
   "metro": {
     "view": [
       1000,
@@ -252,7 +251,7 @@
     "line": "How the rand <em>reaches you</em>"
   },
   "youtube": {
-    "title": "How the weaker rand reaches your pocket (Nov 2026) #shorts",
+    "title": "Why your petrol just got dearer: the rand explained (Nov 2026) #shorts",
     "privacy": "private",
     "synthetic_media": true,
     "category_id": "27",

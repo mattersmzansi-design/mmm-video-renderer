@@ -50,13 +50,13 @@ q = [
 for s in q:
     s["duration"] = est(s["voiceover"])
 short = {"template": "template-countdown.html", "brand": {"name": "Mzansi Money Matters", "logo": "logo.jpg"},
- "slug": "short-rand-reaches-your-pocket", "size": [1080, 1920], "countdown": {"from": 5}, "broll_fit": "pad", "metro": metro,
+ "slug": "short-rand-reaches-your-pocket", "size": [1080, 1920], "countdown": {"from": 5}, "metro": metro,
  "disclaimer": "Education, not financial advice.",
  "voice": EMMA, "timing": {"lead_in": 600}, "scenes": q,
  "endcard": {"title": "Know where your <em>money</em> goes", "subtitle": "Sources in the description", "handle": "@MzansiMoneyMatters",
              "voiceover": "Follow Mzansi Money Matters for more.", "duration": 3200},
  "thumbnail": {"kicker": "Rand at R17.55", "big": "YOUR POCKET", "line": "How the rand <em>reaches you</em>"},
- "youtube": {"title": "How the weaker rand reaches your pocket (Nov 2026) #shorts", "privacy": "private", "synthetic_media": True,
+ "youtube": {"title": "Why your petrol just got dearer: the rand explained (Nov 2026) #shorts", "privacy": "private", "synthetic_media": True,
   "category_id": "27", "tags": ["rand", "rand dollar", "inflation South Africa", "repo rate", "fuel price", "Mzansi Money Matters"],
   "description": "The rand went from about R16.60 to R17.55 per US dollar between 11 and 20 November 2026. Here's how that one number reaches fuel, imports, transport, food, inflation and interest rates.\n\nSources:\n- Rand: MTFX daily USD/ZAR rates (11 Nov: R16.61; 20 Nov: R17.56)\n- Inflation 5.2% in Oct 2026, up from 4.5%; transport inflation 15.2%: Stats SA CPI October 2026 (P0141), SAnews\n- Repo rate held at 7.25% on 19 Nov 2026: SARB MPC statement\n- Fuel and phone examples: own calculation, about R0.95 more per dollar\n\n#Rand #Inflation #RepoRate #Shorts\n\nEducation, not financial advice. Narration and video clips (TAAFT) are AI-generated."}}
 json.dump(short, open("content-short-rand.json", "w"), ensure_ascii=False, indent=2)
