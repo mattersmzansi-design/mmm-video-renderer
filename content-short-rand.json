@@ -12,6 +12,7 @@
   "countdown": {
     "from": 5
   },
+  "broll_fit": "pad",
   "metro": {
     "view": [
       1000,
@@ -125,15 +126,33 @@
   },
   "scenes": [
     {
+      "type": "broll",
+      "broll": "rand-1.mp4",
+      "eyebrow": "Fuel",
+      "headline": "Your petrol just got dearer",
+      "stat": {
+        "value": "+R85",
+        "label": "on every $90 barrel of oil",
+        "count": {
+          "from": 0,
+          "to": 85,
+          "prefix": "+R"
+        }
+      },
+      "receipt": "Calculation: $90 × R0.95 more per dollar",
+      "voiceover": "Your petrol just got more expensive. Every ninety-dollar barrel of oil now costs about eighty-five rand more.",
+      "duration": 8100
+    },
+    {
       "type": "map",
       "map": {
         "show": []
       },
-      "eyebrow": "Rand per US dollar, November 2026",
-      "headline": "How the rand reaches your pocket",
+      "eyebrow": "The reason: one number",
+      "headline": "The rand slipped in 9 days",
       "stat": {
         "value": "R17.55",
-        "label": "20 Nov (R16.60 on 11 Nov)",
+        "label": "per $1 on 20 Nov (R16.60 on 11 Nov)",
         "count": {
           "from": 16.6,
           "to": 17.55,
@@ -142,41 +161,14 @@
         }
       },
       "receipt": "MTFX daily USD/ZAR rates, 11 and 20 Nov 2026",
-      "voiceover": "In November, the rand slipped from about sixteen rand sixty to seventeen rand fifty-five to the US dollar. That one number travels through your whole budget.",
-      "duration": 11700
-    },
-    {
-      "type": "map",
-      "map": {
-        "show": [
-          "fuel"
-        ]
-      },
-      "eyebrow": "1 · Fuel",
-      "headline": "Oil is priced in dollars",
-      "stat": {
-        "value": "+R85",
-        "label": "on a $90 barrel",
-        "count": {
-          "from": 0,
-          "to": 85,
-          "prefix": "+R"
-        }
-      },
-      "receipt": "Calculation: $90 × R0.95 more per dollar",
-      "voiceover": "Fuel first. Oil is priced in dollars, so a ninety-dollar barrel now costs about eighty-five rand more.",
+      "voiceover": "The reason? In nine days the rand slipped from sixteen sixty to seventeen fifty-five to the dollar.",
       "duration": 8100
     },
     {
-      "type": "map",
-      "map": {
-        "show": [
-          "fuel",
-          "imports"
-        ]
-      },
-      "eyebrow": "2 · Imports",
-      "headline": "Imported goods cost more",
+      "type": "broll",
+      "broll": "rand-2.mp4",
+      "eyebrow": "Imports",
+      "headline": "Everything priced in dollars",
       "stat": {
         "value": "+R475",
         "label": "on a $500 phone",
@@ -187,20 +179,14 @@
         }
       },
       "receipt": "Calculation: $500 × R0.95 more per dollar",
-      "voiceover": "Imports next. A phone priced at five hundred dollars costs about four hundred and seventy-five rand more.",
-      "duration": 8100
+      "voiceover": "Anything imported follows. A five-hundred-dollar phone costs about four hundred and seventy-five rand more.",
+      "duration": 6900
     },
     {
-      "type": "map",
-      "map": {
-        "show": [
-          "fuel",
-          "imports",
-          "food"
-        ]
-      },
-      "eyebrow": "3 · Transport and food",
-      "headline": "Dearer fuel moves everything",
+      "type": "broll",
+      "broll": "rand-3.mp4",
+      "eyebrow": "Transport, then food",
+      "headline": "Moving goods costs more",
       "stat": {
         "value": "15.2%",
         "label": "transport inflation, Oct 2026",
@@ -212,26 +198,17 @@
         }
       },
       "receipt": "Stats SA CPI, October 2026 (via SAnews)",
-      "voiceover": "Dearer fuel raises transport costs and, over time, food prices. Transport inflation hit fifteen point two percent in October.",
-      "duration": 8900
+      "voiceover": "Dearer fuel means dearer transport, and over time, dearer food.",
+      "duration": 5300
     },
     {
-      "type": "map",
-      "map": {
-        "show": [
-          "fuel",
-          "imports",
-          "food",
-          "in-o",
-          "in-p",
-          "in-g"
-        ]
-      },
-      "eyebrow": "4 · Inflation",
-      "headline": "It all flows into inflation",
+      "type": "broll",
+      "broll": "rand-4.mp4",
+      "eyebrow": "Inflation and interest rates",
+      "headline": "The Reserve Bank is watching",
       "stat": {
         "value": "5.2%",
-        "label": "Oct 2026, up from 4.5%",
+        "label": "inflation, Oct 2026 · repo rate held at 7.25%",
         "count": {
           "from": 4.5,
           "to": 5.2,
@@ -239,8 +216,8 @@
           "suffix": "%"
         }
       },
-      "receipt": "Stats SA CPI, October 2026",
-      "voiceover": "It all flows into inflation, which rose to five point two percent in October, up from four point five.",
+      "receipt": "Stats SA CPI Oct 2026; SARB MPC, 19 Nov 2026",
+      "voiceover": "Inflation hit five point two percent. The Reserve Bank held rates at seven point two five, and it's watching.",
       "duration": 8900
     },
     {
@@ -256,33 +233,10 @@
           "bank"
         ]
       },
-      "eyebrow": "5 · Interest rates",
-      "headline": "The Reserve Bank watches inflation",
-      "stat": {
-        "value": "7.25%",
-        "label": "repo rate, held 19 Nov 2026"
-      },
-      "receipt": "SARB MPC statement, 19 Nov 2026",
-      "voiceover": "Inflation is what the Reserve Bank watches. On the nineteenth of November it held the repo rate at seven point two five percent.",
-      "duration": 10500
-    },
-    {
-      "type": "map",
-      "map": {
-        "show": [
-          "fuel",
-          "imports",
-          "food",
-          "in-o",
-          "in-p",
-          "in-g",
-          "bank"
-        ]
-      },
-      "eyebrow": "It works both ways",
-      "headline": "When the rand firms, these costs ease",
-      "voiceover": "The rand moves both ways. When it firms, these costs ease.",
-      "duration": 5700
+      "eyebrow": "One number, your whole budget",
+      "headline": "And it works both ways",
+      "voiceover": "One number, your whole budget. When the rand firms, these costs ease.",
+      "duration": 6100
     }
   ],
   "endcard": {
@@ -310,6 +264,6 @@
       "fuel price",
       "Mzansi Money Matters"
     ],
-    "description": "The rand went from about R16.60 to R17.55 per US dollar between 11 and 20 November 2026. Here's how that one number reaches fuel, imports, transport, food, inflation and interest rates.\n\nSources:\n- Rand: MTFX daily USD/ZAR rates (11 Nov: R16.61; 20 Nov: R17.56)\n- Inflation 5.2% in Oct 2026, up from 4.5%; transport inflation 15.2%: Stats SA CPI October 2026 (P0141), SAnews\n- Repo rate held at 7.25% on 19 Nov 2026: SARB MPC statement\n- Fuel and phone examples: own calculation, about R0.95 more per dollar\n\n#Rand #Inflation #RepoRate #Shorts\n\nEducation, not financial advice. Narration is AI-generated."
+    "description": "The rand went from about R16.60 to R17.55 per US dollar between 11 and 20 November 2026. Here's how that one number reaches fuel, imports, transport, food, inflation and interest rates.\n\nSources:\n- Rand: MTFX daily USD/ZAR rates (11 Nov: R16.61; 20 Nov: R17.56)\n- Inflation 5.2% in Oct 2026, up from 4.5%; transport inflation 15.2%: Stats SA CPI October 2026 (P0141), SAnews\n- Repo rate held at 7.25% on 19 Nov 2026: SARB MPC statement\n- Fuel and phone examples: own calculation, about R0.95 more per dollar\n\n#Rand #Inflation #RepoRate #Shorts\n\nEducation, not financial advice. Narration and video clips (TAAFT) are AI-generated."
   }
 }
