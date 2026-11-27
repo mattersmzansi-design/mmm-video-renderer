@@ -16,6 +16,7 @@ jobs:
           import whisper, glob, os
           m = whisper.load_model("small")
           for f in sorted(glob.glob(os.path.join("${{ inputs.dir }}", "*"))):
-              r = m.transcribe(f, fp16=False)
+              r = m.transcribe(f, fp16=False, word_timestamps=True)
               print("TRANSCRIPT", os.path.basename(f), r["language"], "|", r["text"].strip())
+              for sg in r["segments"]: print("SEG", os.path.basename(f), round(sg["start"],2), round(sg["end"],2), sg["text"].strip())
           PY
