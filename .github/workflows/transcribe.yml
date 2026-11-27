@@ -1,0 +1,21 @@
+name: Transcribe audio
+on:
+  workflow_dispatch:
+    inputs:
+      dir: {description: "folder with .wav/.mp4 files", required: true}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: sudo apt-get install -y ffmpeg >/dev/null && pip install -q openai-whisper
+      - run: |
+          python - <<'PY'
+          import whisper, glob, os
+          m = whisper.load_model("small")
+          for f in sorted(glob.glob(os.path.join("${{ inputs.dir }}", "*"))):
+              r = m.transcribe(f, fp16=False)
+              print("TRANSCRIPT", os.path.basename(f), r["language"], "|", r["text"].strip())
+          PY
