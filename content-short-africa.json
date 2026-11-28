@@ -1,0 +1,146 @@
+{
+  "template": "template-countdown.html",
+  "brand": {
+    "name": "Mzansi Money Matters",
+    "logo": "logo.jpg"
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "bf_emma",
+    "speed": 1.0,
+    "lang": "en-gb",
+    "lead_pad": 300,
+    "tail_pad": 500
+  },
+  "timing": {
+    "lead_in": 600
+  },
+  "countdown": {
+    "from": 4,
+    "order": "up"
+  },
+  "slug": "short-africa-richest",
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "type": "broll",
+      "broll": {
+        "file": "africa-01-earth.mp4",
+        "fit": "pad"
+      },
+      "eyebrow": "Latest data",
+      "headline": "Is SA Africa's richest? 1st or 6th?",
+      "voiceover": "Is South Africa Africa's richest country? First, or sixth? It depends what you measure.",
+      "duration": 6900
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "africa-02-seychelles.mp4",
+        "fit": "pad"
+      },
+      "eyebrow": "Average income per person",
+      "headline": "Seychelles 1st · SA 6th",
+      "stat": {
+        "value": "$19,200",
+        "label": "average income per person, 2025",
+        "count": {
+          "from": 0,
+          "to": 19200,
+          "prefix": "$"
+        }
+      },
+      "receipt": "World Bank WDI, July 2026",
+      "voiceover": "On average income per person, Seychelles is first. South Africa is sixth.",
+      "duration": 6100
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "africa-07-joburg.mp4",
+        "fit": "cover"
+      },
+      "eyebrow": "Number of dollar millionaires",
+      "headline": "South Africa 1st",
+      "stat": {
+        "value": "48,200",
+        "label": "US-dollar millionaires, June 2026",
+        "count": {
+          "from": 0,
+          "to": 48200
+        }
+      },
+      "receipt": "New World Wealth, Africa Wealth Report 2026",
+      "voiceover": "On the number of dollar millionaires, South Africa is first, with forty-eight thousand two hundred.",
+      "duration": 7300
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "africa-13-school-clinic.mp4",
+        "fit": "pad"
+      },
+      "eyebrow": "Health & education",
+      "headline": "Seychelles 1st · SA 6th",
+      "stat": {
+        "value": "0.848",
+        "label": "Human Development Index"
+      },
+      "receipt": "UNDP Human Development Report 2025",
+      "voiceover": "On health and education, Seychelles leads again. South Africa is sixth.",
+      "duration": 5700
+    },
+    {
+      "type": "point",
+      "eyebrow": "How evenly income is shared",
+      "headline": "Lower is more equal",
+      "stat": {
+        "value": "54.1",
+        "label": "South Africa's Gini index · among the world's highest",
+        "count": {
+          "from": 0,
+          "to": 54.1,
+          "decimals": 1
+        }
+      },
+      "receipt": "World Bank PIP, 2022 survey",
+      "voiceover": "But South Africa also has one of the highest inequality scores in the world.",
+      "duration": 6900
+    },
+    {
+      "type": "broll",
+      "broll": {
+        "file": "africa-15-scale.mp4",
+        "fit": "pad"
+      },
+      "eyebrow": "The verdict",
+      "headline": "No country wins every round",
+      "voiceover": "No country wins every round. Full breakdown on our channel.",
+      "duration": 5300
+    }
+  ],
+  "disclaimer": "Education, not financial advice.",
+  "endcard": {
+    "title": "It depends <em>how you measure</em>",
+    "subtitle": "Full breakdown on the channel",
+    "handle": "@MzansiMoneyMatters",
+    "voiceover": "Follow Mzansi Money Matters.",
+    "duration": 2800
+  },
+  "youtube": {
+    "title": "Is South Africa Africa's richest country? 1st or 6th? #shorts",
+    "privacy": "private",
+    "synthetic_media": true,
+    "category_id": "27",
+    "tags": [
+      "richest country in Africa",
+      "Seychelles",
+      "South Africa millionaires",
+      "Mzansi Money Matters"
+    ],
+    "description": "Seychelles leads on income per person ($19,200, World Bank) and human development (0.848, UNDP). South Africa leads on private wealth (48,200 dollar millionaires, New World Wealth 2026) but has one of the world's highest Gini indexes (54.1, World Bank). No country wins every round.\n\n#Africa #Shorts #MzansiMoneyMatters\n\nEducation, not financial advice. Narration is AI-generated. Video clips generated with Google Flow (Veo)."
+  }
+}
